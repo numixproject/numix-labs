@@ -58,16 +58,43 @@ for launcher in local_hardcoded:
 	else:
 		pass
 
-# warning_message = """
-# Because fixing hardcoded icons means changing the icon
-# lines of .desktop files in /usr/share/applications
-# root privlages are needed. Asking for root password...\n"""
+warning_message = """
+Because most launchers are in /usr/share/applications/
+fixing their hardcoded icon lines requites root privlages.
+You can exit the script safely at this point if you wish.\n"""
 
-# euid = geteuid()
-# if euid != 0:
-#     print(warning_message)
-#     args = ['sudo', executable] + argv + [environ]
-#     execlpe('sudo', *args)
+euid = geteuid()
+if euid != 0:
+    print(warning_message)
+    print("Asking for root password...")
+    args = ['sudo', executable] + argv + [environ]
+    execlpe('sudo', *args)
 
-# print("\nAquired root!")
-# print("The script will now fix the hardcoded icons...")
+print("\nAquired root!")
+print("Fixing global application icons...")
+global_launchers = listdir("/usr/share/applications")
+
+# List of known local applications that use hardcoded icons
+global_hardcoded = [
+	["app.desktop","old","numix"],
+]
+
+for launcher in global_hardcoded:
+	if launcher[0] in global_launchers:
+		print("Fixing "+launcher[0].replace(".desktop","..."))
+		desktop_file = open("/usr/share/applications"+launcher[0], 'r+')
+		lines = [line for line in desktop_file]
+		desktop_file.close()
+		# Have to open and close so truncate works. It's a bug I'm working on.
+		desktop_file = open("/usr/share/applications"+launcher[0], 'r+')
+		desktop_file.truncate()
+		desktop_file.flush()
+		for n in range(0, len(lines)):
+			if "Icon="+launcher[1] in lines[n]:
+				lines.pop(n)
+				lines.insert(n, "Icon="+launcher[2]+"\n")
+		for line in lines:
+			desktop_file.write(line)
+		desktop_file.close()
+	else:
+		pass
