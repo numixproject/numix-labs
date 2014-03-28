@@ -11,13 +11,13 @@ Run ./UNINSTALL as root to restore defaults icons.
 
 Launchpad PPA
 =============
-The Numix icon themes are available to install for Ubuntu users via a PPA repository. Open a terminal and run :
+The Numix icon themes are available to install for Ubuntu users via a PPA repository. Open a terminal and run:
 
     sudo add-apt-repository ppa:numix/ppa
     sudo apt-get update
     sudo apt-get install numix-icon-theme numix-icon-theme-circle 
 
-You can also install the "numix-icon-theme-utouch" and numix-icon-theme-shine" packages but neither are currently actively maintained.
+You can also install the ```numix-icon-theme-utouch``` and ```numix-icon-theme-shine``` packages but neither are currently actively maintained.
 
 
 Tips
