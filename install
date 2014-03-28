@@ -1,9 +1,11 @@
+#!/bin/bash
+# Installation script for Numix icon themes, written and maintained by Joshua Fogg
+# (joshua.h.fogg@gmail.com). A merge of the original python version and a fork of
+# the Faenza installer written by Tiheum (matthieu.james@gmail.com)
+
+# Development Information
 # Needs root: /usr/share/applications/
 # no rooting: /home/josh/.local/share/applications/
-
-#!/bin/bash
-# Installation script for Faenza icon themes
-# Written by Tiheum (matthieu.james@gmail.com)
 
 ROOT_UID=0
 if [ "$UID" -ne "$ROOT_UID" ]
