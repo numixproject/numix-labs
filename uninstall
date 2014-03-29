@@ -45,7 +45,7 @@ case $response in
 esac
 
 # Unfixes hardcoded icons
-python3 hc-unfix.py -u
+python3 hc-fix.py -u
 
 # End
 exit 0

@@ -22,8 +22,8 @@ case $response in
 esac
 
 # Moves directory
-DIR="$( cd -P "$( dirname "$0" )" && pwd )"
-cd $DIR
+# DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+# cd $DIR
 
 # Downloads most recent version from GH
 echo "Downloading Numix..."
