@@ -1,6 +1,6 @@
 Introduction
 ============
-This is an installer for the Numix icon themes, designed to fix the problems of hardcoded icons. It was originally developed (poorly) in Python but this is an experimental fork of the one Faenza uses written in Bash. It is **not** a stable installer and isn't designed to be used by the general public.
+This is an installer for the Numix icon themes, designed to fix the problems of hardcoded icons. It was originally developed (poorly) in Python but this is an experimental fork of the one Faenza uses written in Bash.
 
 
 Installation
@@ -21,12 +21,10 @@ You can also install the ```numix-icon-theme-utouch``` and ```numix-icon-theme-s
 
 Tips
 ====
-* Don't use this installer.
+* If you're only interested in fixing the hardcoded icons running ```hc-fix.py -f``` will do just that.
+* This installer hasn't being thoroughly tested so something could go wrong
 
 
 Known issues
 ============
-* Installing doesn't fix hard coded icons.
-* Uninstalling doesn't currently unfix the hardcoded icons
-
-
+* Have to close and open file for truncate to work
