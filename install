@@ -21,27 +21,45 @@ case $response in
     * ) echo "Wrong value: installaton aborted."; exit 1;;
 esac
 
-# Downloads most recent version from GH
 echo "Downloading Numix..."
-wget -q -O Numix.tar.gz https://github.com/Foggalong/numix-icon-installer/archive/master.tar.gz
+wget -q -O Numix.tar.gz https://github.com/numixproject/numix-icon-theme/archive/master.tar.gz
+tar xf Numix.tar.gz 2>/dev/null
+rm -Rf  Numix.tar.gz 2>/dev/null
+cd numix-icon-theme-master
+mv Numix ../Numix
+cd ../
+rm -Rf numix-icon-theme-master
+
 echo "Downloading Numix Circle..."
 wget -q -O Numix-Circle.tar.gz https://github.com/numixproject/numix-icon-theme-circle/archive/master.tar.gz
+tar xf Numix-Circle.tar.gz 2>/dev/null
+rm -Rf  Numix-Circle.tar.gz 2>/dev/null
+cd numix-icon-theme-circle-master
+mv Numix-Circle ../Numix-Circle
+cd ../
+rm -Rf numix-icon-theme-circle-master
+
 echo "Downloading Numix Shine..."
 wget -q -O Numix-Shine.tar.gz https://github.com/numixproject/numix-icon-theme-shine/archive/master.tar.gz
+tar xf Numix-Shine.tar.gz 2>/dev/null
+rm -Rf  Numix-Shine.tar.gz 2>/dev/null
+cd numix-icon-theme-shine-master
+mv Numix-Shine ../Numix-Shine
+cd ../
+rm -Rf numix-icon-theme-shine-master
+
 echo "Downloading Numix uTouch..."
 wget -q -O Numix-uTouch.tar.gz https://github.com/numixproject/numix-icon-theme-utouch/archive/master.tar.gz
-
-# # Moves directory
-# DIR="$( cd -P "$( dirname "$0" )" && pwd )"
-# cd $DIR
-cd $HOME/Downloads
-
-# Extracts tar files
-tar xf Numix.tar.gz 2>/dev/null
-tar xf Numix-Circle.tar.gz 2>/dev/null
-tar xf Numix-Shine.tar.gz 2>/dev/null
 tar xf Numix-uTouch.tar.gz 2>/dev/null
+rm -Rf  Numix-uTouch.tar.gz 2>/dev/null
+cd numix-icon-theme-utouch-master
+mv Numix-uTouch ../Numix-uTouch
+cd ../
+rm -Rf numix-icon-theme-utouch-master
 
+# Moves directory
+DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+cd $DIR
 
 # Checks for existing installation and deals with it
 if [ -d $HOME/.icons/Faenza ]
@@ -83,6 +101,12 @@ fi
 echo
 echo "Installation complete."
 
+# Clean Up
+rm -Rf Numix
+rm -Rf Numix-Circle
+rm -Rf Numix-Shine
+rm -Rf Numix-uTouch
+
 echo "The script will now attempt to fix hardcoded icons."
 read -p "Do you want to continue ? [Y]es, [n]o : " response
 case $response in
@@ -93,12 +117,6 @@ esac
 
 # Python script which fixes hardcoded icons
 python3 hc-fix.py -f
-
-# Clean Up
-rm -Rf  Numix.tar.gz 2>/dev/null
-rm -Rf  Numix-Circle.tar.gz 2>/dev/null
-rm -Rf  Numix-Shine.tar.gz 2>/dev/null
-rm -Rf  Numix-uTouch.tar.gz 2>/dev/null
 
 # End
 echo "Hardcoded icons fixed. Enjoy !"
