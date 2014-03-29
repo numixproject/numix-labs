@@ -1,3 +1,8 @@
+0.7
+===
+* Fixed line length problems
+* Uninstaller now functional
+
 0.6
 ===
 * Added more .desktop names
