@@ -62,7 +62,7 @@ DIR="$( cd -P "$( dirname "$0" )" && pwd )"
 cd $DIR
 
 # Checks for existing installation and deals with it
-if [ -d $HOME/.icons/Faenza ]
+if [ -d $HOME/.icons/Numic ]
 then
 	echo
 	read -p "An existing installation have been detected in $HOME/.icons. Remove it previously ? [Y]es, [N]o :" response
