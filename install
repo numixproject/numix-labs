@@ -10,10 +10,8 @@ if [ "$UID" -ne "$ROOT_UID" ]
 then
 	echo "Icon themes will be installed in $HOME/.icons making them available to only you."
 	echo "To make them available for all users, run this script as root."
-	echo "Hardcoded cannot be fixed either as to make the required changes needs root."
 else
 	echo "Icon themes will be installed in /usr/share/icons and are available for all users."
-	echo "Because you're running as root you will also be able to fix hardcoded icons."
 fi
 read -p "Do you want to continue ? [Y]es, [N]o : " response
 case $response in
@@ -76,7 +74,6 @@ echo
 echo "Installation complete."
 
 echo "The script will now attempt to fix hardcoded icons."
-echo "The changes made are not automatically reversable."
 read -p "Do you want to continue ? [Y]es, [n]o : " response
 case $response in
 	[Yy]* ) ;;

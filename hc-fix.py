@@ -83,49 +83,57 @@ hardcoded = [
 ]
 
 # Set up for local fixes
-if mode == "-f":
-	print("\nFixing local application icons...")
-elif mode == "-u":
-	print("\nUnfixing local application icons...")
-local_launchers = listdir(expanduser("~")+"/.local/share/applications")
+local_check = 0
+try:
+	local_launchers = listdir(expanduser("~")+"/.local/share/applications")
+	local_check = 1
+except:
+	pass
 
 # Fixes locally located launchers 
-for launcher in hardcoded:
-	if launcher[0] in local_launchers:
-		if mode == "-f":
-			print("Fixing "+launcher[0].replace(".desktop","..."))
-		elif mode == "-u":
-			print("Unfixing "+launcher[0].replace(".desktop","..."))
-		desktop_file = open(expanduser("~")+"/.local/share/applications/"+launcher[0], 'r+')
-		lines = [line for line in desktop_file]
-		desktop_file.close()
-		# Have to open and close so truncate works. It's a bug I'm working on.
-		desktop_file = open(expanduser("~")+"/.local/share/applications/"+launcher[0], 'r+')
-		desktop_file.truncate()
-		desktop_file.flush()
-		for n in range(0, len(lines)):
+if local_check == 1:
+	if mode == "-f":
+		print("\nFixing local application icons...")
+	elif mode == "-u":
+		print("\nUnfixing local application icons...")
+	for launcher in hardcoded:
+		if launcher[0] in local_launchers:
 			if mode == "-f":
-				if "Icon="+launcher[1] in lines[n]:
-					lines.pop(n)
-					lines.insert(n, "Icon="+launcher[2]+"\n")
+				print("Fixing "+launcher[0].replace(".desktop","..."))
 			elif mode == "-u":
-				if "Icon="+launcher[2] in lines[n]:
-					lines.pop(n)
-					lines.insert(n, "Icon="+launcher[1]+"\n")
-		for line in lines:
-			desktop_file.write(line)
-		desktop_file.close()
-	else:
-		pass
+				print("Unfixing "+launcher[0].replace(".desktop","..."))
+			desktop_file = open(expanduser("~")+"/.local/share/applications/"+launcher[0], 'r+')
+			lines = [line for line in desktop_file]
+			desktop_file.close()
+			# Have to open and close so truncate works. It's a bug I'm working on.
+			desktop_file = open(expanduser("~")+"/.local/share/applications/"+launcher[0], 'r+')
+			desktop_file.truncate()
+			desktop_file.flush()
+			for n in range(0, len(lines)):
+				if mode == "-f":
+					if "Icon="+launcher[1] in lines[n]:
+						lines.pop(n)
+						lines.insert(n, "Icon="+launcher[2]+"\n")
+				elif mode == "-u":
+					if "Icon="+launcher[2] in lines[n]:
+						lines.pop(n)
+						lines.insert(n, "Icon="+launcher[1]+"\n")
+			for line in lines:
+				desktop_file.write(line)
+			desktop_file.close()
+		else:
+			pass
+else:
+	pass
 
 # Set up for global fixes
+global_launchers = listdir("/usr/share/applications")
+
+# Fixes globally located launchers
 if mode == "-f":
 	print("\nFixing global application icons...")
 elif mode == "-u":
 	print("\nUnfixing global application icons...")
-global_launchers = listdir("/usr/share/applications")
-
-# Fixes globally located launchers
 for launcher in hardcoded:
 	if launcher[0] in global_launchers:
 		if mode == "-f":
@@ -154,6 +162,7 @@ for launcher in hardcoded:
 	else:
 		pass
 
+# End
 if mode == "-f":
 	print("\nAll hardcoded icons fixed!")
 elif mode == "-u":
