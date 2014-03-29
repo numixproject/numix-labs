@@ -13,13 +13,26 @@ from sys import executable, argv
 script, mode = argv
 
 # Checks user isn't running as root
+# euid = geteuid()
+# if euid == 0:
+# 	print("Don't run this as root!")
+# 	print("The root password will be asked for when needed.")
+# 	exit()
+# else:
+# 	pass
+
+warning_message = """
+Because most launchers are in /usr/share/applications/
+fixing their hardcoded icon lines requites root privlages.\n"""
+
+# Aquires root
 euid = geteuid()
-if euid == 0:
-	print("Don't run this as root!")
-	print("The root password will be asked for when needed.")
-	exit()
-else:
-	pass
+if euid != 0:
+	print(warning_message)
+	print("Asking for root password...")
+	args = ['sudo', executable] + argv + [environ]
+	execlpe('sudo', *args)
+print("\nAquired root!")
 
 # List of known apps that use hardcoded icons
 hardcoded = [
@@ -79,7 +92,10 @@ hardcoded = [
 ]
 
 # Set up for local fixes
-print("Fixing local application icons...")
+if mode == "-f":
+	print("\nFixing local application icons...")
+elif mode == "-u":
+	print("\nUnfixing local application icons...")
 local_launchers = listdir(expanduser("~")+"/.local/share/applications")
 
 # Fixes locally located launchers 
@@ -111,22 +127,11 @@ for launcher in hardcoded:
 	else:
 		pass
 
-warning_message = """
-Because most launchers are in /usr/share/applications/
-fixing their hardcoded icon lines requites root privlages.
-You can exit the script safely at this point if you wish.\n"""
-
-# Aquires root
-euid = geteuid()
-if euid != 0:
-    print(warning_message)
-    print("Asking for root password...")
-    args = ['sudo', executable] + argv + [environ]
-    execlpe('sudo', *args)
-
-print("\nAquired root!")
 # Set up for global fixes
-print("Fixing global application icons...")
+if mode == "-f":
+	print("\nFixing global application icons...")
+elif mode == "-u":
+	print("\nUnfixing global application icons...")
 global_launchers = listdir("/usr/share/applications")
 
 # Fixes globally located launchers
@@ -136,11 +141,11 @@ for launcher in hardcoded:
 			print("Fixing "+launcher[0].replace(".desktop","..."))
 		elif mode == "-u":
 			print("Unfixing "+launcher[0].replace(".desktop","..."))
-		desktop_file = open("/usr/share/applications"+launcher[0], 'r+')
+		desktop_file = open("/usr/share/applications/"+launcher[0], 'r+')
 		lines = [line for line in desktop_file]
 		desktop_file.close()
 		# Have to open and close so truncate works. It's a bug I'm working on.
-		desktop_file = open("/usr/share/applications"+launcher[0], 'r+')
+		desktop_file = open("/usr/share/applications/"+launcher[0], 'r+')
 		desktop_file.truncate()
 		desktop_file.flush()
 		for n in range(0, len(lines)):
@@ -157,3 +162,8 @@ for launcher in hardcoded:
 		desktop_file.close()
 	else:
 		pass
+
+if mode == "-f":
+	print("\nAll hardcoded icons fixed!")
+elif mode == "-u":
+	print("\nAll hardcoded icons unfixed!")
