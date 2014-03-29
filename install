@@ -21,10 +21,6 @@ case $response in
     * ) echo "Wrong value: installaton aborted."; exit 1;;
 esac
 
-# Moves directory
-# DIR="$( cd -P "$( dirname "$0" )" && pwd )"
-# cd $DIR
-
 # Downloads most recent version from GH
 echo "Downloading Numix..."
 wget -q -O Numix.tar.gz https://github.com/Foggalong/numix-icon-installer/archive/master.tar.gz
@@ -34,6 +30,11 @@ echo "Downloading Numix Shine..."
 wget -q -O Numix-Shine.tar.gz https://github.com/numixproject/numix-icon-theme-shine/archive/master.tar.gz
 echo "Downloading Numix uTouch..."
 wget -q -O Numix-uTouch.tar.gz https://github.com/numixproject/numix-icon-theme-utouch/archive/master.tar.gz
+
+# # Moves directory
+# DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+# cd $DIR
+cd $HOME/Downloads
 
 # Extracts tar files
 tar xf Numix.tar.gz 2>/dev/null
