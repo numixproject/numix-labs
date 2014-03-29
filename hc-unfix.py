@@ -90,9 +90,9 @@ for launcher in hardcoded:
 		desktop_file.truncate()
 		desktop_file.flush()
 		for n in range(0, len(lines)):
-			if "Icon="+launcher[1] in lines[n]:
+			if "Icon="+launcher[2] in lines[n]:
 				lines.pop(n)
-				lines.insert(n, "Icon="+launcher[2]+"\n")
+				lines.insert(n, "Icon="+launcher[1]+"\n")
 		for line in lines:
 			desktop_file.write(line)
 		desktop_file.close()
@@ -129,9 +129,9 @@ for launcher in hardcoded:
 		desktop_file.truncate()
 		desktop_file.flush()
 		for n in range(0, len(lines)):
-			if "Icon="+launcher[1] in lines[n]:
+			if "Icon="+launcher[2] in lines[n]:
 				lines.pop(n)
-				lines.insert(n, "Icon="+launcher[2]+"\n")
+				lines.insert(n, "Icon="+launcher[1]+"\n")
 		for line in lines:
 			desktop_file.write(line)
 		desktop_file.close()

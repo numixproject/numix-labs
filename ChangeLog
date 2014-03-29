@@ -1,3 +1,9 @@
+0.9
+===
+* Added hardcode unfixer
+* Integrated hardcode unfixer
+* Fixed whitespace problems
+
 0.8
 ===
 * Integrated hardcode fixer
