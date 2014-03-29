@@ -12,15 +12,6 @@ from sys import executable, argv
 # -f for fix, -u for unfix
 script, mode = argv
 
-# Checks user isn't running as root
-# euid = geteuid()
-# if euid == 0:
-# 	print("Don't run this as root!")
-# 	print("The root password will be asked for when needed.")
-# 	exit()
-# else:
-# 	pass
-
 warning_message = """
 Because most launchers are in /usr/share/applications/
 fixing their hardcoded icon lines requites root privlages.\n"""
