@@ -1,3 +1,9 @@
+1.1
+===
+* Downloads tars from GitHub rather than being included
+* Comments in installer
+* Removed support for uTouch-GS and Monochrome theme
+
 1.0
 ===
 * First "stable" release

@@ -5,6 +5,7 @@
 # version and a fork of the Faenza installer written by Tiheum
 # (matthieu.james@gmail.com)
 
+# Checks for root
 ROOT_UID=0
 if [ "$UID" -ne "$ROOT_UID" ]
 then
@@ -19,20 +20,17 @@ case $response in
     * ) echo "Wrong value: uninstall aborted."; exit 1;;
 esac
 
+# Uninstalls
 if [ "$UID" -eq "$ROOT_UID" ]
 then
 	rm -Rf /usr/share/icons/Numix 2>/dev/null
 	rm -Rf /usr/share/icons/Numix-Circle 2>/dev/null
-	rm -Rf /usr/share/icons/Numic-Mono 2>/dev/null
 	rm -Rf /usr/share/icons/Numix-Shine 2>/dev/null
-	rm -Rf /usr/share/icons/Numix-uTouch-GS 2>/dev/null
 	rm -Rf /usr/share/icons/Numix-uTouch 2>/dev/null
 else
 	rm -Rf $HOME/.icons/Numix 2>/dev/null
 	rm -Rf $HOME/.icons/Numix-Circle 2>/dev/null
-	rm -Rf $HOME/.icons/Numic-Mono 2>/dev/null
 	rm -Rf $HOME/.icons/Numix-Shine 2>/dev/null
-	rm -Rf $HOME/.icons/Numix-uTouch-GS 2>/dev/null
 	rm -Rf $HOME/.icons/Numix-uTouch 2>/dev/null
 fi
 
@@ -46,6 +44,8 @@ case $response in
     * ) echo "Enjoy!"; exit 1;;
 esac
 
+# Unfixes hardcoded icons
 python3 hc-unfix.py -u
 
+# End
 exit 0

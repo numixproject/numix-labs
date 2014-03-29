@@ -5,6 +5,7 @@
 # version and a fork of the Faenza installer written by Tiheum
 # (matthieu.james@gmail.com)
 
+# Asks for root
 ROOT_UID=0
 if [ "$UID" -ne "$ROOT_UID" ]
 then
@@ -20,27 +21,39 @@ case $response in
     * ) echo "Wrong value: installaton aborted."; exit 1;;
 esac
 
+# Moves directory
 DIR="$( cd -P "$( dirname "$0" )" && pwd )"
 cd $DIR
 
+# Downloads most recent version from GH
+echo "Downloading Numix..."
+wget -q -O Numix.tar.gz https://github.com/Foggalong/numix-icon-installer/archive/master.tar.gz
+echo "Downloading Numix Circle..."
+wget -q -O Numix-Circle.tar.gz https://github.com/numixproject/numix-icon-theme-circle/archive/master.tar.gz
+echo "Downloading Numix Shine..."
+wget -q -O Numix-Shine.tar.gz https://github.com/numixproject/numix-icon-theme-shine/archive/master.tar.gz
+echo "Downloading Numix uTouch..."
+wget -q -O Numix-uTouch.tar.gz https://github.com/numixproject/numix-icon-theme-utouch/archive/master.tar.gz
+
+# Extracts tar files
 tar xf Numix.tar.gz 2>/dev/null
 tar xf Numix-Circle.tar.gz 2>/dev/null
-tar xf Numix-Mono.tar.gz 2>/dev/null
 tar xf Numix-Shine.tar.gz 2>/dev/null
-tar xf Numix-uTouch-GS.tar.gz 2>/dev/null
 tar xf Numix-uTouch.tar.gz 2>/dev/null
 
 
+# Checks for existing installation and deals with it
 if [ -d $HOME/.icons/Faenza ]
 then
 	echo
 	read -p "An existing installation have been detected in $HOME/.icons. Remove it previously ? [Y]es, [N]o :" response
 	case $response in
-		[Yy]* ) rm -Rf $HOME/.icons/Numix 2>/dev/null; rm -Rf $HOME/.icons/Numix-Circle 2>/dev/null; rm -Rf $HOME/.icons/Numix-Mono. 2>/dev/null; rm -Rf $HOME/.icons/Numix-Shine 2>/dev/null; rm -Rf $HOME/.icons/Numix-uTouch-GS 2>/dev/null; rm -Rf $HOME/.icons/Numix-uTouch 2>/dev/null;;
+		[Yy]* ) rm -Rf $HOME/.icons/Numix 2>/dev/null; rm -Rf $HOME/.icons/Numix-Circle 2>/dev/null; rm -Rf $HOME/.icons/Numix-Shine 2>/dev/null; rm -Rf $HOME/.icons/Numix-uTouch 2>/dev/null;;
 	    * ) ;;
 	esac
 fi
 
+# Checks for existing installation and deals with it
 if [ "$UID" -eq "$ROOT_UID" ]
 then
 	if [ -d /usr/share/icons/Numix ]
@@ -48,24 +61,20 @@ then
 		echo
 		read -p "An existing installation has been detected in /usr/share/icons. Remove it previously ? [Y]es, [N]o :" response
 		case $response in
-			[Yy]* ) rm -Rf /usr/share/icons/Numix 2>/dev/null; rm -Rf /usr/share/icons/Numix-Circle 2>/dev/null; rm -Rf /usr/share/icons/Numix-Mono 2>/dev/null; rm -Rf /usr/share/icons/Numix-Shine 2>/dev/null; rm -Rf /usr/share/icons/Numix-uTouch-GS 2>/dev/null; rm -Rf /usr/share/icons/Numix-uTouch 2>/dev/null;;
+			[Yy]* ) rm -Rf /usr/share/icons/Numix 2>/dev/null; rm -Rf /usr/share/icons/Numix-Circle 2>/dev/null; rm -Rf /usr/share/icons/Numix-Shine 2>/dev/null; rm -Rf /usr/share/icons/Numix-uTouch 2>/dev/null;;
 		    * ) ;;
 		esac
 		echo
 	fi
 	cp -R ./Numix/ /usr/share/icons/
 	cp -R ./Numix-Circle/ /usr/share/icons/
-	cp -R ./Numix-Mono/ /usr/share/icons/
 	cp -R ./Numix-Shine/ /usr/share/icons/
-	cp -R ./Numix-uTouch-GS/ /usr/share/icons/
 	cp -R ./Numix-uTouch/ /usr/share/icons/
 	install_dir=/usr/share/icons/
 else
 	cp -R ./Numix/ $HOME/.icons/
 	cp -R ./Numix-Circle/ $HOME/.icons/
-	cp -R ./Numix-Mono/ $HOME/.icons/
 	cp -R ./Numix-Shine/ $HOME/.icons/
-	cp -R ./Numix-uTouch-GS/ $HOME/.icons/
 	cp -R ./Numix-uTouch/ $HOME/.icons/
 	install_dir=$HOME/.icons/
 fi
@@ -81,7 +90,15 @@ case $response in
     * ) echo "Enjoy!"; exit 1;;
 esac
 
+# Python script which fixes hardcoded icons
 python3 hc-fix.py -f
 
+# Clean Up
+rm -Rf  Numix.tar.gz 2>/dev/null
+rm -Rf  Numix-Circle.tar.gz 2>/dev/null
+rm -Rf  Numix-Shine.tar.gz 2>/dev/null
+rm -Rf  Numix-uTouch.tar.gz 2>/dev/null
+
+# End
 echo "Hardcoded icons fixed. Enjoy !"
 exit 0

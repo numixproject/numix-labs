@@ -1,6 +1,6 @@
 Introduction
 ============
-This is an installer for the Numix icon themes, designed to fix the problems of hardcoded icons. Icon themes up to date as of the 29th of March 2014.
+This is an installer for the Numix icon themes, designed to fix the problems of hardcoded icons. Icon themes are downloaded from GitHub to ensure they are the latest version.
 
 
 Installation
