@@ -1,6 +1,6 @@
 Introduction
 ============
-This is an installer for the Numix icon themes, designed to fix the problems of hardcoded icons. It was originally developed (poorly) in Python but this is an experimental fork of the one Faenza uses written in Bash.
+This is an installer for the Numix icon themes, designed to fix the problems of hardcoded icons. Icon themes up to date as of the 29th of March 2014.
 
 
 Installation
