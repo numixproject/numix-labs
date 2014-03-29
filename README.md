@@ -5,8 +5,7 @@ This is an installer for the Numix icon themes, designed to fix the problems of 
 
 Installation
 ============
-Run the ./INSTALL script to choose the distribution logo (Ubuntu, by default) and the Gnome menu icon. If run as root, the script will copy the iconsets to /usr/share/icons to made them available to all users. Some default icons used by Rhythmbox may be also replaced.
-Run ./UNINSTALL as root to restore defaults icons.
+Run the ./INSTALL script to install all the icon themes and fix as many of the hardcoded icons as possible. If run as root, the script will copy the iconsets to /usr/share/icons to made them available to all users. Run ./UNINSTALL as root to restore defaults icons.
 
 
 Launchpad PPA
@@ -27,6 +26,7 @@ Tips
 
 Known issues
 ============
-* The installer doens't work at all.
+* Installing doesn't fix hard coded icons.
+* Uninstalling doesn't currently unfix the hardcoded icons
 
 
