@@ -1,3 +1,8 @@
+0.10
+====
+* Integrated fix and unfix into one file
+* Known issue with root aquisition
+
 0.9
 ===
 * Added hardcode unfixer
