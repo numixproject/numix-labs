@@ -46,6 +46,6 @@ case $response in
     * ) echo "Enjoy!"; exit 1;;
 esac
 
-python3 hc-unfix.py
+python3 hc-unfix.py -u
 
 exit 0

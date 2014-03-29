@@ -84,7 +84,7 @@ case $response in
     * ) echo "Enjoy!"; exit 1;;
 esac
 
-python3 hc-fix.py
+python3 hc-fix.py -f
 
 echo "Hardcoded icons fixed. Enjoy !"
 exit 0
