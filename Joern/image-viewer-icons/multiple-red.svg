@@ -14,10 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="shotwell.svg"
-   inkscape:export-filename="/media/Data/Main/Visuals/Icons/Numix/Desktop/repos/numix-wiki/Joern/image-viewer-icons/shotwell.png"
-   inkscape:export-xdpi="450"
-   inkscape:export-ydpi="450">
+   sodipodi:docname="f-spot.svg">
   <metadata
      id="metadata30">
     <rdf:RDF>
@@ -31,23 +28,23 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#333333"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1366"
-     inkscape:window-height="740"
+     inkscape:window-height="716"
      id="namedview28"
      showgrid="false"
-     inkscape:zoom="11.081706"
-     inkscape:cx="24.180478"
+     inkscape:zoom="6.0572305"
+     inkscape:cx="13.199967"
      inkscape:cy="24"
      inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <defs
@@ -56,42 +53,47 @@
        id="linearGradient4460">
       <stop
          offset="0"
-         style="stop-color:#04131a"
+         style="stop-color:#101a04;stop-opacity:1;"
          id="stop7" />
       <stop
          offset="1"
-         style="stop-color:#0c384e"
+         style="stop-color:#6d1f11;stop-opacity:1;"
          id="stop9" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(1.09524 0 0 1.09524 -133.00183 -293.02198)"
+       gradientTransform="matrix(1.09524,0,0,1.09524,-133.00183,-293.02198)"
        xlink:href="#linearGradient4460"
        id="linearGradient3008"
        y1="279.096"
        y2="268.33"
        gradientUnits="userSpaceOnUse"
        x2="0" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4460"
+       id="linearGradient3776"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.09524,0,0,1.09524,-133.00183,-293.02198)"
+       y1="279.096"
+       x2="0"
+       y2="268.33" />
   </defs>
-  <g
-     style="fill-rule:evenodd"
-     id="g12">
-    <rect
-       width="12.982"
-       x=".282"
-       y=".283"
-       rx="6.491"
-       height="12.982"
-       style="opacity:.5;fill:#fff"
-       id="rect14" />
-    <rect
-       width="11.746"
-       x=".9"
-       y=".901"
-       rx="5.873"
-       height="11.746"
-       style="fill:url(#linearGradient3008)"
-       id="rect16" />
-  </g>
+  <rect
+     id="rect14"
+     style="opacity:0.5;fill:#ffffff;fill-rule:evenodd"
+     height="12.982"
+     rx="6.4910002"
+     y="0.28299999"
+     x="0.28200001"
+     width="12.982" />
+  <rect
+     id="rect16"
+     style="fill:url(#linearGradient3776);fill-rule:evenodd"
+     height="11.746"
+     rx="5.8730001"
+     y="0.90100002"
+     x="0.89999998"
+     width="11.746" />
   <path
      style="fill:#aaa"
      d="M 5.1233712,3.11727 C 4.8497609,3.0439563 4.5051153,3.2437867 4.4320708,3.5163925 L 3.1172699,8.4232958 c -0.073044,0.2726057 0.1255082,0.6179857 0.3991225,0.6913004 l 4.0890861,1.0956678 0.8178173,0.219133 c 0.2726057,0.07305 0.6179857,-0.125508 0.6913004,-0.399122 L 9.4067742,8.9398516 10.429397,5.1233712 C 10.501756,4.8533239 10.299326,4.5041628 10.030275,4.4320708 L 5.1233712,3.11727 z"
@@ -102,12 +104,12 @@
      transform="scale(.28222)"
      id="path20" />
   <path
-     style="fill:#74c3ea"
+     style="fill:#e3b1b0;fill-opacity:1"
      d="m 18,16 c -2,0 -2,0 -2,2 l 0,12 c 8.01e-4,2.006803 0,2 2,2 l 12,0 c 0.447629,0 0.761568,-0.0091 1.03125,-0.03125 l 0.9375,-0.9375 C 31.990439,30.761991 32,30.445985 32,30 l 0,-12 c 10e-7,-2.00737 0,-2 -2,-2 l -12,0 z"
      transform="scale(.28222)"
      id="path22" />
   <path
-     style="fill:#1c83b6;fill-rule:evenodd"
+     style="fill:#cd403e;fill-rule:evenodd;fill-opacity:1"
      d="M 21.125,22 16,26.6875 16,30 c 0,2.007228 0,2 2,2 l 12,0 c 0.447581,-6.4e-5 0.76158,-0.0091 1.03125,-0.03125 l 0.9375,-0.9375 C 31.990453,30.76201 32,30.445985 32,30 l 0,-0.6875 -5.28125,-5.75 -2.40625,2 L 21.125,22 z"
      transform="scale(.28222)"
      id="path24" />
