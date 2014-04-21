@@ -14,7 +14,10 @@
    id="svg4399"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Neues Dokument 29">
+   sodipodi:docname="numix-color-palette.svg"
+   inkscape:export-filename="/home/joern/git/numix-wiki/Joern/numix-color-palette.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45">
   <defs
      id="defs4401" />
   <sodipodi:namedview
@@ -25,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.6"
-     inkscape:cx="400"
-     inkscape:cy="300"
+     inkscape:cx="80"
+     inkscape:cy="312.27181"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
@@ -88,6 +91,14 @@
        position="0,600"
        orientation="600,0"
        id="guide4431" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="200,661.66667"
+       id="guide4488" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="600,600"
+       id="guide4490" />
   </sodipodi:namedview>
   <metadata
      id="metadata4404">
@@ -106,116 +117,165 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer">
     <rect
-       style="opacity:1;fill:#002b36;fill-opacity:1;stroke:none"
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect4528"
+       width="800"
+       height="600"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#002b36;fill-opacity:1;stroke:none"
        id="rect4433"
-       width="400"
+       width="200"
        height="80"
        x="0"
        y="0" />
     <rect
        style="fill:#073642;fill-opacity:1;stroke:none"
        id="rect4435"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="75" />
     <rect
        style="fill:#586e75;fill-opacity:1;stroke:none"
        id="rect4437"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="150" />
     <rect
        style="fill:#657b83;fill-opacity:1;stroke:none"
        id="rect4439"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="225" />
     <rect
        style="fill:#839496;fill-opacity:1;stroke:none"
        id="rect4441"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="300" />
     <rect
        style="fill:#93a1a1;fill-opacity:1;stroke:none"
        id="rect4443"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="375" />
     <rect
        style="fill:#eee8d5;fill-opacity:1;stroke:none"
        id="rect4445"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="450" />
     <rect
        style="fill:#fdf6e3;fill-opacity:1;stroke:none"
        id="rect4447"
-       width="400"
+       width="200"
        height="75"
        x="0"
        y="525" />
     <rect
        style="fill:#b58900;fill-opacity:1;stroke:none"
        id="rect4451"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="0" />
     <rect
        style="fill:#cb4b16;fill-opacity:1;stroke:none"
        id="rect4453"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="75" />
     <rect
        style="fill:#dc322f;fill-opacity:1;stroke:none"
        id="rect4457"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="150" />
     <rect
        style="fill:#d33682;fill-opacity:1;stroke:none"
        id="rect4459"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="225" />
     <rect
        style="fill:#6c71c4;fill-opacity:1;stroke:none"
        id="rect4461"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="300" />
     <rect
        style="fill:#268bd2;fill-opacity:1;stroke:none"
        id="rect4463"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="375" />
     <rect
        style="fill:#2aa198;fill-opacity:1;stroke:none"
        id="rect4465"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="450" />
     <rect
        style="fill:#859900;fill-opacity:1;stroke:none"
        id="rect4467"
-       width="400"
+       width="200"
        height="75"
-       x="400"
+       x="200"
        y="525" />
+    <rect
+       style="fill:#141414;fill-opacity:1;stroke:none"
+       id="rect4451-0"
+       width="200"
+       height="75"
+       x="600"
+       y="-1.0192394e-05" />
+    <rect
+       style="fill:#2d2d2d;fill-opacity:1;stroke:none"
+       id="rect4453-0"
+       width="200"
+       height="75"
+       x="600"
+       y="74.999992" />
+    <rect
+       style="fill:#2d2d2d;fill-opacity:1;stroke:none"
+       id="rect4457-6"
+       width="200"
+       height="75"
+       x="600"
+       y="149.99998" />
+    <rect
+       style="fill:#d64937;fill-opacity:1;stroke:none"
+       id="rect4459-9"
+       width="200"
+       height="75"
+       x="600"
+       y="224.99998" />
+    <rect
+       style="fill:#ada9a8;fill-opacity:1;stroke:none"
+       id="rect4461-0"
+       width="200"
+       height="75"
+       x="600"
+       y="300" />
+    <rect
+       style="fill:#dcdcdc;fill-opacity:1;stroke:none"
+       id="rect4463-4"
+       width="200"
+       height="75"
+       x="600"
+       y="375" />
   </g>
 </svg>
