@@ -14,7 +14,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="template_circle.svg">
+   sodipodi:docname="opera.svg"
+   inkscape:export-filename="/home/kaloyan/Documents/Documents/Graphic/Numix/Fold/png/opera.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <metadata
      id="metadata32">
     <rdf:RDF>
@@ -41,12 +44,12 @@
      id="namedview30"
      showgrid="true"
      inkscape:zoom="15.674954"
-     inkscape:cx="29.508724"
+     inkscape:cx="20.130706"
      inkscape:cy="26.964184"
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
+     inkscape:current-layer="layer4">
     <inkscape:grid
        type="xygrid"
        id="grid3781" />
@@ -1105,7 +1108,7 @@
      style="display:inline">
     <path
        id="path3021"
-       style="fill:#505050;fill-opacity:1;display:inline"
+       style="fill:#b6262b;fill-opacity:1;display:inline"
        d="m 12.699999,6.7734035 c 0,-3.2731867 -2.653456,-5.92673568 -5.9265966,-5.92673568 -3.2733024,0 -5.92673571,2.65354898 -5.92673571,5.92673568 0,3.2732795 2.65345651,5.9265965 5.92673571,5.9265965 3.2731406,0 5.9265966,-2.653364 5.9265966,-5.9265965 z"
        inkscape:connector-curvature="0" />
   </g>
@@ -1116,7 +1119,7 @@
      style="display:inline">
     <path
        inkscape:connector-curvature="0"
-       style="fill:#de3236;fill-opacity:1"
+       style="fill:#dcdcdc;fill-opacity:1"
        d="m 6.7733338,2.5399961 c -2.0245067,0 -3.6688893,1.8943078 -3.6688893,4.2299369 0,2.3356565 1.6443859,4.23673 3.6688893,4.23673 2.0245022,0 3.6688882,-1.9010735 3.6688882,-4.23673 0,-2.3356291 -1.644386,-4.2299369 -3.6688882,-4.2299369 z m 0,0.541866 c 1.6771699,0 1.8380261,1.6507434 1.8380261,3.6880709 3.4e-6,2.0373549 -0.2229397,3.691486 -1.8380261,3.691486 -1.6435787,0 -1.8380294,-1.6541311 -1.8380294,-3.691486 0,-2.0373275 0.1892652,-3.6880709 1.8380294,-3.6880709 z"
        id="path18" />
   </g>
