@@ -14,8 +14,8 @@
    height="48"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="com.google.android.talk.svg"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="chrome-deceagebecbceejblnlcjooeohmmeldh-Default.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -625,6 +625,25 @@
          offset="1"
          id="stop3837-0-1" />
     </linearGradient>
+    <linearGradient
+       x2="0"
+       gradientUnits="userSpaceOnUse"
+       y2="268.33"
+       y1="279.096"
+       id="linearGradient3960"
+       xlink:href="#linearGradient4460-8"
+       gradientTransform="matrix(1.10525,0,0,1.10525,-134.27874,-295.76183)" />
+    <linearGradient
+       id="linearGradient4460-8">
+      <stop
+         id="stop7-8"
+         style="stop-color:#ba080a;stop-opacity:1;"
+         offset="0" />
+      <stop
+         id="stop9-4"
+         style="stop-color:#c70103;stop-opacity:1;"
+         offset="1" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -633,19 +652,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.3822335"
-     inkscape:cx="11.367984"
-     inkscape:cy="32.256369"
+     inkscape:zoom="35.850876"
+     inkscape:cx="25.769622"
+     inkscape:cy="26.924343"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1036"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
      inkscape:window-x="0"
-     inkscape:window-y="22"
-     inkscape:window-maximized="1"
-     showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:window-y="28"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid3019"
@@ -662,7 +679,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -701,12 +718,22 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#56c242;fill-opacity:1;stroke:none" />
+       style="fill:#fc565a;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#64c652;fill-opacity:1;stroke:none"
+       style="fill:#f56567;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 24.250695,11.000002 v 0.449769 c 0,0 -0.0019,0.793499 -0.0019,1.483221 -0.765982,-0.764213 -1.93072,-1.93299 -1.93072,-1.93299 H 17 L 17.0026,34.817675 20.066221,37 23.260346,36.638933 c 0,0 0.01382,-1.257766 0.02268,-2.111249 1.049056,0.778426 2.485509,1.841444 2.485509,1.841444 l 5.231392,-0.480763 V 13.451566 l -2.838869,-2.446448 -3.910302,-0.005 z"
+       id="path3770" />
+    <path
+       style="fill:#ffffff"
+       inkscape:connector-curvature="0"
+       d="m 25.121959,29.682552 -0.17713,0.01878 -3.056056,-18.061061 -4.068857,-0.0039 0.0019,22.670504 c 0,0 0.458975,-0.130915 2.178184,-0.306875 l 0,-17 0.5,0 2.754971,16.756018 c 0,0 0.993572,-0.105485 4.372416,-0.407126 l 0,-21.710971 -2.595522,0 0.09014,18.044571 z"
+       id="path3788"
+       sodipodi:nodetypes="cccccccccccccc" />
   </g>
   <g
      inkscape:label="Symbol"
@@ -716,19 +743,6 @@
     <g
        id="Layer_1_1_"
        transform="matrix(0.08203124,0,0,0.08203124,3.0269062,1007.3679)" />
-    <path
-       style="fill:#f0f0f0;fill-opacity:1;stroke:none"
-       d="m 22,1020.3622 -10,0 0,10 6,0 -2,5 4,0 2,-5 z"
-       id="path3886"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccc"
-       inkscape:transform-center-y="2.5" />
-    <path
-       sodipodi:nodetypes="cccccccc"
-       inkscape:connector-curvature="0"
-       id="path3890"
-       d="m 36,1020.3622 -10,0 0,10 6,0 -2,5 4,0 2,-5 z"
-       style="fill:#f0f0f0;fill-opacity:1;stroke:none" />
   </g>
   <g
      inkscape:groupmode="layer"
