@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="google-news.svg"
+   sodipodi:docname="chrome-deceagebecbceejblnlcjooeohmmeldh-Default.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -626,15 +626,6 @@
          id="stop3837-0-1" />
     </linearGradient>
     <linearGradient
-       y2="268.33"
-       x2="0"
-       y1="279.096"
-       gradientTransform="matrix(1.10525,0,0,1.10525,-134.27874,-295.76183)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient2993"
-       xlink:href="#linearGradient4460-8"
-       inkscape:collect="always" />
-    <linearGradient
        x2="0"
        gradientUnits="userSpaceOnUse"
        y2="268.33"
@@ -653,15 +644,6 @@
          style="stop-color:#c70103;stop-opacity:1;"
          offset="1" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4460-8"
-       id="linearGradient3128"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(3.9162401,0,0,3.9162401,-445.49404,-1043.1088)"
-       y1="279.096"
-       x2="0"
-       y2="268.33" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -670,9 +652,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.031086"
-     inkscape:cx="25.774697"
-     inkscape:cy="26.929645"
+     inkscape:zoom="35.850876"
+     inkscape:cx="25.769622"
+     inkscape:cy="26.924343"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -749,8 +731,9 @@
     <path
        style="fill:#ffffff"
        inkscape:connector-curvature="0"
-       d="m 25.121959,29.682552 -0.17713,0.01878 -3.056056,-18.061061 -4.068857,-0.0039 0.0019,22.670504 c 0,0 0.807594,-0.104918 2.526803,-0.280878 L 20.17149,16.79397 l 0.176208,-0.01524 2.907273,16.977288 c 0,0 0.993572,-0.105485 4.372416,-0.407126 V 11.637921 h -2.595522 l 0.09014,18.044571 z"
-       id="path3788" />
+       d="m 25.121959,29.682552 -0.17713,0.01878 -3.056056,-18.061061 -4.068857,-0.0039 0.0019,22.670504 c 0,0 0.458975,-0.130915 2.178184,-0.306875 l 0,-17 0.5,0 2.754971,16.756018 c 0,0 0.993572,-0.105485 4.372416,-0.407126 l 0,-21.710971 -2.595522,0 0.09014,18.044571 z"
+       id="path3788"
+       sodipodi:nodetypes="cccccccccccccc" />
   </g>
   <g
      inkscape:label="Symbol"
