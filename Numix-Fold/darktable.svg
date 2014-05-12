@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="darktable.svg"
+   sodipodi:docname="com.android.camera.svg"
    inkscape:export-filename="/home/kaloyan/Documents/Documents/Graphic/Numix/numix-wiki/Numix-Fold/Android/com.android.camera.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -45,11 +45,11 @@
      showgrid="true"
      inkscape:zoom="11.313709"
      inkscape:cx="16.933339"
-     inkscape:cy="25.447243"
+     inkscape:cy="14.840641"
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
        id="grid3781" />
@@ -1150,7 +1150,7 @@
      style="display:inline">
     <path
        id="path3021"
-       style="fill:#d5d5d5;fill-opacity:1"
+       style="fill:#3e3c29;fill-opacity:1"
        d="m 12.699999,6.7734035 c 0,-3.2731866 -2.653456,-5.92673568 -5.9265966,-5.92673568 -3.2733024,0 -5.92673568,2.65354908 -5.92673568,5.92673568 0,3.2732795 2.65345638,5.9265965 5.92673568,5.9265965 3.2731406,0 5.9265966,-2.653364 5.9265966,-5.9265965 z"
        inkscape:connector-curvature="0" />
   </g>
@@ -1165,7 +1165,7 @@
        transform="scale(0.28222223,0.28222223)"
        id="path4379" />
     <path
-       style="fill:#f1ce41;fill-opacity:1;stroke:none;display:inline"
+       style="fill:#ebc55a;fill-opacity:1;stroke:none;display:inline"
        d="M 10.375,8 C 3.4769393,13.880835 2.1176765,22.359359 3.40625,28.09375 L 17,28.375 z"
        transform="scale(0.28222223,0.28222223)"
        id="use3191"
