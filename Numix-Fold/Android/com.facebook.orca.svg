@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,13 +43,13 @@
      inkscape:window-height="740"
      id="namedview30"
      showgrid="true"
-     inkscape:zoom="7.7757275"
-     inkscape:cx="34.077579"
-     inkscape:cy="26.973847"
+     inkscape:zoom="12.386013"
+     inkscape:cx="26.780139"
+     inkscape:cy="26.957935"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      inkscape:object-nodes="true">
     <inkscape:grid
        type="xygrid"
@@ -1142,6 +1142,37 @@
        y1="279.096"
        x2="0"
        y2="268.33" />
+    <linearGradient
+       gradientTransform="matrix(0.99988408,0,0,0.99988408,-197.28291,97.121294)"
+       gradientUnits="userSpaceOnUse"
+       y2="1010.7034"
+       x2="86.596764"
+       y1="1046.0466"
+       x1="86.596764"
+       id="linearGradient4116"
+       xlink:href="#linearGradient4226"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4226">
+      <stop
+         id="stop4228"
+         offset="0"
+         style="stop-color:#006dff;stop-opacity:1;" />
+      <stop
+         id="stop4230"
+         offset="1"
+         style="stop-color:#00c6ff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4226"
+       id="linearGradient3231"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.28218951,0,0,0.28218951,0.3434902,-283.93464)"
+       x1="86.596764"
+       y1="1046.0466"
+       x2="86.596764"
+       y2="1010.7034" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -1173,7 +1204,7 @@
      style="display:inline">
     <path
        id="path3021"
-       style="fill:#69a8d4;fill-opacity:1;display:inline"
+       style="fill:#66b7cc;fill-opacity:1;display:inline"
        d="m 12.699999,6.7734035 c 0,-3.2731867 -2.653456,-5.92673568 -5.9265966,-5.92673568 -3.2733024,0 -5.92673571,2.65354898 -5.92673571,5.92673568 0,3.2732795 2.65345651,5.9265965 5.92673571,5.9265965 3.2731406,0 5.9265966,-2.653364 5.9265966,-5.9265965 z"
        inkscape:connector-curvature="0" />
   </g>
@@ -1183,11 +1214,11 @@
      inkscape:label="Symbol"
      style="display:inline">
     <path
-       style="fill:#f9f9f9;fill-opacity:1;stroke:none;display:inline"
-       d="M 5.0730884,4.0088976 C 3.1838734,4.9918535 2.8041784,7.5481053 4.3307724,9.0044284 5.2086974,9.84194 6.3879955,10.090146 7.6143025,9.6924174 8.7886244,9.311548 9.5955556,8.1255512 9.5955556,6.9090949 c 0,-0.4666793 0.05175,-0.6030575 0.4651374,-0.7312309 C 10.442221,6.0595693 10.724444,5.6465258 10.724444,5.3622224 10.013515,5.3933714 8.7488894,4.7930327 8.1844444,4.0868179 l 0,1.4124295 c 0,1.5099649 -0.2566899,1.8447584 -0.8546098,2.2673498 C 6.8475634,8.1074523 5.9719064,8.1676715 5.5390644,7.8909332 4.8778284,7.4681687 4.8845214,6.6602917 5.5553244,5.976164 6.1909994,5.470707 6.6543653,5.438644 7.3377786,5.4844034 l 0,-1.704836 C 6.6014825,3.5626556 5.7345364,3.6779285 5.0730884,4.0088976 z"
-       id="rect3815"
+       style="fill:#ffffff"
+       d="m 5.9266668,6.7733335 -2.54,1.3273428 2.54,-2.7384539 L 7.4788891,6.7733335 10.16,5.5939712 7.4788891,8.1844446 z"
+       id="path3220"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssssccssscccc" />
+       sodipodi:nodetypes="ccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
