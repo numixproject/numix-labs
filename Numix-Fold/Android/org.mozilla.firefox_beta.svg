@@ -40,13 +40,13 @@
      inkscape:window-height="1036"
      id="namedview30"
      showgrid="false"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="-64.35745"
-     inkscape:cy="38.310948"
+     inkscape:zoom="16"
+     inkscape:cx="18.210177"
+     inkscape:cy="26.827573"
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
        id="grid3781" />
@@ -1123,23 +1123,23 @@
        id="path18"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#f38e4c;fill-opacity:1"
+       style="fill:#b7d5e4;fill-opacity:1"
        d="m 7.3790822,8.458883 c 0.092649,-0.051814 0.2095506,-0.02315 0.2977895,0 C 7.7644344,8.451166 7.9346791,8.403762 7.8668004,8.18438 7.7549456,8.0523453 7.5846625,7.8949552 7.2501183,7.7783546 z"
        id="path22"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#f39253;opacity:1;fill-opacity:1"
+       style="fill:#bedeed;opacity:1;fill-opacity:1"
        d="m 5.6444,4.873645 0.486155,0.5092787 c 0.067944,-0.045537 0.1513213,-0.083356 0.1839877,-0.2402378 0.00684,-0.010975 0.015881,-0.01754 0.030436,-0.019693 C 6.4037902,5.0062709 6.3457407,4.9667184 6.2733648,4.911732 6.0676984,4.9155731 5.9184164,4.9050829 5.6444,4.873645 z"
        id="path24"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#ea8d50;fill-opacity:1"
+       style="fill:#bedeed;fill-opacity:1"
        d="M 5.3420986,5.9731578 C 5.2816719,5.8309167 5.1698419,5.6363522 5.042739,5.526092 L 5.8748332,5.1126371 6.1338643,5.3798419 C 5.8387612,5.5589051 5.5717213,5.7410866 5.3420986,5.9731578 z"
        id="path26"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:#ea8d50;fill-opacity:1"
+       style="fill:#bedeed;fill-opacity:1"
        d="M 4.868295,4.2509388 C 4.7186095,4.7192047 4.8226219,5.1439203 5.0468874,5.531953 L 5.8891379,5.1174422 C 5.7772058,4.9969552 5.6488097,4.8749097 5.6488097,4.8749097 5.5623047,4.8509577 5.4520075,4.7804822 5.3180831,4.65663 L 4.9741275,4.3303131 z"
        id="path28"
        inkscape:connector-curvature="0"
