@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="gmusicbrowser.svg"
+   sodipodi:docname="dropbox.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -1563,9 +1563,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.375453"
-     inkscape:cx="30.213734"
-     inkscape:cy="27.614575"
+     inkscape:zoom="15.782782"
+     inkscape:cx="30.293619"
+     inkscape:cy="27.616288"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -1631,9 +1631,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#8c9cd1;fill-opacity:1;stroke:none" />
+       style="fill:#5d90ba;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#93a2d2;fill-opacity:1;stroke:none"
+       style="fill:#6394bc;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
