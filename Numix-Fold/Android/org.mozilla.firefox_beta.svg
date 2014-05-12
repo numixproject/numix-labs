@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="org.mozilla.firefox.svg">
+   sodipodi:docname="org.mozilla.firefox_beta.svg">
   <metadata
      id="metadata32">
     <rdf:RDF>
@@ -39,10 +39,10 @@
      inkscape:window-width="1920"
      inkscape:window-height="1036"
      id="namedview30"
-     showgrid="true"
-     inkscape:zoom="7.0383843"
-     inkscape:cx="-15.495229"
-     inkscape:cy="27.818349"
+     showgrid="false"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="-64.35745"
+     inkscape:cy="38.310948"
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:window-maximized="1"
@@ -1133,15 +1133,17 @@
        id="path24"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#dce9f0;fill-opacity:1"
-       d="M 5.3420986,5.9731578 C 5.2816719,5.8309167 5.1709443,5.6363522 5.0372268,5.5293993 L 5.8748332,5.1126371 6.1338643,5.3798419 C 5.8387612,5.5589051 5.5717213,5.7410866 5.3420986,5.9731578 z"
+       style="fill:#ea8d50;fill-opacity:1"
+       d="M 5.3420986,5.9731578 C 5.2816719,5.8309167 5.1698419,5.6363522 5.042739,5.526092 L 5.8748332,5.1126371 6.1338643,5.3798419 C 5.8387612,5.5589051 5.5717213,5.7410866 5.3420986,5.9731578 z"
        id="path26"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <path
-       style="fill:#1f4457;fill-opacity:1"
-       d="M 4.868295,4.2509388 C 4.7186095,4.7192047 4.8115976,5.1417154 5.0358631,5.5297481 L 5.8759087,5.1130325 C 5.7639766,4.9925455 5.6488097,4.8749097 5.6488097,4.8749097 5.5623047,4.8509577 5.4520075,4.7804822 5.3180831,4.65663 L 4.9741275,4.3303131 z"
+       style="fill:#ea8d50;fill-opacity:1"
+       d="M 4.868295,4.2509388 C 4.7186095,4.7192047 4.8226219,5.1439203 5.0468874,5.531953 L 5.8891379,5.1174422 C 5.7772058,4.9969552 5.6488097,4.8749097 5.6488097,4.8749097 5.5623047,4.8509577 5.4520075,4.7804822 5.3180831,4.65663 L 4.9741275,4.3303131 z"
        id="path28"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
