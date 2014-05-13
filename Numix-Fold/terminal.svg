@@ -14,11 +14,12 @@
    height="48"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="totem.svg"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="terminal.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
-   inkscape:export-ydpi="900">
+   inkscape:export-ydpi="900"
+   enable-background="new">
   <defs
      id="defs4">
     <linearGradient
@@ -584,9 +585,9 @@
        gradientTransform="matrix(1,0,0,-1,0,2056.7244)" />
     <linearGradient
        gradientTransform="translate(0,-1004.3622)"
-       y2="1047.3622"
+       y2="1043.3622"
        x2="24"
-       y1="1028.3622"
+       y1="1031.3622"
        x1="24"
        gradientUnits="userSpaceOnUse"
        id="linearGradient3111-7"
@@ -597,7 +598,7 @@
       <stop
          id="stop3818-9-1"
          offset="0"
-         style="stop-color:#ffffff;stop-opacity:1;" />
+         style="stop-color:#000000;stop-opacity:1;" />
       <stop
          id="stop3820-0-9"
          offset="1"
@@ -609,19 +610,18 @@
        id="linearGradient3985-4"
        gradientUnits="userSpaceOnUse"
        x1="24"
-       y1="1028.3622"
+       y1="1030.3622"
        x2="24"
-       y2="1047.3622"
+       y2="1043.3622"
        gradientTransform="matrix(1,0,0,-1,0,1052.3622)" />
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient3833-9-0">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop3835-9-6" />
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         style="stop-color:#ffffff;stop-opacity:0;"
          offset="1"
          id="stop3837-0-1" />
     </linearGradient>
@@ -1880,15 +1880,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="10.487989"
-     inkscape:cx="9.3353744"
-     inkscape:cy="24.34527"
+     inkscape:cx="-4.7760058"
+     inkscape:cy="20.55461"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="740"
+     inkscape:window-width="1920"
+     inkscape:window-height="1036"
      inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-y="22"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -1906,7 +1906,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1945,9 +1945,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#586584;fill-opacity:1;stroke:none" />
+       style="fill:#414141;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#5e6a88;fill-opacity:1;stroke:none"
+       style="fill:#464646;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
@@ -1992,9 +1992,9 @@
        inkscape:connector-curvature="0"
        id="path3973-7"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
-       style="opacity:0.02999998;fill:url(#linearGradient3111-7);fill-opacity:1;stroke:none;display:inline" />
+       style="opacity:0.1;fill:url(#linearGradient3111-7);fill-opacity:1;stroke:none;display:inline" />
     <path
-       style="opacity:0.02999998;fill:url(#linearGradient3985-4);fill-opacity:1;stroke:none;display:inline"
+       style="opacity:0.1;fill:url(#linearGradient3985-4);fill-opacity:1;stroke:none;display:inline"
        d="M 5.53125,24 C 5.350468,24 5.176236,23.978 5,23.969 L 5,11.344 C 5,7.8354 7.835083,5.0003 11.34375,5.0003 l 25.3125,0 C 40.164917,5.0003 43,7.8354 43,11.344 l 0,12.625 C 42.823764,23.979 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="path3983-0"
        inkscape:connector-curvature="0" />
