@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="feedly.svg"
+   sodipodi:docname="com.android.gallery3d.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -2311,9 +2311,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.294988"
-     inkscape:cx="0.28695461"
-     inkscape:cy="24.342415"
+     inkscape:zoom="9.646719"
+     inkscape:cx="0.36557777"
+     inkscape:cy="24.346538"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -2340,7 +2340,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2379,9 +2379,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#93c849;fill-opacity:1;stroke:none" />
+       style="fill:#9dca55;fill-opacity:0.94117647;stroke:none" />
     <path
-       style="fill:#96c950;fill-opacity:1;stroke:none"
+       style="fill:#a6ce67;fill-opacity:0.94117647;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
@@ -2398,7 +2398,7 @@
        id="Layer_1_1_-8"
        transform="matrix(0.08203124,0,0,0.08203124,63.605723,1005.5926)" />
     <path
-       style="fill:#2c87d5;fill-opacity:1;stroke:none"
+       style="fill:#78acd9;fill-opacity:1;stroke:none"
        d="m 12.022158,1018.34 -0.9,10 0.9,10 12,0.9 12,-0.9 0.9,-10 -0.9,-10 -12,-0.9 z"
        id="path3931"
        inkscape:connector-curvature="0"
@@ -2409,7 +2409,7 @@
        d="m 20.553408,1017.6837 -8.53125,0.6563 -0.875,9.7813 c 0.599359,0.1433 1.231699,0.2187 1.875,0.2187 4.418278,0 8,-3.5817 8,-8 0,-0.932 -0.17578,-1.8245 -0.46875,-2.6563 z"
        id="path3844" />
     <path
-       style="fill:#fbc06e;fill-opacity:1;stroke:none"
+       style="fill:#f2df63;fill-opacity:1;stroke:none"
        d="m 11.922158,1018.34 0,5.656 c 0.452535,0.2135 1.066434,0.344 1.6,0.344 1.932997,0 3.5,-1.567 3.5,-3.5 0,-0.9825 -0.410505,-1.8643 -1.0625,-2.5 z"
        id="path3933"
        inkscape:connector-curvature="0"
