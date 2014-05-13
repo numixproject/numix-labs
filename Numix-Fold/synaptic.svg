@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="calendar.svg"
+   sodipodi:docname="synaptic.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -2812,9 +2812,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="12.521303"
-     inkscape:cx="45.405355"
-     inkscape:cy="24.3398"
+     inkscape:zoom="12.28"
+     inkscape:cx="17.524021"
+     inkscape:cy="24.340814"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -2839,7 +2839,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2878,9 +2878,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#99bac3;fill-opacity:1;stroke:none" />
+       style="fill:#ccded0;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#a0bec6;fill-opacity:1;stroke:none"
+       style="fill:#cfe2d3;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
@@ -2888,12 +2888,12 @@
        id="g3012"
        transform="matrix(3.543307,0,0,3.543307,-12.464475,2.8275)" />
     <path
-       style="fill:#d04040;fill-opacity:1"
+       style="fill:#f37989;fill-opacity:1"
        inkscape:connector-curvature="0"
        d="M 11.964167,21.0047 C 11.395416,21.0307 11,21.1622 11,21.7689 l 0,12.7736 C 11,35.3513 11.69875,36 12.573541,36 l 22.825834,0 c 0.877502,0 1.600627,-0.6487 1.600627,-1.4575 l 0,-12.7736 c 0,-0.8089 -0.723125,-0.7642 -1.600627,-0.7642 l -22.825834,0 c -0.219373,0 -0.419791,-0.011 -0.609374,0 z"
        id="path3804" />
     <path
-       style="fill:#d04040;fill-opacity:1"
+       style="fill:#f37989;fill-opacity:1"
        inkscape:connector-curvature="0"
        d="M 15.054375,14.4016 11.804375,19 23,19 l 0,-7 -5.508125,0 c -0.8125,0 -2.4375,2.4016 -2.4375,2.4016 z M 25,12 l 0,7 11.179375,0 -3.25,-4.5984 c 0,0 -1.625,-2.4016 -2.4375,-2.4016 z"
        id="path3806"
