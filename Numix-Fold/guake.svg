@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="terminal.svg"
+   sodipodi:docname="guake.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -1870,9 +1870,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.487989"
-     inkscape:cx="9.3353744"
-     inkscape:cy="24.34527"
+     inkscape:zoom="10.289448"
+     inkscape:cx="9.4208222"
+     inkscape:cy="24.347445"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
@@ -1897,7 +1897,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1936,9 +1936,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#6f8c30;fill-opacity:1;stroke:none" />
+       style="fill:#2e7c2c;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#728d37;fill-opacity:1;stroke:none"
+       style="fill:#347a32;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
