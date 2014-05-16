@@ -2916,16 +2916,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="9.3029937"
-     inkscape:cx="12.55113"
-     inkscape:cy="26.49134"
+     inkscape:zoom="6.9180358"
+     inkscape:cx="12.648834"
+     inkscape:cy="26.496203"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="true"
-     inkscape:window-width="1301"
-     inkscape:window-height="744"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -2943,7 +2943,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3058,9 +3058,9 @@
        inkscape:connector-curvature="0"
        id="path3973-7"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
-       style="opacity:0.02999998;fill:url(#linearGradient3111-7);fill-opacity:1;stroke:none;display:inline" />
+       style="opacity:0.05;fill:url(#linearGradient3111-7);fill-opacity:1;stroke:none;display:inline" />
     <path
-       style="opacity:0.02999998;fill:url(#linearGradient3985-4);fill-opacity:1;stroke:none;display:inline"
+       style="opacity:0.05;fill:url(#linearGradient3985-4);fill-opacity:1;stroke:none;display:inline"
        d="M 5.53125,24 C 5.350468,24 5.176236,23.978 5,23.969 L 5,11.344 C 5,7.8354 7.835083,5.0003 11.34375,5.0003 l 25.3125,0 C 40.164917,5.0003 43,7.8354 43,11.344 l 0,12.625 C 42.823764,23.979 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="path3983-0"
        inkscape:connector-curvature="0" />
