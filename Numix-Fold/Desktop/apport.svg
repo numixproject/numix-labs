@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="template_square.svg"
+   sodipodi:docname="apport.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -663,16 +663,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="12.764467"
-     inkscape:cx="40.081649"
-     inkscape:cy="33.414968"
+     inkscape:zoom="9.489373"
+     inkscape:cx="29.820416"
+     inkscape:cy="25.205572"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="998"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="28"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -690,7 +690,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -729,9 +729,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#aa2c17;fill-opacity:1;stroke:none" />
+       style="fill:#f47d60;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#b3301f;fill-opacity:1;stroke:none"
+       style="fill:#ec8267;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
@@ -750,40 +750,39 @@
     <rect
        style="fill:#f9f9f9;fill-opacity:1"
        id="rect26"
-       height="2.331496"
-       y="31.66811"
+       height="2"
+       y="31"
        x="14.000393"
-       width="2.9870079" />
+       width="3" />
     <rect
        style="fill:#f9f9f9;fill-opacity:1"
        id="rect28"
-       height="2.331496"
-       y="29.354332"
-       x="16.994488"
-       width="2.9870079" />
-    <rect
-       style="fill:#f9f9f9;fill-opacity:1"
-       id="rect30"
-       transform="scale(-1,1)"
-       height="2.331496"
-       y="31.664566"
-       x="-34.002361"
-       width="2.9870079" />
+       height="2"
+       y="29"
+       x="17"
+       width="3" />
     <rect
        style="fill:#f9f9f9;fill-opacity:1"
        id="rect32"
        transform="scale(-1,1)"
-       height="2.331496"
-       y="29.350786"
-       x="-31.008268"
-       width="2.9870079" />
+       height="2"
+       y="29"
+       x="-31.021261"
+       width="3" />
     <rect
        style="fill:#f9f9f9;fill-opacity:1"
        id="rect34"
-       height="2.331496"
-       y="27.001574"
-       x="19.999212"
-       width="8.0433064" />
+       height="2"
+       y="27"
+       x="20"
+       width="8" />
+    <rect
+       width="3"
+       x="31"
+       y="31"
+       height="2"
+       id="rect3111"
+       style="fill:#f9f9f9;fill-opacity:1" />
   </g>
   <g
      inkscape:label="Symbol"
