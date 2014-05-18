@@ -40,9 +40,9 @@
      inkscape:window-height="998"
      id="namedview30"
      showgrid="true"
-     inkscape:zoom="11.083866"
-     inkscape:cx="18.950006"
-     inkscape:cy="27.642762"
+     inkscape:zoom="5.541933"
+     inkscape:cx="-17.126293"
+     inkscape:cy="23.055865"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -1153,18 +1153,15 @@
        width="1"
        y="0"
        x="0"
-       style="fill:#4789f9"
+       style="fill:#6aa0fa;fill-opacity:1"
        transform="matrix(0.47000184,0,0,0.41065815,7.8157617,-4.7281623)"
        xlink:href="#2"
        id="use3646" />
-    <use
-       height="1"
-       width="1"
-       y="0"
-       x="0"
-       transform="matrix(0.26111213,0,0,0.22814339,7.35246,0.38362449)"
-       xlink:href="#2"
-       id="use3648" />
+    <path
+       id="use3955"
+       d="m 8.1844446,6.7733404 c 0,0.7793351 -0.631776,1.4111109 -1.4111112,1.4111109 -0.7793352,0 -1.4111111,-0.6317758 -1.4111111,-1.4111109 0,-0.779335 0.6317759,-1.4111111 1.4111111,-1.4111111 0.7793352,0 1.4111112,0.6317761 1.4111112,1.4111111 z"
+       inkscape:connector-curvature="0"
+       style="fill:#2d2d2d;fill-opacity:1" />
     <use
        height="1"
        width="1"
@@ -1174,6 +1171,11 @@
        transform="matrix(0.10444485,0,0,0.09125737,7.5694288,3.6529997)"
        xlink:href="#2"
        id="use3650" />
+    <path
+       id="use3951"
+       d="m 8.1844446,6.7733404 c 0,0.7793351 -0.631776,1.4111109 -1.4111112,1.4111109 -0.7793352,0 -1.4111111,-0.6317758 -1.4111111,-1.4111109 0,-0.779335 0.6317759,-1.4111111 1.4111111,-1.4111111 0.7793352,0 1.4111112,0.6317761 1.4111112,1.4111111 z"
+       inkscape:connector-curvature="0"
+       style="fill:#2d2d2d;fill-opacity:0" />
     <path
        style="fill:#b93c3c;fill-opacity:1"
        inkscape:connector-curvature="0"
