@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="template_circle.svg">
+   sodipodi:docname="abiword.svg">
   <metadata
      id="metadata32">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,8 +41,8 @@
      id="namedview30"
      showgrid="true"
      inkscape:zoom="7.8374768"
-     inkscape:cx="24.441315"
-     inkscape:cy="13.624059"
+     inkscape:cx="24.696499"
+     inkscape:cy="13.368875"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -1147,7 +1147,7 @@
        inkscape:connector-curvature="0"
        id="path18"
        d="M 3.3866718,9.1667993 C 3.3826718,7.541948 5.7335818,2.8469962 6.8278643,2.822346 7.3751065,2.809185 8.1950123,3.8490879 8.8846737,5.1922868 9.5743336,6.535697 10.133747,8.1829698 10.16,9.387317 c 0,0 -2.647534,-5.1717607 -3.3079021,-5.1869968 C 6.1796123,4.1837962 4.3543188,7.8439952 4.5714408,8.2514738 4.7834834,8.6496533 8.7180934,7.3662164 8.7180934,7.3662164 8.6332804,7.4968841 6.0645012,9.1953209 4.1379198,9.5955558 c -0.290805,-0.01316 -0.727011,0 -0.751248,-0.4287565 z"
-       style="fill:#4d637f;fill-rule:evenodd" />
+       style="fill:#5d7799;fill-rule:evenodd;fill-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"

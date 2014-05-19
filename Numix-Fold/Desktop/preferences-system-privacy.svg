@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="preferences-system-privacy.svg">
+   sodipodi:docname="activity-log-manager.svg">
   <metadata
      id="metadata32">
     <rdf:RDF>
@@ -36,17 +36,17 @@
      guidetolerance="10"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="740"
+     inkscape:window-width="1280"
+     inkscape:window-height="998"
      id="namedview30"
      showgrid="true"
      inkscape:zoom="10.874045"
-     inkscape:cx="19.027025"
-     inkscape:cy="27.638348"
+     inkscape:cx="3.8532787"
+     inkscape:cy="27.454424"
      inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      showguides="true"
      inkscape:guide-bbox="true">
     <inkscape:grid
@@ -1159,15 +1159,11 @@
        transform="matrix(0.47000184,0,0,0.41065815,7.8157617,-4.7281623)"
        xlink:href="#2"
        id="use3646" />
-    <use
-       height="1"
-       width="1"
-       y="0"
-       x="0"
-       transform="matrix(0.26111213,0,0,0.22814339,7.35246,0.38362449)"
-       xlink:href="#2"
-       id="use3648"
-       style="opacity:0.8" />
+    <path
+       id="use3183"
+       d="m 8.1844446,6.7733404 c 0,0.7793351 -0.631776,1.4111109 -1.4111112,1.4111109 -0.7793352,0 -1.4111111,-0.6317758 -1.4111111,-1.4111109 0,-0.779335 0.6317759,-1.4111111 1.4111111,-1.4111111 0.7793352,0 1.4111112,0.6317761 1.4111112,1.4111111 z"
+       inkscape:connector-curvature="0"
+       style="fill:#454545;fill-opacity:1" />
     <use
        height="1"
        width="1"
