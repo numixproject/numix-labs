@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="skype.svg"
+   sodipodi:docname="preferences-system-sharing.svg"
    inkscape:export-filename="/home/kaloyan/Documents/Documents/Graphic/Numix/Fold/png/opera.png"
    inkscape:export-xdpi="600"
    inkscape:export-ydpi="600">
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,7 +44,7 @@
      id="namedview30"
      showgrid="true"
      inkscape:zoom="9.1016061"
-     inkscape:cx="20.413924"
+     inkscape:cx="20.633665"
      inkscape:cy="26.964184"
      inkscape:window-x="0"
      inkscape:window-y="28"
@@ -2406,7 +2406,7 @@
      style="display:inline">
     <path
        id="path3021"
-       style="fill:#9fd3f5;fill-opacity:1;display:inline"
+       style="fill:#8bc7ce;fill-opacity:1;display:inline"
        d="m 12.699999,6.7734035 c 0,-3.2731867 -2.653456,-5.92673568 -5.9265966,-5.92673568 -3.2733024,0 -5.92673571,2.65354898 -5.92673571,5.92673568 0,3.2732795 2.65345651,5.9265965 5.92673571,5.9265965 3.2731406,0 5.9265966,-2.653364 5.9265966,-5.9265965 z"
        inkscape:connector-curvature="0" />
   </g>
