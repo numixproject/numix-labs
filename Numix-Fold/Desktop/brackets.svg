@@ -1880,10 +1880,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="10.168031"
-     inkscape:cx="50.364201"
+     inkscape:cx="50.560896"
      inkscape:cy="24.337607"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4117"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="740"
@@ -1978,14 +1978,15 @@
        id="g4117">
       <path
          inkscape:connector-curvature="0"
-         d="m 2.5400001,3.3866665 0,6.7733335 3.3866664,0 0,-1.2700001 -2.1166665,0 0,-4.2333334 2.1166665,0 0,-1.27 z"
+         d="m 2.5396507,3.3859385 0,6.7733335 3.3866664,0 0,-1.2700001 -2.1166665,0 0,-4.2333334 2.1166665,0 0,-1.27 z"
          id="path4119"
          style="fill:#777777;fill-opacity:1" />
       <path
          inkscape:connector-curvature="0"
-         d="m 11.006666,3.3866665 0,6.7733335 -3.8099996,0 0,-1.2700001 2.5399998,0 0,-4.2333334 -2.5399998,0 0,-1.27 z"
+         d="m 11.006275,3.3866664 0,6.7726056 -3.3866496,-7.28e-4 0,-1.269857 2.1167965,7.214e-4 0,-4.2328785 -2.1167965,-7.003e-4 0,-1.2698572 z"
          id="path4121"
-         style="fill:#777777;fill-opacity:1" />
+         style="fill:#777777;fill-opacity:1"
+         sodipodi:nodetypes="ccccccccc" />
     </g>
   </g>
   <g
