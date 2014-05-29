@@ -15,12 +15,23 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="google-drive.svg"
+   sodipodi:docname="RENAME_ME-tinted-statusbar.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient3873">
+      <stop
+         style="stop-color:#8c93d1;stop-opacity:1;"
+         offset="0"
+         id="stop3875" />
+      <stop
+         style="stop-color:#f2dcaa;stop-opacity:1;"
+         offset="1"
+         id="stop3877" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient3833">
@@ -633,17 +644,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="23.811002"
-     inkscape:cx="28.033156"
-     inkscape:cy="21.11335"
+     inkscape:zoom="12.782552"
+     inkscape:cx="28.557471"
+     inkscape:cy="18.451205"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
-     showgrid="true"
+     inkscape:current-layer="layer1"
+     showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="740"
      inkscape:window-x="0"
      inkscape:window-y="28"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid3019"
@@ -699,12 +712,18 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#666666;fill-opacity:1;stroke:none" />
+       style="fill:#67739c;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#6a6a6a;fill-opacity:1;stroke:none"
+       style="fill:#6e7aa2;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
+    <path
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       d="m 20.836903,29.212843 c -0.882748,-0.654864 -1.969659,0.688164 -0.878842,1.739365 7.909581,5.218094 7.030739,2.609047 13.182636,-3.47873 1.070085,-1.659236 -0.468566,-2.44299 -1.757685,-0.869682 -5.273055,6.087776 -4.394212,8.696823 -10.546109,2.609047 z"
+       id="path3909"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      inkscape:label="Symbol"
@@ -714,23 +733,71 @@
     <g
        id="Layer_1_1_"
        transform="matrix(0.08203124,0,0,0.08203124,3.0269062,1007.3679)" />
-    <polygon
-       id="polygon24"
-       transform="matrix(1.952589e-4,0,0,1.9073763e-4,10.999854,1017.3581)"
-       style="fill:#6ee474;fill-rule:evenodd;fill-opacity:1"
-       points="66578,38447 44385,0 0,76894 22194,115341 " />
-    <path
-       sodipodi:nodetypes="ccccccc"
-       inkscape:connector-curvature="0"
-       id="polygon22"
-       d="m 28.333,1032.3622 -0.333,1 8.000001,0 0.999999,-1 -8.666623,-15.0041 -8.666957,0 z"
-       style="fill:#f5e665;fill-rule:evenodd;fill-opacity:1" />
-    <path
-       sodipodi:nodetypes="ccccc"
-       inkscape:connector-curvature="0"
-       id="polygon20"
-       d="m 15.33343,1039.358 4.03257,-6.9958 17.634,0 -4.333633,6.9958 z"
-       style="fill:#90c0d8;fill-rule:evenodd;fill-opacity:1" />
+    <g
+       id="g3887"
+       style="fill:#f5aa9d;fill-opacity:1">
+      <path
+         transform="matrix(0.8,0,0,1,23.6,1010.3622)"
+         d="m -12,11 a 2.5,2 0 1 1 -5,0 2.5,2 0 1 1 5,0 z"
+         sodipodi:ry="2"
+         sodipodi:rx="2.5"
+         sodipodi:cy="11"
+         sodipodi:cx="-14.5"
+         id="path3104"
+         style="fill:#f5aa9d;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         id="path3106"
+         transform="translate(0,1004.3622)"
+         d="M 24 9 C 19.726039 9 15.913991 10.772 13.25 13.5 C 12.244442 14.529643 11.4227 15.727708 10.75 17 L 13.28125 17 C 13.824283 16.086714 14.461024 15.243934 15.1875 14.5 C 17.527956 12.1033 20.637431 10.6875 24 10.6875 C 27.362569 10.6875 30.472044 12.1033 32.8125 14.5 C 35.152957 16.8967 36.65625 20.2501 36.65625 24 C 36.65625 27.7499 35.152957 31.1032 32.8125 33.5 C 30.472044 35.8966 27.362569 37.3125 24 37.3125 C 20.637431 37.3125 17.527956 35.8966 15.1875 33.5 C 13.289732 31.556546 11.96892 28.968532 11.53125 26.0625 L 9.15625 26.0625 C 9.5996825 29.305016 11.046868 32.244016 13.25 34.5 C 15.913991 37.2279 19.726039 39 24 39 C 28.273961 39 32.086009 37.2279 34.75 34.5 C 37.413991 31.7721 39 28.0701 39 24 C 39 19.9299 37.413991 16.2278 34.75 13.5 C 32.086009 10.772 28.273961 9 24 9 z "
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#f5aa9d;fill-opacity:1;stroke:none;stroke-width:1.19522857999999998;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+    </g>
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect3899"
+       width="3"
+       height="10"
+       x="20"
+       y="1019.3622"
+       ry="1.5"
+       rx="1.5" />
+    <rect
+       rx="1.5"
+       ry="1"
+       y="1023.3622"
+       x="24"
+       height="6"
+       width="3"
+       id="rect3901"
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect3903"
+       width="2"
+       height="4"
+       x="28"
+       y="1025.3622"
+       ry="1.5"
+       rx="1.5" />
+    <rect
+       rx="1"
+       ry="1"
+       y="1025.3622"
+       x="31"
+       height="4"
+       width="2"
+       id="rect3905"
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none" />
+    <rect
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect3907"
+       width="3"
+       height="6"
+       x="-543.36847"
+       y="873.50238"
+       ry="1"
+       rx="1.5"
+       transform="matrix(0.84175076,-0.53986633,0.53986633,0.84175076,0,0)" />
   </g>
   <g
      inkscape:groupmode="layer"

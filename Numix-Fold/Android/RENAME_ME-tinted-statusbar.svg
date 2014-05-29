@@ -15,12 +15,23 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="google-drive.svg"
+   sodipodi:docname="RENAME_ME-tinted-statusbar.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient3873">
+      <stop
+         style="stop-color:#8c93d1;stop-opacity:1;"
+         offset="0"
+         id="stop3875" />
+      <stop
+         style="stop-color:#f2dcaa;stop-opacity:1;"
+         offset="1"
+         id="stop3877" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient3833">
@@ -625,6 +636,16 @@
          offset="1"
          id="stop3837-0-1" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3873"
+       id="linearGradient3879"
+       x1="12"
+       y1="1019.8622"
+       x2="36"
+       y2="1019.8622"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.1428571,0,-146.1946)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -633,17 +654,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="23.811002"
-     inkscape:cx="28.033156"
-     inkscape:cy="21.11335"
+     inkscape:zoom="11.92"
+     inkscape:cx="28.398705"
+     inkscape:cy="31.879851"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="740"
      inkscape:window-x="0"
      inkscape:window-y="28"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        type="xygrid"
        id="grid3019"
@@ -714,23 +737,13 @@
     <g
        id="Layer_1_1_"
        transform="matrix(0.08203124,0,0,0.08203124,3.0269062,1007.3679)" />
-    <polygon
-       id="polygon24"
-       transform="matrix(1.952589e-4,0,0,1.9073763e-4,10.999854,1017.3581)"
-       style="fill:#6ee474;fill-rule:evenodd;fill-opacity:1"
-       points="66578,38447 44385,0 0,76894 22194,115341 " />
-    <path
-       sodipodi:nodetypes="ccccccc"
-       inkscape:connector-curvature="0"
-       id="polygon22"
-       d="m 28.333,1032.3622 -0.333,1 8.000001,0 0.999999,-1 -8.666623,-15.0041 -8.666957,0 z"
-       style="fill:#f5e665;fill-rule:evenodd;fill-opacity:1" />
-    <path
-       sodipodi:nodetypes="ccccc"
-       inkscape:connector-curvature="0"
-       id="polygon20"
-       d="m 15.33343,1039.358 4.03257,-6.9958 17.634,0 -4.333633,6.9958 z"
-       style="fill:#90c0d8;fill-rule:evenodd;fill-opacity:1" />
+    <rect
+       style="fill:url(#linearGradient3879);fill-opacity:1;stroke:none"
+       id="rect3103"
+       width="24"
+       height="8"
+       x="12"
+       y="1015.3622" />
   </g>
   <g
      inkscape:groupmode="layer"

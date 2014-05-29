@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="google-drive.svg"
+   sodipodi:docname="RENAME_ME-Xposed-Installer.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -633,11 +633,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="23.811002"
-     inkscape:cx="28.033156"
-     inkscape:cy="21.11335"
+     inkscape:zoom="11.108225"
+     inkscape:cx="23.47217"
+     inkscape:cy="23.228176"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="740"
@@ -699,9 +699,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#666666;fill-opacity:1;stroke:none" />
+       style="fill:#99ca95;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#6a6a6a;fill-opacity:1;stroke:none"
+       style="fill:#9dcc99;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
@@ -714,23 +714,21 @@
     <g
        id="Layer_1_1_"
        transform="matrix(0.08203124,0,0,0.08203124,3.0269062,1007.3679)" />
-    <polygon
-       id="polygon24"
-       transform="matrix(1.952589e-4,0,0,1.9073763e-4,10.999854,1017.3581)"
-       style="fill:#6ee474;fill-rule:evenodd;fill-opacity:1"
-       points="66578,38447 44385,0 0,76894 22194,115341 " />
     <path
-       sodipodi:nodetypes="ccccccc"
-       inkscape:connector-curvature="0"
-       id="polygon22"
-       d="m 28.333,1032.3622 -0.333,1 8.000001,0 0.999999,-1 -8.666623,-15.0041 -8.666957,0 z"
-       style="fill:#f5e665;fill-rule:evenodd;fill-opacity:1" />
+       style="fill:#555555;fill-opacity:1"
+       d="m 33.435983,1023.3625 c -0.863965,0 -1.435983,0.758 -1.435983,1.6927 l 0,6.6146 c 0,0.935 0.572018,1.6927 1.435983,1.6927 0.863965,0 1.564017,-0.7577 1.564017,-1.6927 l 0,-6.6146 c 6.1e-5,-0.9347 -0.699991,-1.6927 -1.564017,-1.6927 z m -18.871477,0 c -0.864453,0 -1.564506,0.758 -1.564506,1.6927 l 0,6.6146 c 0,0.935 0.69999,1.6927 1.564506,1.6927 0.864331,0 1.435494,-0.7577 1.435494,-1.6927 l 0,-6.6146 c -4.85e-4,-0.9347 -0.571468,-1.6927 -1.435494,-1.6927 z"
+       id="path32"
+       inkscape:connector-curvature="0" />
     <path
-       sodipodi:nodetypes="ccccc"
-       inkscape:connector-curvature="0"
-       id="polygon20"
-       d="m 15.33343,1039.358 4.03257,-6.9958 17.634,0 -4.333633,6.9958 z"
-       style="fill:#90c0d8;fill-rule:evenodd;fill-opacity:1" />
+       style="fill:#555555;fill-opacity:1"
+       d="M 17 19 L 17 30.59375 C 17 31.28265 17.322278 32 18 32 L 20 32 L 20 35.375 C 20 36.272 20.318283 37 21.1875 37 C 22.056409 37 23 36.272 23 35.375 L 23 32 L 25 32 L 25 35.375 C 25 36.272 25.943653 37 26.8125 37 C 27.681348 37 28 36.272 28 35.375 L 28 32 L 30 32 C 30.676924 32 31 31.28215 31 30.59375 L 31 19 L 17 19 z M 20.5 21 L 21.75 21 L 24 24.59375 L 26.5 21 L 27.75 21 L 25 25.5 L 28 30 L 26.75 30 L 24 26.40625 L 21.25 30 L 20 30 L 23 25.5 L 20.5 21 z "
+       transform="translate(0,1004.3622)"
+       id="path34" />
+    <path
+       style="fill:#555555;fill-opacity:1"
+       d="m 27.318269,1017.5604 1.293223,-1.8419 c 0.07646,-0.1095 0.05767,-0.2529 -0.04268,-0.321 -0.100538,-0.068 -0.243698,-0.034 -0.3209,0.075 l -1.343455,1.9128 c -0.884627,-0.3423 -1.868133,-0.5328 -2.904517,-0.5328 -1.036078,0 -2.020136,0.1905 -2.904763,0.5328 l -1.343462,-1.9128 c -0.0772,-0.1096 -0.220418,-0.1432 -0.320896,-0.075 -0.100474,0.068 -0.119512,0.2114 -0.04274,0.321 l 1.293226,1.8419 c -2.055204,0.9381 -3.497667,2.7211 -3.681299,4.8021 h 14 c -0.183693,-2.081 -1.626156,-3.864 -3.681728,-4.8021 z m -6.27143,2.9024 c -0.427759,0 -0.774879,-0.3402 -0.774879,-0.76 0,-0.4193 0.346816,-0.7598 0.774879,-0.7598 0.428064,0 0.774018,0.3405 0.774018,0.7598 0,0.4195 -0.346384,0.76 -0.774018,0.76 z m 6.002983,0 c -0.428066,0 -0.774387,-0.3402 -0.774387,-0.76 0,-0.4193 0.346383,-0.7598 0.774387,-0.7598 0.428127,0 0.774448,0.3405 0.774448,0.7598 0,0.4195 -0.346383,0.76 -0.774448,0.76 z"
+       id="path36"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
