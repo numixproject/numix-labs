@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="chrome-efjnaogkjbogokcnohkmnjdojkikgobo-Default.svg"
+   sodipodi:docname="RENAME_ME-App-Drawer.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -3012,15 +3012,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="9.965"
-     inkscape:cx="24.933221"
+     inkscape:cx="25.133923"
      inkscape:cy="14.87132"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="998"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="28"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -3040,7 +3040,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3085,69 +3085,6 @@
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
-    <rect
-       width="6"
-       x="12"
-       y="12.999998"
-       height="6"
-       style="fill:#e36c5d;fill-opacity:1"
-       id="rect18" />
-    <rect
-       id="rect3777"
-       style="fill:#85a2d7;fill-opacity:1"
-       height="6"
-       y="12.999998"
-       x="21"
-       width="6" />
-    <rect
-       width="6"
-       x="30"
-       y="12.999998"
-       height="6"
-       style="fill:#85a2d7;fill-opacity:1"
-       id="rect3779" />
-    <rect
-       id="rect3781"
-       style="fill:#82b86b;fill-opacity:1"
-       height="6"
-       y="20.999998"
-       x="12"
-       width="6" />
-    <rect
-       width="6"
-       x="21"
-       y="20.999998"
-       height="6"
-       style="fill:#e36c5d;fill-opacity:1"
-       id="rect3783" />
-    <rect
-       id="rect3785"
-       style="fill:#85a2d7;fill-opacity:1"
-       height="6"
-       y="20.999998"
-       x="30"
-       width="6" />
-    <rect
-       width="6"
-       x="12"
-       y="29"
-       height="6"
-       style="fill:#82b86b;fill-opacity:1"
-       id="rect3787-6" />
-    <rect
-       id="rect3789"
-       style="fill:#82b86b;fill-opacity:1"
-       height="6"
-       y="29"
-       x="21"
-       width="6" />
-    <rect
-       width="6"
-       x="30"
-       y="29"
-       height="6"
-       style="fill:#e36c5d;fill-opacity:1"
-       id="rect3791-35" />
   </g>
   <g
      inkscape:label="Symbol"
@@ -3165,6 +3102,69 @@
        inkscape:label="Symbols"
        id="layer6"
        transform="matrix(1.0000171,0,0,1.0000171,78.068883,887.05058)" />
+    <rect
+       width="6"
+       x="12"
+       y="1017.3622"
+       height="6"
+       style="fill:#e36c5d;fill-opacity:1"
+       id="rect18" />
+    <rect
+       id="rect3777"
+       style="fill:#85a2d7;fill-opacity:1"
+       height="6"
+       y="1017.3622"
+       x="21"
+       width="6" />
+    <rect
+       width="6"
+       x="30"
+       y="1017.3622"
+       height="6"
+       style="fill:#85a2d7;fill-opacity:1"
+       id="rect3779" />
+    <rect
+       id="rect3781"
+       style="fill:#82b86b;fill-opacity:1"
+       height="6"
+       y="1025.3622"
+       x="12"
+       width="6" />
+    <rect
+       width="6"
+       x="21"
+       y="1025.3622"
+       height="6"
+       style="fill:#e36c5d;fill-opacity:1"
+       id="rect3783" />
+    <rect
+       id="rect3785"
+       style="fill:#85a2d7;fill-opacity:1"
+       height="6"
+       y="1025.3622"
+       x="30"
+       width="6" />
+    <rect
+       width="6"
+       x="12"
+       y="1033.3622"
+       height="6"
+       style="fill:#82b86b;fill-opacity:1"
+       id="rect3787-6" />
+    <rect
+       id="rect3789"
+       style="fill:#82b86b;fill-opacity:1"
+       height="6"
+       y="1033.3622"
+       x="21"
+       width="6" />
+    <rect
+       width="6"
+       x="30"
+       y="1033.3622"
+       height="6"
+       style="fill:#e36c5d;fill-opacity:1"
+       id="rect3791-35" />
   </g>
   <g
      inkscape:groupmode="layer"
