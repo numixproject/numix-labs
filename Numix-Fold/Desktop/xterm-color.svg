@@ -1906,7 +1906,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1964,12 +1964,12 @@
        id="Layer_1_1_-8"
        transform="matrix(0.08203124,0,0,0.08203124,63.605723,1005.5926)" />
     <path
-       style="fill:#d0e090;fill-opacity:1"
+       style="fill:#f5aa9d;fill-opacity:1"
        id="path3343"
        d="m 35.999999,1038.3622 v -4 H 24 v 4 h 11.999999 z"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#ffb482;fill-opacity:1"
+       style="fill:#9dd3f5;fill-opacity:1"
        id="path3345"
        d="M 14.742901,1034.3622 12,1031.4533 l 6.1714,-5.0911 -6.1714,-5.0908 2.742901,-2.9092 9.257099,8 -9.257099,8 z"
        inkscape:connector-curvature="0" />
