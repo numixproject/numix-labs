@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,7 +41,7 @@
      id="namedview30"
      showgrid="false"
      inkscape:zoom="8"
-     inkscape:cx="22.338697"
+     inkscape:cx="32.338697"
      inkscape:cy="29.912381"
      inkscape:window-x="0"
      inkscape:window-y="28"
@@ -1112,6 +1112,34 @@
          style="stop-color:#f9f9f9"
          offset="1" />
     </linearGradient>
+    <linearGradient
+       x2="0"
+       gradientUnits="userSpaceOnUse"
+       y2="268.33"
+       y1="279.096"
+       id="linearGradient5018"
+       xlink:href="#linearGradient4460-1"
+       gradientTransform="matrix(1.10525,0,0,1.10525,-134.27874,-295.76214)" />
+    <linearGradient
+       id="linearGradient4460-1">
+      <stop
+         id="stop7-4"
+         style="stop-color:#dbdbdb"
+         offset="0" />
+      <stop
+         id="stop9-3"
+         style="stop-color:#f9f9f9"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4460-1"
+       id="linearGradient3978"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.10525,0,0,1.10525,-134.27874,-295.76214)"
+       y1="279.096"
+       x2="0"
+       y2="268.33" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -1153,10 +1181,11 @@
      inkscape:label="Symbol"
      style="display:inline">
     <path
-       id="path3198"
-       d="m 6.7733204,0.84688183 c -0.4453781,0 -0.8824616,0.0501055 -1.2992818,0.14238699 L 12.557794,8.0730244 c 0.09228,-0.4168202 0.142387,-0.8539037 0.142387,-1.2992818 0,-3.2830616 -2.643799,-5.92686077 -5.9268606,-5.92686077 z"
-       style="fill:#777777;fill-rule:evenodd;fill-opacity:1"
-       inkscape:connector-curvature="0" />
+       style="fill:#2d2d2d"
+       d="m 4.2333334,5.0800001 0,1.54321 c 0,0 1.1395264,-0.822358 1.1395264,0.6638055 0,1.4861822 -1.1395264,0.897429 -1.1395264,0.897429 l 0,1.4111112 1.5425609,0 c 0,0 -0.5843347,-1.1859167 0.7439713,-1.1671393 1.4255393,0.020113 0.7985872,1.1671393 0.7985872,1.1671393 l 1.4304363,0 0,-1.4861822 c 0,0 1.119825,0.4907091 1.1287868,-0.7130815 0.00666,-0.8951713 -0.424406,-1.0266305 -1.1287868,-0.773082 l 0,-1.54321 -1.4111112,0 c 0,0 0.5688255,-1.1288889 -0.7984342,-1.1288889 -1.3672613,0 -0.7634494,1.1288889 -0.7634494,1.1288889 z"
+       id="path18"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccscccccccscccscc" />
   </g>
   <g
      inkscape:groupmode="layer"
