@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="glade.svg"
+   sodipodi:docname="medit.svg"
    inkscape:export-filename="/home/me4oslav/Documents/normal-for-unnamed-project.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -1890,6 +1890,24 @@
        y1="6.773"
        x2="0"
        y2="12.7" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="1006.36"
+       x2="0"
+       y1="1050.36"
+       id="1"
+       xlink:href="#0"
+       gradientTransform="matrix(0.28222223,0,0,0.28222223,0,-283.45334)" />
+    <linearGradient
+       id="0">
+      <stop
+         id="stop3330"
+         stop-color="#982c31" />
+      <stop
+         id="stop3332"
+         stop-color="#c84948"
+         offset="1" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -1899,10 +1917,10 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="8.1017786"
-     inkscape:cx="22.155628"
-     inkscape:cy="24.342304"
+     inkscape:cx="22.649347"
+     inkscape:cy="24.095445"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer4"
      showgrid="true"
      inkscape:window-width="1366"
      inkscape:window-height="740"
@@ -1932,7 +1950,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Border&amp;Shadow">
+     inkscape:label="Border&amp;Shadow"
+     sodipodi:insensitive="true">
     <rect
        ry="7"
        rx="7"
@@ -1964,9 +1983,9 @@
        height="38"
        width="38"
        id="rect3958"
-       style="fill:#dfdfdf;fill-opacity:1;stroke:none" />
+       style="fill:#9dcd9b;fill-opacity:1;stroke:none" />
     <path
-       style="fill:#e2e2e2;fill-opacity:1;stroke:none"
+       style="fill:#aed4ac;fill-opacity:1;stroke:none"
        d="M 5.53125,24 C 5.350468,24 5.176236,24.022 5,24.031 l 0,12.625 c 0,3.5086 2.835083,6.3437 6.34375,6.3437 l 25.3125,0 C 40.164917,42.9997 43,40.1646 43,36.656 L 43,24.031 C 42.823764,24.021 42.649532,24 42.46875,24 l -36.9375,0 z"
        id="rect3962"
        inkscape:connector-curvature="0" />
@@ -1982,42 +2001,52 @@
     <g
        id="Layer_1_1_-8"
        transform="matrix(0.08203124,0,0,0.08203124,62.605723,1005.5926)" />
-    <rect
-       style="fill:#999999;fill-opacity:1;stroke:none"
-       id="rect3056"
-       width="26"
-       height="10"
-       x="11"
-       y="1031.3622"
-       rx="5.3149605"
-       ry="5.3149605" />
-    <rect
-       ry="5.3149605"
-       rx="5.3149605"
-       y="1015.3621"
-       x="11"
-       height="10"
-       width="26"
-       id="rect3058"
-       style="fill:#d34836;fill-opacity:1;stroke:none" />
-    <rect
-       ry="4.2519684"
-       rx="4.2519684"
-       y="1032.3622"
-       x="23"
-       height="8"
-       width="13"
-       id="rect3840"
-       style="fill:#f9f9f9;fill-opacity:1;stroke:none" />
-    <rect
-       style="fill:#f9f9f9;fill-opacity:1;stroke:none"
-       id="rect3842"
-       width="13"
-       height="8"
-       x="12"
-       y="1016.3621"
-       rx="4.2519684"
-       ry="4.2519684" />
+    <g
+       style="fill:#f9f9f9"
+       transform="matrix(3.0319918,0.19768946,-0.14608151,2.9794022,15.612439,160.45837)"
+       id="g3351">
+      <path
+         style="fill-rule:evenodd"
+         inkscape:connector-curvature="0"
+         d="m 18.875883,286.46188 c 0.677124,0.39093 1.097897,0.9723 1.050135,1.39967 l -2.762727,-1.59506 c -0.0084,-0.005 -0.01699,-0.009 -0.02557,-0.0135 0.345873,-0.2559 1.060412,-0.18244 1.738165,0.20887 z"
+         id="path3353" />
+      <rect
+         ry="0.398"
+         style="fill-rule:evenodd"
+         transform="matrix(-0.86602566,-0.49999956,-0.49999956,0.86602566,0,0)"
+         width="0.99900001"
+         height="5.112"
+         x="-161.22"
+         y="239.5"
+         rx="0.398"
+         id="rect3355" />
+      <rect
+         ry="0.398"
+         style="fill-rule:evenodd"
+         transform="matrix(-0.86602566,-0.49999956,-0.49999956,0.86602566,0,0)"
+         rx="0.398"
+         y="239.5"
+         x="-160.08"
+         height="5.112"
+         width="0.99900001"
+         id="rect3357" />
+      <rect
+         ry="0.398"
+         style="fill-rule:evenodd"
+         transform="matrix(-0.86602566,-0.49999956,-0.49999956,0.86602566,0,0)"
+         width="0.99900001"
+         height="5.112"
+         x="-158.94"
+         y="239.5"
+         rx="0.398"
+         id="rect3359" />
+      <path
+         style="fill-rule:evenodd"
+         inkscape:connector-curvature="0"
+         d="m -119.50798,657.3724 c 4.83364,-8.37211 478.53026,-8.37212 483.3639,-10e-6 4.83364,8.3721 -232.01466,418.60541 -241.68194,418.60541 -9.66728,0 -246.5156,-410.2333 -241.68196,-418.6054 z"
+         transform="matrix(-0.00582634,-0.00336384,-0.00355544,0.00615821,18.856482,288.16313)"
+         id="path3361" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"

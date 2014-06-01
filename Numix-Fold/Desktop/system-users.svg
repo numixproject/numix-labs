@@ -1636,12 +1636,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="9.9791699"
-     inkscape:cx="24.192787"
-     inkscape:cy="23.826013"
+     inkscape:zoom="74.484306"
+     inkscape:cx="32.718252"
+     inkscape:cy="6.1816702"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="740"
      inkscape:window-x="0"
@@ -1723,8 +1723,10 @@
       <path
          id="path3156"
          transform="translate(0,1004.3622)"
-         d="M 29.53125 34.21875 L 16.875 34.78125 C 16.875 34.78125 11.919298 36.06185 8.09375 37.96875 C 7.572815 38.22845 7.2436234 38.26575 7 38.65625 C 7.0040002 39.207366 7.0039552 40.311257 7 41.28125 C 8.11111 42.325782 9.6034278 42.976379 11.25 43 C 11.281146 43.000447 11.312493 43 11.34375 43 L 37.25 42.96875 C 37.270337 42.966893 37.29222 42.970797 37.3125 42.96875 C 38.730641 42.82559 40.017268 42.230512 41 41.3125 C 41.009612 39.95378 40.997579 38.438405 40.96875 38.09375 C 40.693342 37.71415 40.671766 37.67645 40.3125 37.46875 C 39.953235 37.26095 29.53125 34.21875 29.53125 34.21875 z "
-         style="opacity:1;fill:#f9f9f9;fill-opacity:1;stroke:none" />
+         d="M 29.53125,34.21875 16.875,34.78125 c 0,0 -4.955702,1.2806 -8.78125,3.1875 -0.520935,0.2597 -2.5348346,1.466217 -2.778458,1.856717 L 6.9194461,41.37523 C 7.9500022,42.473465 9.6034278,43.164338 11.25,43.187959 11.28115,43.188406 11.31249,43 11.34375,43 L 24.171875,44 37,43 c 0.02034,-0.0019 0.29222,0.158759 0.3125,0.156709 C 38.730641,43.013549 40.017268,42.230512 41,41.3125 l 2.318238,-2.305806 C 43.04283,38.627094 40.671766,37.67645 40.3125,37.46875 c -0.359265,-0.2078 -10.78125,-3.25 -10.78125,-3.25 z"
+         style="fill:#f9f9f9;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccscccccccc" />
       <path
          style="color:#000000;fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:1"
          id="path6671"
