@@ -7,13 +7,13 @@ The Numix icon themes are split into three collections based on their style, and
  * Bevel
  * Antergos
 
-**Simple Family**
+**Pastel Collection**
+ * Fold
+ * Squircle
+
+**Mono Collection**
  * uTouch
  * Shine
  * Metro
  * Mono
  * Lite
-
-**Pastel Family**
- * Fold
- * Squircle
