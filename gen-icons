@@ -87,7 +87,7 @@ done
 
 indir="$basedir/input"
 outdir="$basedir/output"
-templatedir="$indir/template/$flavor"
+templatedir="$indir/templates/$flavor"
 symbolsdir="$indir/symbols"
 templatefile="$templatedir/template.meta"
 
