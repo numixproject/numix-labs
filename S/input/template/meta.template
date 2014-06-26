@@ -1,4 +1,0 @@
-background -> fill="color[symbol]"
-symbol -> %drop -> fill="#000" -> opacity="0.1" -> transform="translate(1,0)" -> clip-path="clip.svg"
-symbol -> transform="translate(1,-1)" -> clip-path="clip.svg"
-shadow + background + underlay + drop + symbol + overlay

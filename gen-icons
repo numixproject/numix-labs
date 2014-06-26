@@ -23,12 +23,13 @@
 #
 # input/
 #     template/
-#         meta.template
-#         shadow.svg
-#         background.svg
-#         underlay.svg
-#         overlay.svg
-#         clip.svg
+#         square/
+#             meta.template
+#             shadow.svg
+#             background.svg
+#             underlay.svg
+#             overlay.svg
+#             clip.svg
 #     symbols/
 #         file-manager.svg
 #         text-editor.svg
@@ -49,6 +50,9 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         -d|--dir)
             basedir="$2"
+            shift;;
+        -f|--flavor)
+            flavor="$2"
             shift;;
         -p|--png)
             makepng="true";;
@@ -79,12 +83,13 @@ done
 [[ "$basedir" = "" ]] && basedir="."
 [[ "$makepng" = "" ]] && makepng="false"
 [[ "$optimize" = "" ]] && optimize="true"
+[[ "$flavor" = "" ]] && flavor="default"
 
 indir="$basedir/input"
 outdir="$basedir/output"
-templatedir="$indir/template"
+templatedir="$indir/template/$flavor"
 symbolsdir="$indir/symbols"
-templatefile="$templatedir/meta.template"
+templatefile="$templatedir/template.meta"
 
 trap exit INT
 
@@ -240,6 +245,8 @@ echo "$1" | while read line; do
             make_svg "$command"
 
             [[ "$makepng" = "true" ]] && make_png
+        else
+            show_warning "Unrecognized command $command"
         fi
     done
 done
@@ -257,7 +264,12 @@ fi
 if [[ -f "$templatefile" ]]; then
     template=$(cat "$templatefile" | sed -e "s/ //g" -e "s/->/ /g")
 else
-    show_error "No template file found."
+    show_error "No template file found in $templatefile."
+    exit 1
+fi
+
+if [[ "$template" = "" ]]; then
+    show_error "Template file is empty."
     exit 1
 fi
 
