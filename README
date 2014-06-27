@@ -1,0 +1,9 @@
+SYMBOL SHADOWS
+
+"translate(0,-1)" in template.meta controls the shadow displacement for icon themes that don't use blur shadow.
+"opacity="0.1" in template meta controls the shadow opaque level for icon themes that don't use blur shadow.
+"opacity="0.5" ->" in template meta controls the blur opaque level for icon themses that use blur shadow.
+"<feGaussianBlur stdDeviation="1"/>" in blur.svg controls the blur strength for icons themes that have blur shadows. The number must be between 0 and 1.
+
+SOMEBODY WRITE THE REST!
+Also - Αποφις!

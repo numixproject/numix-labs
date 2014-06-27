@@ -1,7 +1,7 @@
 #!/bin/bash
 # Script to generate icons from SVG templates
 #
-# Copyright (c) 2014 Numix Project
+# Copyright (c) 2014  Numix Project
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -10,7 +10,7 @@
 #
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
@@ -22,21 +22,22 @@
 # It will take color information and file name from the symbols
 #
 # input/
-# template/
-# square/
-# template.meta
-# shadow.svg
-# background.svg
-# underlay.svg
-# overlay.svg
-# clip.svg
-# symbols/
-# file-manager.svg
-# text-editor.svg
-# web-browser.svg
+#     templates/
+#         square/
+#             template.meta
+#             shadow.svg
+#             background.svg
+#             underlay.svg
+#             overlay.svg
+#             blur.svg
+#             clip.svg
+#     symbols/
+#         file-manager.svg
+#         text-editor.svg
+#         web-browser.svg
 # output/
-# svg/
-# png/
+#     svg/
+#     png/
 #
 # COLOR INFORMATION
 #
@@ -72,7 +73,7 @@ while [[ $# -gt 0 ]]; do
         -*)
             args="$1"
             shift
-set -- $(printf "$args" | cut -c 2- | sed 's/./-& /g') "$@"
+            set -- $(printf "$args" | cut -c 2- | sed 's/./-& /g') "$@"
             continue;;
         *)
             break;;
@@ -93,7 +94,7 @@ if [[ "$template" = "" ]]; then
         if [[ -f "$dir/template.meta" ]]; then
             templatedir="$dir"
             break
-fi
+        fi
     done < <(find "$indir/templates" -maxdepth 1 -type d)
 fi
 
@@ -237,7 +238,7 @@ if [[ "$viewbox" = "" ]]; then
     viewbox="viewBox=\"0 0 $width $height\""
 fi
 
-if [[ "$viewbox" = "" || "$viewbox" = "0 0 " ]]; then
+if [[ "$viewbox" = "" || "$viewbox" = "0 0    " ]]; then
     show_warning "Failed to determine viewBox."
     return
 fi
