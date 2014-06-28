@@ -1,7 +1,0 @@
-<!-- color: #eaf07f -->
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
- <g>
-  <path d="M 11 15 L 32 15 L 32 33 L 11 33 C 10.445312 33 10 32.554688 10 32 L 10 16 C 10 15.445312 10.445312 15 11 15 Z M 11 15 " fill="#5b9b19"/>
-  <path d="M 32 22 L 38 18 L 38 30 L 32 26 L 31 26 L 31 23 Z M 32 22 " fill="#5b9b19"/>
- </g>
-</svg>
