@@ -6,27 +6,27 @@
 
 ## Directory structure
 
-|-- input
-|   |-- symbols
-|   |   |-- file-manager.svg
-|   |   |-- text-editor.svg
-|   |   |-- web-browser.svg
-|   `-- templates
-|       |-- circle
-|       |-- hexagon
-|       `-- square
-|           |-- background.svg
-|           |-- blur.svg
-|           |-- clip.svg
-|           |-- overlay.svg
-|           |-- shadow.svg
-|           `-- template.meta
-`-- output
-    |-- circle
-    |-- hexagon
-    `-- square
-        |-- png
-        `-- svg
+    |-- input
+    |   |-- symbols
+    |   |   |-- file-manager.svg
+    |   |   |-- text-editor.svg
+    |   |   |-- web-browser.svg
+    |   `-- templates
+    |       |-- circle
+    |       |-- hexagon
+    |       `-- square
+    |           |-- background.svg
+    |           |-- blur.svg
+    |           |-- clip.svg
+    |           |-- overlay.svg
+    |           |-- shadow.svg
+    |           `-- template.meta
+    `-- output
+        |-- circle
+        |-- hexagon
+        `-- square
+            |-- png
+            `-- svg
 
 ## Templates and symbols
 
@@ -44,7 +44,7 @@ The last line in the file specifies the order in which the layers will be combin
 
 An example `template.meta` file looks like,
 
-    background -> fill(symbol\[color\])
+    background -> fill(symbol[color])
     symbol -> %drop -> fill(#000) -> filter="blur.svg" -> opacity="0.5" -> clip-path="clip.svg"
     symbol -> transform="translate(0,-1)" -> clip-path="clip.svg"
     shadow + background + underlay + drop + symbol + overlay
@@ -57,7 +57,7 @@ Here the data passed to `fill` is `symbol[color]`. Here `symbol[color]` tells th
 
 Any SVG file can contain these types of data in a simple syntax. For example, the `color` data can be defined inside the symbol as,
 
-    <\!-- color: #d64937 -->
+    <!-- color: #d64937 -->
 
 Comming to the next line, we are making a shadow for the symbol here. So, we select the `symbol` and copy into a new layer named `drop`. The `%` in front of the name tells the script to create a new layer.
 
@@ -69,8 +69,8 @@ In the last line, we are telling the script to generate the resulting icon by co
 
 ### Resources
 
-[SVG attribute index](http://www.w3.org/TR/SVG/attindex.html)
-[SVG filter effects](http://www.w3.org/TR/SVG/filters.html)
+1. [SVG attribute index](http://www.w3.org/TR/SVG/attindex.html)
+2. [SVG filter effects](http://www.w3.org/TR/SVG/filters.html)
 
 ## Ouput folder
 
