@@ -50,12 +50,12 @@ symbolsdir="$indir/symbols"
 trap exit INT
 
 show_info() {
-echo -e "\033[0;34m$@\033[0m"
+echo -e "\033[0;34m$@\033[0m" 1>&2 2>&1
 return 0
 }
 
 show_success() {
-echo -e "\033[0;32m$@\033[0m"
+echo -e "\033[0;32m$@\033[0m" 1>&2 2>&1
 return 0
 }
 
@@ -69,7 +69,7 @@ echo -e "\033[0;31m$@\033[0m" 1>&2
 return 1
 }
 
-make_png() {
+write_png() {
 rm -f "$outdir/$template/png/${icon/svg/png}"
 
 which rsvg-convert > /dev/null 2>&1
@@ -95,20 +95,12 @@ else
 fi
 }
 
-make_svg() {
-layers=$(echo "$1" | sed -e "s/\+/ /g")
-svg="<svg ${viewbox}>"
-
-for layer in $layers; do
-    if [[ ! ${!layer} = "" ]]; then
-        svg+="<g id=\"${layer}\">${!layer}</g>"
-    fi
-done
-
-svg+="</svg>"
+op_write() {
+data="$1"
 
 rm -f "$outdir/$template/svg/$icon"
-echo "$svg" > "$outdir/$template/svg/$icon"
+
+echo "<svg ${viewbox}>${data}</svg>" > "$outdir/$template/svg/$icon"
 
 if [[ -f "$outdir/$template/svg/$icon" && $(grep "<svg\|</svg>" "$outdir/$template/svg/$icon") ]]; then
     if [[ "$optimize" = "true" ]]; then
@@ -124,12 +116,8 @@ if [[ -f "$outdir/$template/svg/$icon" && $(grep "<svg\|</svg>" "$outdir/$templa
 else
     show_err "Failed to write $icon."
 fi
-}
 
-strip_tags() {
-data=$(cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g")
-
-echo "$data"
+[[ "$makepng" = "true" ]] && write_png
 }
 
 op_fill() {
@@ -138,12 +126,16 @@ color="$2"
 
 [[ "$color" =~ ^#.+$ ]] && color="${color:0:7}"
 
-if [[ $(echo "$data" | grep "fill[:=]") ]]; then
-    data=$(echo "$data" | sed -e "s/fill=\"/style=\"fill:/g" -e "s/fill:[^;\"]*/fill:${color}/g")
+if [[ ! "$color" = "" ]]; then
+    if [[ $(echo "$data" | grep "fill[:=]") ]]; then
+        data=$(echo "$data" | sed -e "s/fill=\"/style=\"fill:/g" -e "s/fill:[^;\"]*/fill:${color}/g")
+    else
+        oldtag=$(echo "$data" | grep -o "<.*" | grep -v "<[\!\?].+" | head -n 1 | sed -e 's/[[\.+^$/]/\\&/g')
+        newtag=$(echo "$oldtag" | sed -e "s/$/ style=\"fill:${color}\"/")
+        data=$(echo "$data" | sed -e "0,/$oldtag/s//$newtag/")
+    fi
 else
-    oldtag=$(echo "$data" | grep -o "<.*" | grep -v "<[\!\?].+" | head -n 1 | sed -e 's/[[\.+^$/]/\\&/g')
-    newtag=$(echo "$oldtag" | sed -e "s/$/ style=\"fill:${color}\"/")
-    data=$(echo "$data" | sed -e "0,/$oldtag/s//$newtag/")
+    show_warn "No color specified for fill."
 fi
 
 echo "$data"
@@ -157,13 +149,36 @@ prop=$(echo "$task" | cut -f2 -d"(" | cut -f1 -d")")
 
 [[ "$prop" =~ ^.+\[.+\]$ ]] && prop=$(read_props "$prop")
 
-[[ "$prop" = "" ]] && show_warn "Property $prop is empty."
-
 if [[ $(type -t "$type") = "function" ]]; then
     data=$("$type" "$data" "$prop")
 else
     show_warn "Invalid operation $type."
 fi
+
+echo "$data"
+}
+
+strip_tags() {
+data=$(cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g")
+
+echo "$data"
+}
+
+add_layer() {
+data="$1"
+layer="${2/#+/}"
+
+if [[ ! "${!layer}" = "" ]]; then
+    data+="<g id=\"${layer}\">${!layer}</g>"
+else
+    show_warn "$layer is empty or doesn't exist"
+fi
+
+echo "$data"
+}
+
+strip_tags() {
+data=$(cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g")
 
 echo "$data"
 }
@@ -251,13 +266,11 @@ echo "$1" | while read line; do
             declare $data="$(add_attr "${!data}" "$command")"
         elif [[ "$command" =~ ^[a-z\-]+\(.*\)$ ]]; then
             declare $data="$(do_task "${!data}" "$command")"
+        elif [[ "$command" =~ ^\+[a-z]+$ ]]; then
+            declare $data="$(add_layer "${!data}" "$command")"
         elif [[ "$command" =~ ^\%[a-z]+$ ]]; then
             declare ${command#%}="${!data}"
             data=${command#%}
-        elif [[ "$command" =~ ^[a-z]+\+.*[a-z]+$ ]]; then
-            make_svg "$command"
-
-            [[ "$makepng" = "true" ]] && make_png
         else
             show_warn "Unrecognized command $command."
         fi
