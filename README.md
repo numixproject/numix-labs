@@ -47,7 +47,7 @@ An example `template.meta` file looks like,
     background -> fill(symbol[color])
     symbol -> %drop -> fill(#000) -> filter="blur.svg" -> opacity="0.5" -> clip-path="clip.svg"
     symbol -> transform="translate(0,-1)" -> clip-path="clip.svg"
-    shadow -> %final -> +background -> +drop -> +symbol -> +overlay -> write()
+    %final -> +shadow -> +background -> +drop -> +symbol -> +overlay -> write()
 
 So, let's see what's happening.
 
@@ -65,7 +65,7 @@ Then we do a `fill` operation on it with the color `#000`.
 
 Next, we tell the script to add the attribute `filter="blur.svg`. Here the script sees that `blur.svg` is a SVG file name and includes that file in appropriate format. If it's not a file name, it'll directly add that attribute to the layer, as it occurs in the next step with `opacity="0.5"`.
 
-In the last line, we tell the script to take the `shadow` layer and create a new layer `final`, then add the `background` layer to it, then `drop` and so on. The `+` in front of the name tells the script to add the layer.
+In the last line, we tell the script to create a new empty layer `final`, then add the `shadow` layer to it, then `background` and so on. The `+` in front of the name tells the script to add the layer.
 
 Lastly, we tell the script to `write` the result with `write()`. The `write` function writes the SVG (and PNG if specified) files to the output folder with the same name as the `symbol` layer.
 
@@ -76,7 +76,7 @@ Lastly, we tell the script to `write` the result with `write()`. The `write` fun
     attr="value"        add the attribute `attr` to the layer (e.g.- transform="translate(0,-1)")
     attr="file.svg"     add the file as an attribute (e.g.- clip-path="clip.svg")
     layer[property]     get `property` from `layer` (passed as an argument)
-    fill(#d64937)       perform a `fill` operation with the color `#d64937`
+    fill(#d64937)       do a `fill` operation with the color `#d64937`
     write()             write the file
 
 ### Resources

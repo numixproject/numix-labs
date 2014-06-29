@@ -18,7 +18,7 @@ while [[ $# -gt 0 ]]; do
         -s|--store)
             optimize="false";;
         -h|--help)
-            args=( "-d, --dir <directory>" "-t, --template" "-p, --png" "-s, --store" "-h, --help" )
+            args=( "-d, --dir <directory>" "-t, --template <name>" "-p, --png" "-s, --store" "-h, --help" )
             desc=( "specify base directory" "specify template directory to use" "generate PNG files" "don't optimize icons" "show this help message and exit" )
             printf "Usage:\tgen-icons [options...]\n\n"
             for ((i=0; i < ${#args[@]}; i++)); do
@@ -118,6 +118,8 @@ else
 fi
 
 [[ "$makepng" = "true" ]] && write_png
+
+echo "$data"
 }
 
 op_fill() {
@@ -166,7 +168,7 @@ echo "$data"
 
 add_layer() {
 data="$1"
-layer="${2/#+/}"
+layer="$2"
 
 if [[ ! "${!layer}" = "" ]]; then
     data+="<g id=\"${layer}\">${!layer}</g>"
@@ -267,7 +269,7 @@ echo "$1" | while read line; do
         elif [[ "$command" =~ ^[a-z\-]+\(.*\)$ ]]; then
             declare $data="$(do_task "${!data}" "$command")"
         elif [[ "$command" =~ ^\+[a-z]+$ ]]; then
-            declare $data="$(add_layer "${!data}" "$command")"
+            declare $data="$(add_layer "${!data}" "${command#+}")"
         elif [[ "$command" =~ ^\%[a-z]+$ ]]; then
             declare ${command#%}="${!data}"
             data=${command#%}
