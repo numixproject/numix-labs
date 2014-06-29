@@ -169,12 +169,16 @@ fi
 }
 
 strip_tags() {
-cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g"
+data=$(cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g")
+
+echo "$data"
 }
 
-re_color() {
+op_fill() {
 data="$1"
 color="$2"
+
+[[ "$color" =~ ^#.+$ ]] && color="${color:0:7}"
 
 if [[ $(echo "$data" | grep "fill[:=]") ]]; then
     data=$(echo "$data" | sed -e "s/fill=\"/style=\"fill:/g" -e "s/fill:[^;\"]*/fill:${color}/g")
@@ -187,41 +191,53 @@ fi
 echo "$data"
 }
 
+do_task() {
+data="$1"
+task="$2"
+type=$(echo "$task" | cut -f1 -d"(" | sed -e "s/^/op_/g")
+prop=$(echo "$task" | cut -f2 -d"(" | cut -f1 -d")")
+
+[[ "$prop" =~ ^.+\[.+\]$ ]] && prop=$(read_props "$prop")
+
+[[ "$prop" = "" ]] && show_warn "Property $prop is empty."
+
+if [[ $(type -t "$type") = "function" ]]; then
+    data=$("$type" "$data" "$prop")
+else
+    show_warn "Invalid operation $type."
+fi
+
+echo "$data"
+}
+
 add_attr() {
 data="$1"
 attr="$2"
 type=$(echo "$attr" | cut -f1 -d"=")
+prop=$(echo "$attr" | cut -f2 -d"\"")
 
-if [[ "$type" = "fill" ]]; then
-    prop=$(echo "$attr" | cut -f2 -d"\"")
+[[ "$prop" =~ ^.+\[.+\]$ ]] && prop=$(read_props "$prop")
 
-    if [[ "$attr" =~ ^.+=\".+\[.+\]\"$ ]]; then
-        value=$(read_props "$prop")
-    else
-        value="$prop"
-    fi
+[[ "$prop" = "" ]] && show_warn "Property $prop is empty."
 
-    [[ "$value" = "" ]] && show_warn "Cannot find $prop value"
-
-    data=$(re_color "$data" "${value:0:7}")
-elif [[ "$type" = "clip-path" || "$type" = "filter" ]]; then
+if [[ "$prop" =~ ^.+\.svg$ ]]; then
     case "$type" in
         "clip-path")
             tagname="clipPath";;
-        "filter")
-            tagname="filter";;
+        *)
+            tagname="$type";;
     esac
 
     id=$(date +%N)
-    url=$(echo "$attr" | cut -f2 -d"\"" | cut -f1 -d".")
+    url="${prop%.*}"
 
     if [[ ! "${!url}" = "" ]]; then
         data="<defs><${tagname} id=\"${tagname}-${id}\">${!url}</${tagname}></defs><g ${type}=\"url(#${tagname}-${id})\">${data}</g>"
     else
         show_warn "$type is empty or doesn't exist."
     fi
-else
-    data="<g ${attr}>${data}</g>"
+else    
+    data="<g ${type}=\"${prop}\">${data}</g>"
 fi
 
 echo "$data"
@@ -242,15 +258,13 @@ fi
 
 read_props() {
 data=$(echo "$1" | sed -e "s/\[/_/" -e "s/\]//")
-prop=$(echo "$data" | cut -f1 -d"_")
-name=$(echo "$data" | cut -f2 -d"_")
+name=$(echo "$data" | cut -f1 -d"_")
+prop=$(echo "$data" | cut -f2 -d"_")
 value=$(echo "${!name}" | grep -o "<\!-- ${prop}: .* -->" | sed -e "s/<\!-- ${prop}: //g" -e "s/ -->//g")
 
-if [[ ! "$value" = "" ]]; then
-    echo "$value"
-else
-    show_warn "Property $prop not found."
-fi
+[[ "$value" = "" ]] && show_warn "Property $prop not found."
+
+echo "$value"
 }
 
 read_files() {
@@ -277,6 +291,8 @@ echo "$1" | while read line; do
             data="$command"
         elif [[ "$command" =~ ^[a-z\-]+=\".*\"$ ]]; then
             declare $data="$(add_attr "${!data}" "$command")"
+        elif [[ "$command" =~ ^[a-z\-]+\(.*\)$ ]]; then
+            declare $data="$(do_task "${!data}" "$command")"
         elif [[ "$command" =~ ^\%[a-z]+$ ]]; then
             declare ${command#%}="${!data}"
             data=${command#%}
