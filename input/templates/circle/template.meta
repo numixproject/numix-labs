@@ -1,4 +1,4 @@
 background -> fill(symbol[color])
 symbol -> %drop -> fill(#000) -> opacity="0.1" -> transform="translate(0,1)" -> clip-path="clip.svg"
 symbol -> clip-path="clip.svg"
-shadow -> +background -> +underlay -> +drop -> +symbol -> +overlay -> write()
+shadow -> %final -> +background -> +underlay -> +drop -> +symbol -> +overlay -> write()
