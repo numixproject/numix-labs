@@ -18,7 +18,7 @@ function automake() {
 	};
 	
 	script = document.createElement('script');
-	script.src = 'https://github.com/numixproject/numix-app-icons/raw/master/Symbols/Mono/Desktop/' + document.getElementById('name').value + '.mono.js';
+	script.src = 'https://github.com/numixproject/numix-labs/raw/master/David/autotouch-icons/' + document.getElementById('name').value + '.js';
 	document.head.appendChild(script);
 	script.onload = function() {
 		make('auto');
