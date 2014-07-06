@@ -196,15 +196,9 @@ prop=$(echo "$attr" | cut -f2 -d"\"")
 [[ "$prop" = "" ]] && show_warn "Property $prop is empty."
 
 if [[ "$prop" =~ ^.+\.svg$ ]]; then
-    case "$type" in
-        "clip-path")
-            tagname="clipPath";;
-        *)
-            tagname="$type";;
-    esac
-
     id=$(date +%N)
     url="${prop%.*}"
+    tagname=$(echo "$type" | sed -re "s/([a-z]+)-([a-z])([a-z]+)/\1\U\2\L\3/")
 
     if [[ ! "${!url}" = "" ]]; then
         data="<defs><${tagname} id=\"${tagname}-${id}\">${!url}</${tagname}></defs><g ${type}=\"url(#${tagname}-${id})\">${data}</g>"
