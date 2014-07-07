@@ -72,17 +72,19 @@ return 1
 write_png() {
 rm -f "$outdir/$template/png/${icon/svg/png}"
 
-which rsvg-convert > /dev/null 2>&1
-if [[ $? -eq 0 ]]; then
+if [[ `command -v convert` ]]; then
+    convert -depth 16 -background transparent "$outdir/$template/svg/$icon" "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
+elif [[ `command -v inkscape` ]]; then
+    inkscape "$outdir/$template/svg/$icon" --without-gui --export-background-opacity 0 --export-png "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
+elif [[ `command -v rsvg-convert` ]]; then
     rsvg-convert "$outdir/$template/svg/$icon" -o "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
 else
-    show_warn "rsvg-convert not installed."
+    show_warn "ImageMagick, Inkscape or librsvg2-tools not installed"
 fi
 
 if [[ -f "$outdir/$template/png/${icon/svg/png}" ]]; then
     if [[ "$optimize" = "true" ]]; then
-        which optipng > /dev/null 2>&1
-        if [[ $? -eq 0 ]]; then
+        if [[ `command -v optipng` ]]; then
             optipng -strip all -o7 -zm1-9 "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
         else
             show_warn "optipng not installed."
@@ -104,11 +106,10 @@ echo "<svg ${viewbox}>${data}</svg>" > "$outdir/$template/svg/$icon"
 
 if [[ -f "$outdir/$template/svg/$icon" && $(grep "<svg\|</svg>" "$outdir/$template/svg/$icon") ]]; then
     if [[ "$optimize" = "true" ]]; then
-        which svgcleaner-cli > /dev/null 2>&1
-        if [[ $? -eq 0 ]]; then
+        if [[ `command -v svgcleaner-cli` ]]; then
             svgcleaner-cli "$outdir/$template/svg/$icon" "$outdir/$template/svg/$icon" --colors-to-rrggbb --convert-to-relative --compact-output --create-viewbox --equal-elts-to-use --merge-gradients --remove-ai-atts --remove-ai-elts --remove-corel-atts --remove-corel-elts --remove-duplicated-defs --remove-empty-containers --remove-fill-props --remove-inkscape-atts --remove-inkscape-elts --remove-invisible-elts --remove-metadata-elts --remove-msvisio-atts --remove-msvisio-elts --remove-nonsvg-elts --remove-notappl-atts --remove-outside-elts --remove-proc-instr --remove-prolog --remove-sketch-atts --remove-sketch-elts --remove-sodipodi-atts --remove-sodipodi-elts --remove-stroke-props --remove-unreferenced-ids --remove-unused-defs --remove-unused-xlinks --remove-version --rrggbb-to-rgb > /dev/null 2>&1
         else
-            show_warn "svgcleaner-cli not installed."
+            show_warn "svgcleaner not installed."
         fi
     fi
 
