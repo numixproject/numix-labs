@@ -163,7 +163,7 @@ Filters can be used to apply a number of different image effects to an element.
 
     <feGaussianBlur stdDeviation="0.5"/>
 
-*NOTE: The blur radius is controlled by the `stdDeviation` propery of the filter. It can take 2 parameters for the blur radius in x and y axis.*
+*NOTE: The blur radius is controlled by the `stdDeviation` propery. It can take 2 parameters for the blur radius in x and y axis.*
 
 #### Luminance mask
 
@@ -192,6 +192,12 @@ Filters can be used to apply a number of different image effects to an element.
 #### Emboss
 
     <feConvolveMatrix order="5 5" preserveAlpha="true" kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0"/>
+
+#### Brightness
+
+    <feComponentTransfer><feFuncR type="linear" slope="0.5"/><feFuncG type="linear" slope="0.5"/><feFuncB type="linear" slope="0.5"/></feComponentTransfer>
+
+*NOTE: The amount of brightness is controlled by the `slope` property.*
 
 #### Posterize
 
