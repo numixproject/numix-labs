@@ -36,6 +36,10 @@ The SVG files in the `template` directory can have any name, but they must be re
 
 Each file in the directory are passed to the script as a layer. For example, `background.svg` will be passed as a layer named `background`.
 
+It is a good idea to name the files according to their role, for example `overlay.svg` for the layer that goes on top, `shadow.svg` for the layer that acts as a drop shadow etc.
+
+Also, it is recommended to clean up the SVG files so as to avoid errors as the script is designed to handle simple SVG data, and might have issues with complex files.
+
 ### The template.meta file
 
 Each template must contain a `template.meta` file, which describes how to generate the resulting icon.
