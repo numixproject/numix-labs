@@ -31,10 +31,10 @@ l_var = round(rgb_to_hls(r_var, g_var, b_var)[1]*255)
 s_var = round(rgb_to_hls(r_var, g_var, b_var)[2]*255)
 
 # Makes lighter code
-if l_var > 245:
-	l2_var = 255
+if l_var < 10:
+	l2_var = 0
 else:
-	l2_var = l_var+10
+	l2_var = l_var-10
 
 r2_var = round(hls_to_rgb(h_var/255.0, l2_var/255.0, s_var/255.0)[0]*255)
 g2_var = round(hls_to_rgb(h_var/255.0, l2_var/255.0, s_var/255.0)[1]*255)
