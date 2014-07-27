@@ -106,18 +106,3 @@ rm -Rf Numix
 rm -Rf Numix-Circle
 rm -Rf Numix-Shine
 rm -Rf Numix-uTouch
-
-echo "The script will now attempt to fix hardcoded icons."
-read -p "Do you want to continue ? [Y]es, [n]o : " response
-case $response in
-	[Yy]* ) ;;
-    [Nn]* ) exit 99;;
-    * ) echo "Enjoy!"; exit 1;;
-esac
-
-# Python script which fixes hardcoded icons
-python3 hc-fix.py -f
-
-# End
-echo "Hardcoded icons fixed. Enjoy !"
-exit 0
