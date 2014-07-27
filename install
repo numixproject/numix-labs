@@ -106,3 +106,6 @@ rm -Rf Numix
 rm -Rf Numix-Circle
 rm -Rf Numix-Shine
 rm -Rf Numix-uTouch
+
+# End
+exit 0
