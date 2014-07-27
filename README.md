@@ -5,7 +5,7 @@ This is an installer for the Numix icon themes, designed to fix the problems of 
 
 Installation
 ============
-Run the ./INSTALL script to install all the icon themes and fix as many of the hardcoded icons as possible. If run as root, the script will copy the iconsets to /usr/share/icons to made them available to all users. Run ./UNINSTALL as root to restore defaults icons.
+Run the ```./INSTALL``` script to install all the icon themes and fix as many of the hardcoded icons as possible. If run as root, the script will copy the iconsets to ```/usr/share/icons``` to made them available to all users. Run ```./INSTALL -u``` as root to restore defaults icons.
 
 
 Other Sources
@@ -23,12 +23,7 @@ For Fedora based distros they are available through [Fedora Utils](http://satya1
     sudo fedorautils -e install_numix
 
 
-Tips
-====
-* If you're only interested in fixing the hardcoded icons running ```hc-fix.py -f``` will do just that.
-* This installer hasn't being thoroughly tested so something could go wrong
-
-
 Known issues
 ============
 * Have to close and open file for truncate to work
+* This installer hasn't being thoroughly tested so something could go wrong
