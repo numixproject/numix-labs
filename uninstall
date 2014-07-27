@@ -36,16 +36,5 @@ fi
 
 echo "Uninstall complete."
 
-echo "The script will now attempt to unfix hardcoded icons."
-read -p "Did you fix them during installation? [Y]es, [n]o : " response
-case $response in
-	[Yy]* ) ;;
-    [Nn]* ) exit 99;;
-    * ) echo "Enjoy!"; exit 1;;
-esac
-
-# Unfixes hardcoded icons
-python3 hc-fix.py -u
-
 # End
 exit 0
