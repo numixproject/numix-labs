@@ -1,9 +1,0 @@
-<!-- color: #eeeeee -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 48 48" version="1.1">
-<g id="surface1">
-<path style="fill-rule:nonzero;fill:rgb(75.686275%,49.019608%,6.666667%);fill-opacity:1;stroke-width:0.282;stroke-linecap:round;stroke-linejoin:miter;stroke:rgb(55.686275%,34.901961%,0.784314%);stroke-opacity:1;stroke-miterlimit:4;" d="M 6.067778 9.630834 L 6.775538 10.018889 L 7.477787 9.630834 L 7.477787 7.3025 L 6.775538 6.915547 L 6.067778 7.3025 M 6.067778 9.630834 " transform="matrix(3.543307,0,0,3.543307,0,0)"/>
-<path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(55.686275%,34.901961%,0.784314%);stroke-opacity:1;stroke-miterlimit:4;" d="M 24 35 L 24 25 M 24 35 "/>
-<path style="fill-rule:nonzero;fill:rgb(29.803922%,60.392157%,1.568627%);fill-opacity:1;stroke-width:0.282;stroke-linecap:round;stroke-linejoin:miter;stroke:rgb(18.431373%,37.647059%,1.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4.374445 7.059965 L 6.773333 8.329965 L 9.172222 7.059965 L 9.172222 4.519965 L 6.773333 3.277526 L 4.374445 4.519965 M 4.374445 7.059965 " transform="matrix(3.543307,0,0,3.543307,0,0)"/>
-<path style="fill-rule:nonzero;fill:rgb(18.431373%,37.647059%,1.176471%);fill-opacity:1;stroke-width:0.282;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(18.431373%,37.647059%,1.176471%);stroke-opacity:1;stroke-miterlimit:4;" d="M 6.773333 8.325556 L 6.773333 5.645547 L 9.2075 4.515556 L 6.773333 5.645547 L 4.392083 4.515556 L 6.773333 5.645547 M 6.773333 8.325556 " transform="matrix(3.543307,0,0,3.543307,0,0)"/>
-</g>
-</svg>

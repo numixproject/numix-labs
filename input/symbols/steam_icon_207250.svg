@@ -1,8 +1,0 @@
-<!-- color: #eeeeee -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 48 48" version="1.1">
-<g id="surface1">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(14.901961%,49.803922%,75.686275%);fill-opacity:1;" d="M 12 19 L 29 19 L 29 36 L 12 36 M 12 19 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(41.176471%,74.509804%,28.627451%);fill-opacity:1;" d="M 29 12 L 29 36 L 36 29 L 36 12 M 29 12.003906 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(89.803922%,30.588235%,31.764706%);fill-opacity:1;" d="M 20.574219 12 L 12 19 L 29 19 L 36 12 M 20.570312 12 "/>
-</g>
-</svg>

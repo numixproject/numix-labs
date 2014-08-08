@@ -1,9 +1,0 @@
-<!-- color: #8dd866 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
- <g>
-  <path d="M 24 28.375 L 31 31.875 L 26.625 22.25 Z M 24 28.375 " fill="#a4a8ab"/>
-  <path d="M 31.875 26.625 L 35.375 17 L 38 30.125 Z M 31.875 26.625 " fill="#7f7f84"/>
-  <path d="M 31 31.875 L 35.375 17 L 23.125 10 L 19.625 19.625 L 26.625 22.25 Z M 31 31.875 " fill="#ececec"/>
-  <path d="M 10 31 L 22.25 38 L 26.625 22.25 L 13.5 15.25 Z M 10 31 " fill="#f9f9f9"/>
- </g>
-</svg>

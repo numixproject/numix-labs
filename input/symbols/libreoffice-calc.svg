@@ -1,9 +1,0 @@
-<!-- color: #3dc57a -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 48 48" version="1.1">
-<g id="surface1">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(90.196078%,90.196078%,90.196078%);fill-opacity:1;" d="M 14.65625 11 C 13.183594 11 11.996094 12.183594 11.996094 13.65625 L 11.996094 34.339844 C 11.996094 35.816406 13.179688 37 14.65625 37 L 35.339844 37 C 36.8125 37 38 35.816406 38 34.339844 L 38 16.996094 L 32 11 M 14.65625 11 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:0.2;" d="M 38 17 L 32 17 L 38 23 M 38 17 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 38 17 L 32 17 L 32 11.003906 M 38 17 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(26.666667%,78.431373%,61.176471%);fill-opacity:1;" d="M 33 19 C 33 24.628906 33 30.121094 33 35 C 27.382812 35 21.859375 35 17 35 C 17 29.371094 17 23.878906 17 19 C 22.554688 19 28.238281 19 33 19 M 32 20 L 24 20 L 24 24 L 32 24 M 23 20 L 18 20 L 18 24 L 23 24 M 32 25 L 24 25 L 24 29 L 32 29 M 23 25 L 18 25 L 18 29 L 23 29 M 32 30 L 24 30 L 24 34 L 32 34 M 23 30 L 18 30 L 18 34 L 23 34 M 23 30 "/>
-</g>
-</svg>

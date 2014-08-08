@@ -1,8 +1,0 @@
-<!-- color: #595959 -->
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
- <g>
-  <path d="M 12 13 L 15 18 L 35 18 L 32 13 Z M 12 13 " fill="#f35353"/>
-  <path d="M 32 18 L 10 35 L 13 35 L 35 18 L 33 16 Z M 32 18 " fill="#f35353"/>
-  <path d="M 18 31 L 42 31 L 13 35 L 13 33 Z M 18 31 " fill="#f35353"/>
- </g>
-</svg>
