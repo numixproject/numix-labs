@@ -36,7 +36,7 @@ def darken(code):
 		b_hex = hex(b2_var)[2:]
 	return r_hex+g_hex+b_hex # the lighter code
 
-for symbol in listdir("symbols/"):
+for symbol in listdir("symbols-android/")+listdir("symbols-desktop/"):
 	print("Making "+symbol)
 	now_sym = [line for line in open("symbols/"+symbol, 'r')]
 	light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
