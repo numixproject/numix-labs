@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="system-software-update.svg"
+   sodipodi:docname="gimp.svg"
    inkscape:export-filename="/home/me4oslav/Downloads/gimp-new-square.png"
    inkscape:export-xdpi="720"
    inkscape:export-ydpi="720">
@@ -436,7 +436,7 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3979-2"
+       xlink:href="#linearGradient3979"
        id="linearGradient4075"
        x1="24"
        y1="1051.36"
@@ -485,26 +485,6 @@
            id="path19" />
       </g>
     </clipPath>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3979-2"
-       id="linearGradient4033-5"
-       x1="-27"
-       y1="13"
-       x2="-24"
-       y2="13"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       id="linearGradient3979-2">
-      <stop
-         style="stop-color:#cde3df;stop-opacity:1;"
-         offset="0"
-         id="stop3981-7" />
-      <stop
-         style="stop-color:#ddece9;stop-opacity:1;"
-         offset="1"
-         id="stop3983-6" />
-    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -514,7 +494,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.608016"
-     inkscape:cx="22.056531"
+     inkscape:cx="38.082148"
      inkscape:cy="21.415075"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
@@ -635,24 +615,24 @@
     </g>
     <path
        inkscape:connector-curvature="0"
-       style="fill:#13a7e2;fill-opacity:1;stroke:none"
+       style="fill:#f77c35;fill-opacity:1;stroke:none"
        d="m 25.34375,12.093751 3.15625,2.40625 -2.125,1.875 c 3.258,1.012 5.625,4.04 5.625,7.625 0,2.957 -1.613,5.52325 -4,6.90625 l 0,4.40625 c 4.652,-1.652 8,-6.0935 8,-11.3125 0,-6.172 -4.66825,-11.23425 -10.65625,-11.90625 z"
        id="rect4500" />
     <path
        id="path57"
        d="m 20,12.683 c -4.652,1.652001 -8,6.094001 -8,11.313001 0,6.168 4.668,11.234 10.656,11.906002 l -3.156,-2.406002 2.125,-1.875 c -3.258,-1.012 -5.625,-4.04 -5.625,-7.625 0,-2.957 1.612999,-5.52 4,-6.906"
        inkscape:connector-curvature="0"
-       style="fill:#0cb472;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#169aa9;fill-opacity:1;fill-rule:nonzero;stroke:none"
        sodipodi:nodetypes="cscccsc" />
     <path
        id="path59"
        d="M 21,10.000001 27,14.5 21,20.000001 m 0,-10"
        inkscape:connector-curvature="0"
-       style="fill:#0cb472;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+       style="fill:#169aa9;fill-opacity:1;fill-rule:nonzero;stroke:none" />
     <path
        id="path61"
        d="m 27,38.000002 -6,-4.500001 6,-5.5 m 0,10.000001"
        inkscape:connector-curvature="0"
-       style="fill:#13a7e2;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+       style="fill:#f77c35;fill-opacity:1;fill-rule:nonzero;stroke:none" />
   </g>
 </svg>
