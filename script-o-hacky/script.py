@@ -36,9 +36,9 @@ def darken(code):
 		b_hex = hex(b2_var)[2:]
 	return r_hex+g_hex+b_hex # the lighter code
 
-for symbol in listdir("symbols-android/")+listdir("symbols-desktop/"):
+for symbol in listdir("symbols-android/"):
 	print("Making "+symbol)
-	now_sym = [line for line in open("symbols/"+symbol, 'r')]
+	now_sym = [line for line in open("symbols-android/"+symbol, 'r')]
 	light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
 	copy2("background.svg", "background.svg.tmp")
 	f1 = open("background.svg.tmp", "r")
@@ -47,6 +47,21 @@ for symbol in listdir("symbols-android/")+listdir("symbols-desktop/"):
 		f2.write(line.replace('color:#ffffff', 'color:#'+light_rgb).replace('color:#000000', 'color:#'+darken(light_rgb)))
 	f1.close()
 	f2.close()
-	copy2("symbols/"+symbol, "input/symbols/"+symbol)
+	copy2("symbols-android/"+symbol, "input/symbols/"+symbol)
+	system("./numix-kit -t circle")
+	remove("input/symbols/"+symbol)
+
+for symbol in listdir("symbols-desktop/"):
+	print("Making "+symbol)
+	now_sym = [line for line in open("symbols-desktop/"+symbol, 'r')]
+	light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
+	copy2("background.svg", "background.svg.tmp")
+	f1 = open("background.svg.tmp", "r")
+	f2 = open("/home/josh/Programs/Icons/Numix/script-o/input/templates/circle/background.svg", "w")
+	for line in f1:
+		f2.write(line.replace('color:#ffffff', 'color:#'+light_rgb).replace('color:#000000', 'color:#'+darken(light_rgb)))
+	f1.close()
+	f2.close()
+	copy2("symbols-desktop/"+symbol, "input/symbols/"+symbol)
 	system("./numix-kit -t circle")
 	remove("input/symbols/"+symbol)
