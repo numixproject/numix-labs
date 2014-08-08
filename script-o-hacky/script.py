@@ -36,32 +36,44 @@ def darken(code):
 		b_hex = hex(b2_var)[2:]
 	return r_hex+g_hex+b_hex # the lighter code
 
-for symbol in listdir("symbols-android/"):
-	print("Making "+symbol)
-	now_sym = [line for line in open("symbols-android/"+symbol, 'r')]
-	light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
-	copy2("background.svg", "background.svg.tmp")
-	f1 = open("background.svg.tmp", "r")
-	f2 = open("/home/josh/Programs/Icons/Numix/script-o/input/templates/circle/background.svg", "w")
-	for line in f1:
-		f2.write(line.replace('color:#ffffff', 'color:#'+light_rgb).replace('color:#000000', 'color:#'+darken(light_rgb)))
-	f1.close()
-	f2.close()
-	copy2("symbols-android/"+symbol, "input/symbols/"+symbol)
-	system("./numix-kit -t circle")
-	remove("input/symbols/"+symbol)
-
-for symbol in listdir("symbols-desktop/"):
-	print("Making "+symbol)
-	now_sym = [line for line in open("symbols-desktop/"+symbol, 'r')]
-	light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
-	copy2("background.svg", "background.svg.tmp")
-	f1 = open("background.svg.tmp", "r")
-	f2 = open("/home/josh/Programs/Icons/Numix/script-o/input/templates/circle/background.svg", "w")
-	for line in f1:
-		f2.write(line.replace('color:#ffffff', 'color:#'+light_rgb).replace('color:#000000', 'color:#'+darken(light_rgb)))
-	f1.close()
-	f2.close()
-	copy2("symbols-desktop/"+symbol, "input/symbols/"+symbol)
-	system("./numix-kit -t circle")
-	remove("input/symbols/"+symbol)
+for template in listdir("input/templates/"):
+	# Android Themes
+	if "android" in template:
+		for symbol in listdir("input/symbols-android/"):
+			try:
+				print("Making "+symbol)
+				now_sym = [line for line in open("input/symbols-android/"+symbol, 'r')]
+				light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
+				copy2("input/templates/"+template+"/gradient.svg", "input/templates/"+template+"/gradient.svg.tmp")
+				f1 = open("input/templates/"+template+"/gradient.svg.tmp", "r")
+				f2 = open("input/templates/"+template+"/background.svg", "w")
+				for line in f1:
+					f2.write(line.replace('color:#ffffff', 'color:#'+light_rgb).replace('color:#000000', 'color:#'+darken(light_rgb)))
+				f1.close()
+				f2.close()
+				copy2("input/symbols-android/"+symbol, "input/symbols/"+symbol)
+				system("./numix-kit -t {0}".format(template))
+				remove("input/symbols/"+symbol)
+			except:
+				print(symbol+" caused an error!")
+				copy2("input/symbols-android/"+symbol, "input/symbols-errors/"+symbol)
+	# Desktop Themes
+	elif "desktop" in template:
+		for symbol in listdir("input/symbols-desktop/"):
+			try:
+				print("Making "+symbol)
+				now_sym = [line for line in open("input/symbols-desktop/"+symbol, 'r')]
+				light_rgb = now_sym[0].split(" -->")[0].replace("<!-- color: #","")
+				copy2("input/templates/"+template+"/gradient.svg", "input/templates/"+template+"/gradient.svg.tmp")
+				f1 = open("input/templates/"+template+"/gradient.svg.tmp", "r")
+				f2 = open("input/templates/"+template+"/background.svg", "w")
+				for line in f1:
+					f2.write(line.replace('color:#ffffff', 'color:#'+light_rgb).replace('color:#000000', 'color:#'+darken(light_rgb)))
+				f1.close()
+				f2.close()
+				copy2("input/symbols-desktop/"+symbol, "input/symbols/"+symbol)
+				system("./numix-kit -t {0}".format(template))
+				remove("input/symbols/"+symbol)
+			except:
+				print(symbol+" caused an error!")
+				copy2("input/symbols-desktop/"+symbol, "input/symbols-errors/"+symbol)

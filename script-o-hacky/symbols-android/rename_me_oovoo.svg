@@ -1,8 +1,0 @@
-<!-- color: #fa930d -->
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
- <path d="M 24 0 L 24 24 L 48 24 L 48 0 L 24 0 z " fill="#faa114" fill-rule="evenodd"/>
- <path d="M 24 24 L 24 48 L 48 48 L 48 24 L 24 24 z " fill="#fa910a" fill-rule="evenodd"/>
- <path d="M 0 24 L 0 48 L 24 48 L 24 24 L 0 24 z " fill="#faa114" fill-rule="evenodd"/>
- <path d="M 0 0 L 0 24 L 24 24 L 24 0 L 0 0 z " fill="#fa910a" fill-rule="evenodd"/>
- <path d="M 19,36 29,36 35,14.183594 31,12 24,31 17,12 13,14.183594 z m 0,0" fill="#f8f8f8"/>
-</svg>

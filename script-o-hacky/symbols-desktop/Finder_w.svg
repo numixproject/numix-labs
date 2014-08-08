@@ -1,7 +1,0 @@
-<!-- color: #6391c5 -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 48 48" version="1.1">
-<g id="surface1">
-<path style=" stroke:none;fill-rule:evenodd;fill:rgb(78.039216%,83.921569%,92.54902%);fill-opacity:1;" d="M 21 0 C 21 5.421875 21 26 21 26 L 28 26 L 28 48 C 31 48 45 48 48 48 C 48 44 48 4.363281 48 0 C 37.449219 0 30 0 21 0 M 21 0 "/>
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(17.647059%,17.647059%,17.647059%);fill-opacity:1;" d="M 20 0 L 20 27 L 27 27 L 27 48 C 28 48 28 48 29 48 L 29 25 L 22 25 L 22 0 C 21 0 21 0 20 0 M 20 0 "/>
-</g>
-</svg>

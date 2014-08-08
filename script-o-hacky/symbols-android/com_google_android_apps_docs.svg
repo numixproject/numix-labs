@@ -1,8 +1,0 @@
-<!-- color: #4c4c4c -->
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
- <g>
-  <path d="M 19.667969 26.667969 L 37 26.667969 L 32.667969 34 L 15.332031 34 Z M 19.667969 26.667969 " fill="#3f86fb" fill-rule="evenodd"/>
-  <path d="M 37 26.667969 L 28.332031 12 L 19.667969 12 L 28.332031 26.667969 Z M 37 26.667969 " fill="#fbcf4b" fill-rule="evenodd"/>
-  <path d="M 15.332031 34 L 24 19.332031 L 19.667969 12 L 11 26.667969 Z M 15.332031 34 " fill="#0aa35f" fill-rule="evenodd"/>
- </g>
-</svg>
