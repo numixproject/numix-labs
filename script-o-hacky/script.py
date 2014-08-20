@@ -2,7 +2,7 @@
 
 from os import listdir, system, remove, rename
 from colorsys import rgb_to_hls, hls_to_rgb
-from shutil import copy2
+from shutil import copy2, move
 
 def darken(code):
 	rgb_hex = str(code).lower().strip()	
@@ -54,9 +54,10 @@ for template in listdir("input/templates/"):
 				copy2("input/symbols-android/"+symbol, "input/symbols/"+symbol)
 				system("./numix-kit -t {0}".format(template))
 				remove("input/symbols/"+symbol)
+				move("input/symbols-android/"+symbol, "output/symbols-android"+symbol)
 			except:
 				print(symbol+" caused an error!")
-				copy2("input/symbols-android/"+symbol, "input/symbols-errors/"+symbol)
+				move("input/symbols-android/"+symbol, "input/symbols-errors/"+symbol)
 	# Desktop Themes
 	elif "desktop" in template:
 		for symbol in listdir("input/symbols-desktop/"):
@@ -74,6 +75,7 @@ for template in listdir("input/templates/"):
 				copy2("input/symbols-desktop/"+symbol, "input/symbols/"+symbol)
 				system("./numix-kit -t {0}".format(template))
 				remove("input/symbols/"+symbol)
+				move("input/symbols-desktop/"+symbol, "output/symbols-desktop"+symbol)
 			except:
 				print(symbol+" caused an error!")
-				copy2("input/symbols-desktop/"+symbol, "input/symbols-errors/"+symbol)
+				move("input/symbols-desktop/"+symbol, "input/symbols-errors/"+symbol)
