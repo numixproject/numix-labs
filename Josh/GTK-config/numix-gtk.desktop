@@ -1,0 +1,8 @@
+[Desktop Entry]
+Categories=Utility;
+Type=Application
+Exec=gtk-theme-config
+Name=Numix GTK Config
+GenericName=GTK Theme Config
+Icon=numix
+Keywords=Numix;GTK;config;theme;
