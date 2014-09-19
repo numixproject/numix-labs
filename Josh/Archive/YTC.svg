@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" viewBox="0 0 13.546667 13.546667" height="48">
+ <defs>
+  <clipPath>
+   <path d="m 489.217,197.275 c -2.603,0 -3.953,-1.367 -3.953,-3.971 l 0,0 0,-1.034 c 0,-2.604 1.35,-3.971 3.953,-3.971 l 0,0 1.035,0 c 2.62,0 3.97,1.367 3.97,3.971 l 0,0 0,1.034 c 0,2.604 -1.35,3.971 -3.97,3.971 l 0,0 -1.035,0 z"/>
+  </clipPath>
+  <linearGradient id="0">
+   <stop stop-color="#620000"/>
+   <stop offset="1" stop-color="#dd0f0f"/>
+  </linearGradient>
+  <clipPath>
+   <rect y="223" x="307" height="42" width="42" transform="matrix(0,1,-1,0,0,0)" fill="url(#1)" color="#bebebe" rx="9"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.175,0,0,0.175,302.79999,215.99997)" y1="280" x2="0" y2="40"/>
+  <clipPath>
+   <rect y="85" x="433" height="22" width="22" fill="url(#2)" color="#bebebe" rx="4"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="2" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0875,0,0,0.0875,430.9,81.499996)" y1="291.43" x2="0" y2="40"/>
+  <clipPath>
+   <rect width="30" height="30" x="433" y="37" fill="url(#3)" color="#bebebe" rx="6"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="3" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.11931818,0,0,0.11931818,430.13636,32.227267)" y1="291.43" x2="0" y2="40"/>
+  <clipPath>
+   <rect width="16" height="16" x="304" y="212" transform="matrix(0,1,-1,0,0,0)" fill="url(#4)" color="#bebebe" rx="3"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.06666667,0,0,0.06666667,302.4,209.33333)" y1="280" x2="0" y2="40"/>
+  <clipPath>
+   <rect y="46" x="34" height="220" width="220" fill="url(#5)" color="#bebebe" rx="50"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="5" gradientUnits="userSpaceOnUse" gradientTransform="translate(0,-4)" y1="280" x2="0" y2="40"/>
+  <clipPath>
+   <rect y="142" x="290" height="60" width="60" fill="url(#6)" color="#bebebe" rx="12.5"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="6" gradientUnits="userSpaceOnUse" y1="204" x2="0" y2="140"/>
+  <clipPath>
+   <rect width="88" height="88" x="292" y="32" fill="url(#7)" color="#bebebe" rx="18"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="7" gradientUnits="userSpaceOnUse" y1="124" x2="0" y2="28"/>
+  <clipPath>
+   <rect y="101" x="417" height="22" width="22" fill="url(#8)" color="#bebebe" rx="5"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="8" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0875,0,0,0.0875,414.9,97.5)" y1="302.86" x2="0" y2="28.571"/>
+  <clipPath>
+   <rect width="30" height="30" x="417" y="53" fill="url(#9)" color="#bebebe" rx="7"/>
+  </clipPath>
+  <linearGradient xlink:href="#0" id="9" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.11931818,0,0,0.11931818,414.13636,48.22727)" y1="299.81" x2="0" y2="31.619"/>
+  <use id="A" opacity="0.2" fill="#ffffff" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#A" transform="matrix(8,0,0,8,-2141.5757,-54.424243)"/>
+  </clipPath>
+  <clipPath>
+   <use xlink:href="#A"/>
+  </clipPath>
+  <use id="B" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#B"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#B"/>
+  </clipPath>
+  <use id="C" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#C"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#C"/>
+  </clipPath>
+  <use id="D" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#D"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#D"/>
+  </clipPath>
+  <use id="E" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#E"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#E"/>
+  </clipPath>
+  <use id="F" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#F"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#F"/>
+  </clipPath>
+  <use id="G" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#G"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#G"/>
+  </clipPath>
+  <use id="H" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#H"/>
+  </clipPath>
+  <clipPath>
+   <rect y="223" x="307" height="42" width="42" transform="matrix(0,1,-1,0,0,0)" fill="url(#1)" color="#bebebe" rx="9"/>
+  </clipPath>
+  <clipPath>
+   <rect y="85" x="433" height="22" width="22" fill="url(#2)" color="#bebebe" rx="4"/>
+  </clipPath>
+  <clipPath>
+   <rect width="30" height="30" x="433" y="37" fill="url(#3)" color="#bebebe" rx="6"/>
+  </clipPath>
+  <clipPath>
+   <rect width="16" height="16" x="304" y="212" transform="matrix(0,1,-1,0,0,0)" fill="url(#4)" color="#bebebe" rx="3"/>
+  </clipPath>
+  <clipPath>
+   <rect y="46" x="34" height="220" width="220" fill="url(#5)" color="#bebebe" rx="50"/>
+  </clipPath>
+  <clipPath>
+   <rect y="142" x="290" height="60" width="60" fill="url(#6)" color="#bebebe" rx="12.5"/>
+  </clipPath>
+  <clipPath>
+   <rect width="88" height="88" x="292" y="32" fill="url(#7)" color="#bebebe" rx="18"/>
+  </clipPath>
+  <clipPath>
+   <rect y="101" x="417" height="22" width="22" fill="url(#8)" color="#bebebe" rx="5"/>
+  </clipPath>
+  <clipPath>
+   <rect width="30" height="30" x="417" y="53" fill="url(#9)" color="#bebebe" rx="7"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#H"/>
+  </clipPath>
+  <use id="I" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#I"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#I"/>
+  </clipPath>
+  <use id="J" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#J"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#J"/>
+  </clipPath>
+  <use id="K" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#K"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#K"/>
+  </clipPath>
+  <use id="L" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#L"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#L"/>
+  </clipPath>
+  <use id="M" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#M"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#M"/>
+  </clipPath>
+  <use id="N" fill="none" xlink:href="#S"/>
+  <clipPath>
+   <use xlink:href="#N"/>
+  </clipPath>
+  <clipPath>
+   <use transform="matrix(8,0,0,8,-2141.5757,-54.424243)" xlink:href="#N"/>
+  </clipPath>
+  <clipPath>
+   <path d="m 296,26 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"/>
+  </clipPath>
+  <linearGradient gradientUnits="userSpaceOnUse" x2="0" y2="40" y1="280" xlink:href="#P" id="O" gradientTransform="matrix(.175 0 0 .175 302.79999 215.99997)"/>
+  <linearGradient id="P">
+   <stop stop-color="#151515"/>
+   <stop offset="1" stop-color="#222"/>
+  </linearGradient>
+  <linearGradient gradientUnits="userSpaceOnUse" x2="0" y2="90" y1="230" xlink:href="#P" id="Q" gradientTransform="matrix(.375 0 0 .375 298 16)"/>
+  <linearGradient gradientUnits="userSpaceOnUse" x2="0" y2="90" y1="230" xlink:href="#P" id="R" gradientTransform="matrix(.25 0 0 .25 299.99999 131.99999)"/>
+  <clipPath>
+   <rect height="20" rx="4" y="78" x="434" width="20" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="22" rx="4" y="77" x="433" width="22" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="22" rx="5" y="77" x="433" width="22" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="30" rx="6" y="29" x="433" width="30" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect transform="matrix(0 -1 1 0 0 0)" height="60" rx="12.5" y="142" x="306" width="60" fill="url(#R)" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="90" rx="18.75" y="31" x="307" width="90" fill="url(#Q)" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="30" rx="4" y="29" x="433" width="30" opacity="0.2" fill="#6d6d6d" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="22" rx="3" y="77" x="433" width="22" opacity="0.2" fill="#6d6d6d" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <path d="m 144,70 c -49.705627,0 -90,40.29437 -90,90 0,49.70563 40.294373,90 90,90 49.70563,0 90,-40.29437 90,-90 0,-49.70563 -40.29437,-90 -90,-90 z m 0,32.1875 c 32.03251,0 58,25.96748 58,58 0,32.03252 -25.96749,58 -58,58 -32.03251,0 -58,-25.96748 -58,-58 0,-32.03252 25.96749,-58 58,-58 z"/>
+  </clipPath>
+  <clipPath>
+   <path d="m 152,204 a 8,8 0 1 1 -16,0 8,8 0 1 1 16,0 z"/>
+  </clipPath>
+  <clipPath>
+   <rect height="16" rx="3" y="116" x="432" width="16" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <path d="m 145,215 c 33.13708,0 60,-26.86292 60,-60 0,-33.13708 -26.86292,-60 -60,-60 -33.13708,0 -60,26.86292 -60,60 0,12.50698 3.8285,24.10633 10.375,33.71875 L 89,211 111.28125,204.625 C 120.89367,211.1715 132.49302,215 145,215 z"/>
+  </clipPath>
+  <clipPath>
+   <path d="m 98.03125,23.191212 c -41.492132,1.05238 -74.84375,35.06824 -74.84375,76.812498 0,42.40687 34.405632,76.8125 76.8125,76.8125 42.40687,0 76.8125,-34.40563 76.8125,-76.8125 0,-42.406866 -34.40563,-76.812498 -76.8125,-76.812498 -0.662607,0 -1.310145,-0.0167 -1.96875,0 z M 100,50.659962 c 27.24464,0 49.34375,22.099114 49.34375,49.343748 -1e-5,27.24464 -22.09911,49.34375 -49.34375,49.34375 -27.244636,-1e-5 -49.34375,-22.09911 -49.34375,-49.34375 0,-27.244634 22.099114,-49.343748 49.34375,-49.343748 z"/>
+  </clipPath>
+  <clipPath>
+   <rect height="16" rx="2" y="116" x="432" width="16" opacity="0.2" fill="#6d6d6d" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect height="240" rx="50" y="36" x="24" width="240" fill="#986767" color="#bebebe"/>
+  </clipPath>
+  <clipPath>
+   <rect transform="rotate(90)" height="42" rx="9" y="223" x="307" width="42" fill="url(#O)" color="#bebebe"/>
+  </clipPath>
+  <path id="S" d="m 296,26 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z" color="#000000"/>
+ </defs>
+ <path d="M 6.7733335,0 C 3.0325247,0 0,3.0325247 0,6.7733335 c 0,3.7408085 3.0325247,6.7733335 6.7733335,6.7733335 3.7408085,0 6.7733335,-3.032525 6.7733335,-6.7733335 C 13.546667,3.0325247 10.514142,0 6.7733335,0 z m 0,0.14111112 c 3.6628755,0 6.6322225,2.96934698 6.6322225,6.63222238 0,3.6628755 -2.969347,6.6322225 -6.6322225,6.6322225 -3.6628754,0 -6.63222238,-2.969347 -6.63222238,-6.6322225 0,-3.6628754 2.96934698,-6.63222238 6.63222238,-6.63222238 z" opacity="0.1"/>
+ <path d="m 6.7733335,0.14111112 c -3.6628754,0 -6.63222238,2.96934698 -6.63222238,6.63222238 0,3.6628755 2.96934698,6.6322225 6.63222238,6.6322225 3.6628755,0 6.6322225,-2.969347 6.6322225,-6.6322225 0,-3.6628754 -2.969347,-6.63222238 -6.6322225,-6.63222238 z m 0,0.0705555 c 3.6239085,0 6.5616665,2.93775843 6.5616665,6.56166683 0,3.6239085 -2.937758,6.5616665 -6.5616665,6.5616665 -3.6239084,0 -6.56166683,-2.937758 -6.56166683,-6.5616665 0,-3.6239084 2.93775843,-6.56166683 6.56166683,-6.56166683 z" opacity="0.2"/>
+ <path d="m 13.335001,6.7733267 c 0,3.6239083 -2.937759,6.5616673 -6.5616674,6.5616673 -3.6239086,0 -6.56166686,-2.937759 -6.56166686,-6.5616673 0,-3.6239085 2.93775826,-6.5616668 6.56166686,-6.5616668 3.6239084,0 6.5616674,2.9377583 6.5616674,6.5616668 z" opacity="0.4"/>
+ <g>
+  <path d="m 13.264439,6.7733328 c 0,3.5849422 -2.906172,6.4911122 -6.4911108,6.4911122 -3.584939,0 -6.49110597,-2.90617 -6.49110597,-6.4911122 0,-3.5849415 2.90616697,-6.49111113 6.49110597,-6.49111113 3.5849388,0 6.4911108,2.90616963 6.4911108,6.49111113 z" fill="#d52a22"/>
+ </g>
+ <g>
+  <path d="m 6.8213976,4.2335415 c -0.8570104,0 -2.1232974,0.051071 -2.5023344,0.063437 -0.411684,0.03625 -0.5640777,0.057424 -0.7895527,0.2474979 -0.343552,0.3008731 -0.425066,0.8920494 -0.425066,1.7965153 l 0,0.8607882 c 0,1.0323737 0.139241,1.5568436 0.368491,1.7486876 0.264625,0.2235459 0.439102,0.2413999 0.6153195,0.2682059 0.068414,0.01 0.5525859,0.09466 2.7011002,0.09466 1.3398128,0 2.4914367,-0.06234 2.6104783,-0.0775 0.1913772,-0.023969 0.4662848,-0.0581 0.6738985,-0.2854489 0.307342,-0.3439499 0.368492,-0.9149851 0.368492,-1.7422682 l 0,-1.002789 c 0,-0.5354804 -0.03029,-1.2923047 -0.368492,-1.6091684 C 9.8175346,4.3825986 9.7237078,4.3221766 9.193559,4.2959209 9.0436276,4.2891409 7.7353057,4.2333309 6.8213976,4.2333309 z M 5.9266674,5.6444408 7.902223,6.7733297 5.9266674,7.9022185 z" fill="#f9f9f9"/>
+ </g>
+</svg>

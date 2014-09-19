@@ -1,0 +1,7 @@
+Files with substantial changes
+
+
+Addressbook
+Brasero
+Calc
+Clementine
