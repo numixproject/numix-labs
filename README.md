@@ -1,5 +1,13 @@
 # numix-kit
 
+# BUGS
+
+These things need fixing before icon making can continue:
+
+* No longer works with the librsvg tools in 14.04 (works in 14.10)
+* Needs to use recursive intersecting instead of clipping (quite a few DEs don't support clipping)
+* Native gradient support, rather than a filter layer or hacky fix
+
 ## Introduction
 
 `numix-kit` generates complete icons from predefined SVG templates and symbols.
