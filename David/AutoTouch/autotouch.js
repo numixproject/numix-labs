@@ -28,6 +28,7 @@
     technic = technic.replace(/.*<svg.*?>/, "");
     technic = technic.replace(/<\/svg>.*/, "");
     technic = technic.replace(/fill=".*?"/g, "fill=\"#fff\"");
+    technic = technic.replace(/stroke=".*?"/g, "stroke=\"#fff\"");
     var red = parseInt(color.substring(1, 3), 16);
     var green = parseInt(color.substring(3, 5), 16);
     var blue = parseInt(color.substring(5, 7), 16);

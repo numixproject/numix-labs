@@ -1,10 +1,18 @@
 #!/bin/sh
+
+# Run this script without any arguments to "uTouchify" Technic *app* icons. Run
+# it with the argument -nonapp to get a uTouch *non-app* (e.g. file type icons,
+# buttons etc.) icon from a Technic icon. If you use any other argument after
+# the command, you'll get a load of blank SVGs because of how the script works
+# (see line 15). You can do this the wrong way around and it will work - but
+# don't!
+
 if [[ `which svgcleaner-cli` ]]; then
     find . -type f -name '*.svg' -print0 | while IFS= read -r -d '' FILE; do
         echo "Optimizing $FILE"
         svgcleaner-cli "$FILE" "$FILE" --colors-to-rrggbb --convert-to-relative --compact-output --create-viewbox --merge-gradients --remove-ai-atts --remove-ai-elts --remove-corel-atts --remove-corel-elts --remove-default-atts --remove-duplicated-defs --remove-empty-containers --remove-fill-props --remove-inkscape-atts --remove-inkscape-elts --remove-invisible-elts --remove-metadata-elts --remove-msvisio-atts --remove-msvisio-elts --remove-nonsvg-elts --remove-notappl-atts --remove-outside-elts --remove-proc-instr --remove-prolog --remove-sketch-atts --remove-sketch-elts --remove-sodipodi-atts --remove-sodipodi-elts --remove-stroke-props --remove-unreferenced-ids --remove-unused-defs --remove-unused-xlinks --remove-version --rrggbb-to-rgb --trim-ids --ungroup-containers
         echo "uTouchifying $FILE"
-        cat "$FILE" | ./autotouch.js > "$FILE.new"
+        cat "$FILE" | ./autotouch$1.js > "$FILE.new"
         mv "$FILE" "$FILE.old"
         mv "$FILE.new" "$FILE"
         echo "Optimizing $FILE"
