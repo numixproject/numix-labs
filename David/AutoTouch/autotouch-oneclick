@@ -6,21 +6,22 @@
 # manually specify what to do for each folder.
 
 cd ./actions
-../autotouch-all -nonapp
-# No need for animations, really
+../autotouch-all -nonapp "."
+# No need for animations; there are only two
 cd ../apps
-../autotouch-all
+../autotouch-all "" "."
 cd ../categories
-../autotouch-all -nonapp
+../autotouch-all -nonapp "."
 cd ../devices
-../autotouch-all -nonapp
+../autotouch-all -nonapp "."
 cd ../emblems
-../autotouch-all -nonapp
+../autotouch-all -nonapp "."
 cd ../mimetypes
-../autotouch-all -nonapp
+../autotouch-all -nonapp "."
 cd ../places
-../autotouch-all -nonapp
+../autotouch-all -nonapp "."
 cd ../status
-../autotouch-all -nonapp
+../autotouch-all -nonapp "."
 cd ../
+rm */old
 echo "Finished!"
