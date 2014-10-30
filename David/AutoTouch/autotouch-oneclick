@@ -24,5 +24,5 @@ cd ../status
 ../autotouch-all -nonapp "."
 cd ../
 echo "Removing backup directories"
-rm */old
+rm -rf */old
 echo "Finished!"
