@@ -23,5 +23,6 @@ cd ../places
 cd ../status
 ../autotouch-all -nonapp "."
 cd ../
+echo "Removing backup directories"
 rm */old
 echo "Finished!"
