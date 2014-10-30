@@ -7,7 +7,7 @@ To use AutoTouch, make a folder called icons and put any SVGs into it in the for
 <!-- color: #rrggbb --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">$ICON</svg>
 ```
 
-This format is the [Numix Technicolor](https://github.com/numixproject/numix-icon-theme-technic) icon format. It means that you can automatically generate uTouch icons just by having an existing single-colored icon with a defined background color. AutoTouch will calculate the gradient and opacity of the white triangle overlay for you.
+This format is the [Numix Technicolour](https://github.com/numixproject/numix-icon-theme-technic) icon format. It means that you can automatically generate uTouch icons just by having an existing single-coloured icon with a defined background colour. AutoTouch will calculate the gradient and opacity of the white triangle overlay for you.
 
 All you need to do to run the script is:
 
