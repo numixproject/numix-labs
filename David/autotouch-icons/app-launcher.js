@@ -1,2 +1,0 @@
-bg = '#f35938';
-path = '<path d="m 12,13 6,0 0,6 -6,0 z" fill="#f9f9f9"/><path d="m 21,13 6,0 0,6 -6,0 z" fill="#f9f9f9"/><path d="m 30,13 6,0 0,6 -6,0 z" fill="#f9f9f9"/><path d="m 12,21 6,0 0,6 -6,0 z" fill="#f9f9f9"/><path d="m 21,21 6,0 0,6 -6,0 z" fill="#f9f9f9"/><path d="m 30,21 6,0 0,6 -6,0 z" fill="#f9f9f9"/><path d="m 12,29 6,0 0,5.996094 -6,0 z" fill="#f9f9f9"/><path d="m 21,29 6,0 0,5.996094 -6,0 z" fill="#f9f9f9"/><path d="m 30,29 6,0 0,5.996094 -6,0 z" fill="#f9f9f9"/>';
