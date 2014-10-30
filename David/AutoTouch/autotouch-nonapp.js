@@ -30,7 +30,7 @@
     technic = technic.replace(/<\/svg>.*/, "");
     technic = technic.replace(/fill="(#(?:[0-9a-fA-F]{3}){1,2})"/g, "fill=\"#fff\"");
     technic = technic.replace(/stroke="(#(?:[0-9a-fA-F]{3}){1,2})"/g, "stroke=\"#fff\"");
-    if (color.length === 6) {
+    if (color.length === 7) {
         var red = parseInt(color.substring(1, 3), 16);
         var green = parseInt(color.substring(3, 5), 16);
         var blue = parseInt(color.substring(5, 7), 16);
