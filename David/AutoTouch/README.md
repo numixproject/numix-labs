@@ -16,3 +16,12 @@ All you need to do to run the script is:
 2. Install the package `svgcleaner` from the AUR (you can use `yaourt`). If you don't use Arch Linux and it's not in your distro's repos, manually install the AUR package by compiling it and then extracting the resulting tar.xz into the root of your filesystem.
 
 3. Run `./autotouch-all` to automatically "uTouchify" all the icons anywhere inside the current folder. It's best to put them in a seperate icons folder, though.
+
+If you want, you can automatically generate uTouch icons from a Numix-Technic scalable directory. See the beginning of the `autotouch-oneclick` file:
+
+```
+# Put all these scripts (you don't have to include the README!) into the
+# "scalable" folder of Numix-Technic and run this script. It'll generate app
+# icons for the apps and non-app icons for the non-apps without you having to
+# manually specify what to do for each folder.
+```
