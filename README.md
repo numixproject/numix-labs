@@ -1,16 +1,15 @@
 Numix videos
 =====
-
 Sources of the videos made by The Numix Project.
 
-Available in the PPA:
+<h3> Available in the PPA: </h3>
 
-- **Introducing Numix Calculator 2.6**
+<h5> Introducing Numix Calculator 2.6 </h5>
  
 
 View it on [YouTube](https://www.youtube.com/watch?v=z_x1br-CVqY) or open the file **project.kdenlive** with [Kdenlive](https://kdenlive.org/) to see the sources.
 
-How to open the sources:
+<h3> How to open the sources: </h3>
 - Download [Kdenlive](https://kdenlive.org/);
 - Open [Kdenlive](https://kdenlive.org/);
 - Click on **Open Project**;
