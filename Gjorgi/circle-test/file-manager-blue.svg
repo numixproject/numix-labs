@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="file-manager.svg">
+   sodipodi:docname="file-manager-blue.svg">
   <metadata
      id="metadata331">
     <rdf:RDF>
@@ -40,9 +40,9 @@
      inkscape:window-height="1052"
      id="namedview329"
      showgrid="true"
-     inkscape:zoom="4.9221725"
-     inkscape:cx="11.012327"
-     inkscape:cy="27.472428"
+     inkscape:zoom="12.118768"
+     inkscape:cx="27.182104"
+     inkscape:cy="31.492059"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
@@ -58,11 +58,11 @@
     <linearGradient
        id="linearGradient4140">
       <stop
-         style="stop-color:#6e6196;stop-opacity:1;"
+         style="stop-color:#2684da;stop-opacity:1;"
          offset="0"
          id="stop4143" />
       <stop
-         style="stop-color:#847baf;stop-opacity:1;"
+         style="stop-color:#3f96e5;stop-opacity:1;"
          offset="1"
          id="stop4145" />
     </linearGradient>
