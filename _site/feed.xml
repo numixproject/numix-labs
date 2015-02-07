@@ -4,10 +4,10 @@
     <title>The Official Numix Blog</title>
     <description>The official blog of &#39;&#39;Numix Project&#39;&#39; - an open source project that is all about creating quality designed software product and artwork.Here we will post important announcements and blog about anything we feel is worthy writing about.
 </description>
-    <link>http://blog.numixproject.org//</link>
-    <atom:link href="http://blog.numixproject.org//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Feb 2015 16:52:19 +0100</pubDate>
-    <lastBuildDate>Sat, 07 Feb 2015 16:52:19 +0100</lastBuildDate>
+    <link>http://blog.numixproject.org/blog//</link>
+    <atom:link href="http://blog.numixproject.org/blog//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 07 Feb 2015 17:04:42 +0100</pubDate>
+    <lastBuildDate>Sat, 07 Feb 2015 17:04:42 +0100</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -56,8 +56,8 @@ Well, the last is kept at super secret repository, but if you know where to look
 &lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/res/blog/20150131/1.png&quot; alt=&quot;Ubuntu Numix&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 31 Jan 2015 18:00:00 +0100</pubDate>
-        <link>http://blog.numixproject.org//2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</link>
-        <guid isPermaLink="true">http://blog.numixproject.org//2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</guid>
+        <link>http://blog.numixproject.org/blog//2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org/blog//2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</guid>
         
         <category>linux</category>
         
@@ -94,8 +94,8 @@ We hope you will have enjoyable time and our blog and find it useful, informativ
 &lt;p&gt;This concludes our first post, see you all in the comments here and on various social networks and of course in the next post.&lt;/p&gt;
 </description>
         <pubDate>Fri, 30 Jan 2015 20:00:00 +0100</pubDate>
-        <link>http://blog.numixproject.org//2015/01/30/introducing-numix-blog.html</link>
-        <guid isPermaLink="true">http://blog.numixproject.org//2015/01/30/introducing-numix-blog.html</guid>
+        <link>http://blog.numixproject.org/blog//2015/01/30/introducing-numix-blog.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org/blog//2015/01/30/introducing-numix-blog.html</guid>
         
         <category>blog</category>
         
