@@ -32,25 +32,25 @@ What we introduced in the new design was **new shapes** for the folder body, **n
 
 To achieve crispy looking folder on no matter which zoom level you use your file manager, we have created all the folder icons for **all the sizes** - `16x16, 22x22, 24x24, 32x32, 48x48, 64x64, 96x96, 128x128, 256x1256`. The symbol to tile ration is identical for all the sizes and in 16x16 size we use plain orange symbolics, because these icons are too tiny to have a symbol over a tile design and are used mostly in sidebars and a symbol over a tile design would not work that well in sidebar.
 
-![](http://numixproject.github.io/res/blog/20150131/16.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/16.png)
 
-![](http://numixproject.github.io/res/blog/20150131/22.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/22.png)
 
-![](http://numixproject.github.io/res/blog/20150131/24.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/24.png)
 
-![](http://numixproject.github.io/res/blog/20150131/32.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/32.png)
 
-![](http://numixproject.github.io/res/blog/20150131/48.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/48.png)
 
-![](http://numixproject.github.io/res/blog/20150131/64.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/64.png)
 
-![](http://numixproject.github.io/res/blog/20150131/96.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/96.png)
 
-![](http://numixproject.github.io/res/blog/20150131/128.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/128.png)
 
-![](http://numixproject.github.io/res/blog/20150131/256.png)
+![](http://numixproject.github.io/blog/res/blog/20150131/256.png)
 
 
 To conclude this article we will not give you and image of a potato, but rather a screenshot of the new folders used in Ozonified Fedora 21 with Ozon GTK theme and our top secret non-uniformity apps icon.
 
-![Ubuntu Numix](http://numixproject.github.io/res/blog/20150131/1.png)
+![Ubuntu Numix](http://numixproject.github.io/blog/res/blog/20150131/1.png)

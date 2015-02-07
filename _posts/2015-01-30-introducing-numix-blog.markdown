@@ -19,6 +19,6 @@ We hope you will have enjoyable time and our blog and find it useful, informativ
 
 We also updated our main website with a link of our blog:
 
-![Numix Website Image](http://numixproject.github.io/res/blog/20150130/01.png)
+![Numix Website Image](http://numixproject.github.io/blog/res/blog/20150130/01.png)
 
 This concludes our first post, see you all in the comments here and on various social networks and of course in the next post.
