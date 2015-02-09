@@ -10,9 +10,12 @@ tags:
 
 ---
 <span style="color:#555555;">
-*In Bulgarian there is a saying "δеʒпʌатен оδяg няма", which means "there is not such thing as free lunch". If we say that this saying exists in various variations in most in not all languages, there is a good 99% chance, we won't be wrong. However as you know in the world of open source this is one of the maxims that for better or worse is not entirely true.
-We are currently in the process of, erm ... re-evaluating our monetising and general strategy on Google Play and because of that we've decided to put on a leotard and dance to rather infamous Michael Sembello song. Ok, ok, ok, not that, although that would be hilarious, just not for us. :P*</span>
+*In Bulgarian there is a saying "δеʒпʌатен оδяg няма", which means "there is not such thing as free lunch". If we say that this saying exists in various variations in most in not all languages, there is a good 99% chance, we won't be wrong. However as you know in the world of open source this is one of the maxims that for better or worse is not entirely true.*</span>
 
+<span style="color:#555555;">
+*We are currently in the process of, erm ... re-evaluating our monetising and general strategy on Google Play and because of that we've decided to put on a leotard and dance to rather infamous Michael Sembello song. Ok, ok, ok, not that, although that would be hilarious, just not for us. :P*</span>
+<br>
+<br>
 Now, cheap jokes aside - what we've really decided is to **make one of our themes free of charge.** Yes, you read that correct. One of these three themes [hexagon](https://play.google.com/store/apps/details?id=com.numix.icons_hexagon), [square](https://play.google.com/store/apps/details?id=com.numix.icons_square), [fold](https://play.google.com/store/apps/details?id=com.numix.icons_fold) will become free. 
 
 As a bonus we're giving you the **ability to choose which one will get free by voting [on this Post](https://plus.google.com/b/115833527622591803679/+NumixProjectOrg/posts/4qtP5WxnkqQ)**.
