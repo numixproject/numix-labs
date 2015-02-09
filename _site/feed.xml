@@ -4,11 +4,58 @@
     <title>The Official Numix Blog</title>
     <description>The official blog of &#39;&#39;Numix Project&#39;&#39; - an open source project that is all about creating quality designed software product and artwork.Here we will post important announcements and blog about anything we feel is worthy writing about.
 </description>
-    <link>http://blog.numixproject.org/blog//</link>
-    <atom:link href="http://blog.numixproject.org/blog//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Feb 2015 18:38:44 +0100</pubDate>
-    <lastBuildDate>Sat, 07 Feb 2015 18:38:44 +0100</lastBuildDate>
-    <generator>Jekyll v2.5.2</generator>
+    <link>http://blog.numixproject.org//blog/</link>
+    <atom:link href="http://blog.numixproject.org//blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 09 Feb 2015 17:08:37 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Feb 2015 17:08:37 +0100</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Ermahgerd, free icon theme!</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;em&gt;In Bulgarian there is a saying “δеʒпʌатен оδяg няма”, which means “there is not such thing as free lunch”. If we say that this saying exists in various variations in most in not all languages, there is a good 99% chance, we won’t be wrong. However as you know in the world of open source this is one of the maxims that for better or worse is not entirely true.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;We are currently in the process of, erm … re-evaluating our monetising and general strategy on Google Play and because of that we’ve decided to put on a leotard and dance to rather infamous Michael Sembello song. Ok, ok, ok, not that, although that would be hilarious, just not for us. :P&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Now, cheap jokes aside - what we’ve really decided is to &lt;strong&gt;make one of our themes free of charge.&lt;/strong&gt; Yes, you read that correct. One of these three themes &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_hexagon&quot;&gt;hexagon&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_square&quot;&gt;square&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_fold&quot;&gt;fold&lt;/a&gt; will become free. &lt;/p&gt;
+
+&lt;p&gt;As a bonus we’re giving you the &lt;strong&gt;ability to choose which one will get free by voting &lt;a href=&quot;&quot;&gt;on this Post&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh5.ggpht.com/d6m15TjkwW0W9kpXFaHzr_5lND6DnWSTLeG24spWam5budXXKYcPDCatPe2APW1KFBo=h900-rw&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh5.ggpht.com/Gh4qqiWfExKWHNHvpUDU_CJJ9Yx0IXJH9vDHUcGpDNgYpBlA0q2-jzODe1GC6wdz_w=h900-rw&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh3.ggpht.com/JKzSAGrWLM6jtslbCMdycD3NMvMhXGap5JhNO84vgtiJdRXrROkWcUqU77BUoFU5_g=h900-rw&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But wait, there is more&lt;/strong&gt; - the source files of the selected theme will get uploaded on GitHub under a &lt;strong&gt;Open Source license&lt;/strong&gt;. How cool is all of that, eh? Oooops, almost forgot - the selected theme will become free on &lt;strong&gt;14th of February&lt;/strong&gt;. However, you’re not getting a plush teddy bear and a box a chocolates with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+For we started the article with a maxima, allow us to finish it with one. Way back in the day Niccolo Machiavelli - an Italian historian, politician, diplomat, philosopher, humanist, and writer become associated with the saying “the end justifies the means” and we can it is somewhat applicable to our strategy re-evaluation when it comes to Google Play. Don’t worry, we’re not doing anything evil or illegal, but rather simply rolling out ads for our Android apps. Our &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.numixproject.torch&quot;&gt;Torch App&lt;/a&gt; came with ads build in, which you can remove by tapping the remove ads button and chucking some Money at our screens. Our &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.calculator&quot;&gt;base and free Calculator app&lt;/a&gt; got an update, which introduced ads on exiting the preferences pane, which you can avoid by buying the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.calculator_pro&quot;&gt;Pro version&lt;/a&gt;, which also comes with plenty of other neat features. Our Hermes app will also come with ads, which you will be able remove for some price, which is an action that will also grant you access to pro features like additional themes and more.
+The &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_circle&quot;&gt;Circle Icon Theme&lt;/a&gt; also got ads. On that note - the theme that gets free of charge will be the next product in the Numix Android line to get ads. Don’t worry, the ads will only show up within the app from which you apply the theme and not anywhere else, so the chances are you might not even notice them much.
+Now dearies, go and vote.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.gretchenrubin.com/wp-content/uploads/2014/06/freebutton-300x299.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Jan 2015 18:00:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/01/31/free-icon-pack.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/01/31/free-icon-pack.html</guid>
+        
+        <category>android</category>
+        
+        <category>icons</category>
+        
+        <category>icon pack</category>
+        
+        <category>giveaway</category>
+        
+        
+      </item>
     
       <item>
         <title>Folders, folders, folders, they are ready for your love</title>
@@ -56,8 +103,8 @@ Well, the last is kept at super secret repository, but if you know where to look
 &lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/1.png&quot; alt=&quot;Ubuntu Numix&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 31 Jan 2015 18:00:00 +0100</pubDate>
-        <link>http://blog.numixproject.org/blog//2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</link>
-        <guid isPermaLink="true">http://blog.numixproject.org/blog//2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</guid>
+        <link>http://blog.numixproject.org//blog/2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</guid>
         
         <category>linux</category>
         
@@ -94,8 +141,8 @@ We hope you will have enjoyable time and our blog and find it useful, informativ
 &lt;p&gt;This concludes our first post, see you all in the comments here and on various social networks and of course in the next post.&lt;/p&gt;
 </description>
         <pubDate>Fri, 30 Jan 2015 20:00:00 +0100</pubDate>
-        <link>http://blog.numixproject.org/blog//2015/01/30/introducing-numix-blog.html</link>
-        <guid isPermaLink="true">http://blog.numixproject.org/blog//2015/01/30/introducing-numix-blog.html</guid>
+        <link>http://blog.numixproject.org//blog/2015/01/30/introducing-numix-blog.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/01/30/introducing-numix-blog.html</guid>
         
         <category>blog</category>
         
