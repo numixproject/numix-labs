@@ -16,7 +16,7 @@ We are currently in the process of, erm ... re-evaluating our monetising and gen
 
 Now, cheap jokes aside - what we've really decided is to **make one of our themes free of charge.** Yes, you read that correct. One of these three themes [hexagon](https://play.google.com/store/apps/details?id=com.numix.icons_hexagon), [square](https://play.google.com/store/apps/details?id=com.numix.icons_square), [fold](https://play.google.com/store/apps/details?id=com.numix.icons_fold) will become free. 
 
-As a bonus we're giving you the **ability to choose which one will get free by voting [on this Post]()**.
+As a bonus we're giving you the **ability to choose which one will get free by voting [on this Post](https://plus.google.com/b/115833527622591803679/+NumixProjectOrg/posts/4qtP5WxnkqQ)**.
 
 <br>
 <br>
