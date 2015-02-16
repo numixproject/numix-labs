@@ -6,9 +6,48 @@
 </description>
     <link>http://blog.numixproject.org//blog/</link>
     <atom:link href="http://blog.numixproject.org//blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Feb 2015 14:46:28 +0100</pubDate>
-    <lastBuildDate>Sat, 14 Feb 2015 14:46:28 +0100</lastBuildDate>
+    <pubDate>Mon, 16 Feb 2015 17:34:43 +0100</pubDate>
+    <lastBuildDate>Mon, 16 Feb 2015 17:34:43 +0100</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Introducing the Numix Store</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;i&gt;Even if have the best product in the world, it will not sale much, unless you popularise it and provide easy way to sell it. Up until now we’ve been using the Ubuntu Software Centre to sell our GTK themes and Icon themes for Ubuntu and DeviantArt to do the same for all the other distros. However whilst dA does to job, we are well aware that it is imperfect and in all honesty it can sometimes be tricky for both us and you to use. For example there is this as frustrating as having to cope up with Elena from Vampire Diaries for 6 seasons, bug where uploading does not work from the first or the second or the third … or the etc … time. Another con from using dA is the fact you will have to buy points, with chch you can buy products. When we decided we are going to sell t-shirts too, the only solution for us was to open up our own web store.&lt;/i&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;The road to the store.&lt;/b&gt;
+We announced that we’re making a web store a while ago, but sadly we couldn’t make it as fast as we wanted to, because we didn’t have much experience with setuping opencart. Our adorable web developing hamster - &lt;a href=&quot;https://plus.google.com/107080331539861558818&quot;&gt;ahmar siddiqui&lt;/a&gt; can only work on Numix in his free time and of course there were the issues we had to fix along the road. But no matter now, the important thing is that the store is now up and buying paid Numix products is now easier than ever.&lt;/p&gt;
+
+&lt;p&gt;What about those of us who have already purchased pain Numix products from dA?
+For the time being you will still have to rely on dA, but we will do our best to fix that. Trust us, we don’t want to deal with dA anymore than you do. Perhaps we won’t that even less.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Wait! Didn’t you say something about Numix t-shirts?&lt;/b&gt;
+Damn right we did, dearies. You can order one from &lt;a href=&quot;https://numixproject.org/store/index.php?route=product/product&amp;amp;product_id=60&quot;&gt;here&lt;/a&gt;. Please note that international shipping can be costly to your destination and there is nothing we can do about that. However you’re buying something to show off with and supporting us. Of course ordering more than 1 t-shirt will not mean the shipping costs will increase.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;But there are issue with the store.&lt;/b&gt;
+Well, it would have been scary if there wasn’t. If you find an issue please &lt;a href=&quot;https://github.com/numixproject/numix-store/issues&quot;&gt;report it&lt;/a&gt; and we will do our best to fix it.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Is the store secure?&lt;/b&gt;
+Yes, it is. It is even behind a SSL certificate.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;So, where is the store?&lt;/b&gt;
+On 22 Acacia Avenue of course. :P &lt;a href=&quot;https://numixproject.org/store/&quot;&gt;Click here&lt;/a&gt; to get beamed to the location really fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-HjGTSMlmUrw/VOISkl_9XrI/AAAAAAAA-3k/zQ9nGjRiTC0/w1522-h796-no/Screenshot%2Bfrom%2B2015-02-16%2B17%3A46%3A56.png&quot; alt=&quot;Numix Store&quot; /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-biyH2tNxnS4/VOISjeF5W3I/AAAAAAAA-3Y/IH-cTurhX3A/w496-h882-no/2015%2B-%2B1.png&quot; alt=&quot;Numix Store&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Feb 2015 18:25:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/02/16/numix-store.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/02/16/numix-store.html</guid>
+        
+        <category>web</category>
+        
+        <category>store</category>
+        
+        
+      </item>
     
       <item>
         <title>Our valentine present for you - Fold icon pack for free!</title>
