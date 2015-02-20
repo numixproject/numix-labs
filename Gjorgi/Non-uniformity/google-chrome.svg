@@ -13,8 +13,8 @@
    height="48"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="chrome.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="google-chrome.svg"
    inkscape:export-filename="/home/me4oslav/Documents/Phyllo/chrome.png"
    inkscape:export-xdpi="900"
    inkscape:export-ydpi="900">
@@ -26,32 +26,37 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#333333"
+     pagecolor="#f7f7f7"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
      inkscape:window-height="1052"
      id="namedview34"
      showgrid="true"
-     inkscape:zoom="28.924023"
-     inkscape:cx="27.573737"
-     inkscape:cy="37.82594"
+     inkscape:zoom="12.588161"
+     inkscape:cx="17.974688"
+     inkscape:cy="21.230738"
      inkscape:window-x="0"
      inkscape:window-y="28"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid3772"
