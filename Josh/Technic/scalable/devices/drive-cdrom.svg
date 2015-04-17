@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 48 48"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="drive-cdrom.svg">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="998"
+     id="namedview8"
+     showgrid="true"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="12.399163"
+     inkscape:cy="16.478209"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2989" />
+  </sodipodi:namedview>
+  <path
+     style="fill:#839496;fill-opacity:1;stroke:none"
+     d="M 13 8 C 11.892 8 11 8.892 11 10 L 11 31 C 11 32.108 11.892 33 13 33 L 35 33 C 36.108 33 37 32.108 37 31 L 37 10 C 37 8.892 36.108 8 35 8 L 13 8 z M 33 28 C 33.552285 28 34 28.447715 34 29 C 34 29.552285 33.552285 30 33 30 C 32.447715 30 32 29.552285 32 29 C 32 28.447715 32.447715 28 33 28 z M 14.65625 34 C 16.120869 37.5192 19.754904 40 24 40 C 28.245096 40 31.879131 37.5192 33.34375 34 L 14.65625 34 z "
+     id="rect2991" />
+</svg>

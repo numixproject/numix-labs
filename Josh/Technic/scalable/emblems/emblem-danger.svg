@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   viewBox="0 0 48 48"
+   height="48"
+   id="svg3025"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="emblem-danger.svg">
+  <metadata
+     id="metadata3037">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3035" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3033"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3025" />
+  <path
+     style="fill:#f2000c;color:#000"
+     d="M 21.500001,9 C 20.668999,9 20,9.669 20,10.5 l 0,1.5 0,12 0,1.5 c 0,0.831 0.669,1.5 1.500001,1.5 l 1.499998,0 2.000002,0 L 26.5,27 C 27.331,27 28,26.331 28,25.5 L 28,24 28,12 28,10.5 C 28,9.669 27.288354,9.2627855 26.5,9 l -1.499999,0 -2.000002,0 z m 0,21.999999 c -0.831002,0 -1.500001,0.669 -1.500001,1.5 l 0,1.5 L 20,36 l 0,1.5 c 0,0.831 0.71164,1.237216 1.500001,1.5 l 1.499998,0 2.000002,0 L 26.5,39 c 0.831,0 1.5,-0.669 1.5,-1.5 l 0,-1.5 0,-2.000001 0,-1.5 c 0,-0.831 -0.669,-1.5 -1.5,-1.5 l -1.499999,0 -2.000002,0 z"
+     id="path3031" />
+</svg>

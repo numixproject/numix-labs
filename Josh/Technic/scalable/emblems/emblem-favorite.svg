@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   viewBox="0 0 48 48"
+   height="48"
+   id="svg3015"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="emblem-favorite.svg">
+  <metadata
+     id="metadata3027">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3025" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3023"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3015" />
+  <path
+     style="fill:#dc322f"
+     inkscape:connector-curvature="0"
+     id="path3021"
+     d="m 22.819905,37.042367 c -0.645773,-0.697413 -2.258241,-2.057031 -3.583258,-3.021373 -3.925924,-2.857266 -4.460243,-3.270771 -6.054249,-4.685312 -2.938651,-2.607797 -4.1866474,-5.227779 -4.1823707,-8.780265 0.00209,-1.734182 0.1247367,-2.402309 0.6286554,-3.42452 0.8549363,-1.734267 2.1143003,-3.022963 3.7243963,-3.811138 1.140375,-0.558234 1.702806,-0.806248 3.607155,-0.816395 1.992085,-0.01061 2.411443,0.213237 3.583259,0.833654 1.426301,0.755153 2.894367,2.369046 3.197836,3.515483 l 0.187431,0.708079 0.46222,-0.975188 c 2.611974,-5.510737 10.951091,-5.428289 13.853147,0.136967 0.920614,1.765456 1.021686,5.535145 0.20534,7.658591 -1.064892,2.769958 -3.065015,4.881723 -7.688617,8.117788 -3.032237,2.122269 -6.464037,5.333312 -6.702934,5.784307 -0.277318,0.523524 -0.01323,0.08204 -1.238011,-1.240678 z" />
+</svg>

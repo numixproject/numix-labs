@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   viewBox="0 0 48 48"
+   height="48"
+   id="svg3079"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="text-x-python.svg">
+  <metadata
+     id="metadata3097">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3095" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3093"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3079" />
+  <path
+     style="fill:#376a94"
+     d="M 8 1 C 6.9714285 1 6 1.9714285 6 3 L 6 45 C 6 45.971429 7.0285714 47 8 47 L 40 47 C 40.971429 47 42 45.971429 42 45 L 42 14 L 29 1 L 8 1 z M 24.21875 15 C 25.030182 14.996262 25.872113 15.052949 26.6875 15.1875 C 27.9756 15.400317 28.5 16.724846 28.5 18 L 28.5 23 C 28.5 24.31385 27.819732 25 26.5 25 L 21.5 25 C 19.890313 25 18.5 26.44695 18.5 28 L 18.5 31 L 17.5 31 C 16.120519 31 15.181151 29.580497 14.84375 28.1875 C 14.388609 26.316101 14.407939 25.198501 14.84375 23.40625 C 15.221569 21.842647 16.120519 21 17.5 21 L 19.5 21 L 24.5 21 L 24.5 20 L 19.5 20 L 19.5 17 C 19.5 15.64218 19.928907 15.539265 21.9375 15.1875 C 22.619334 15.0679 23.407315 15.0037 24.21875 15 z M 22.5 17 C 21.947327 17 21.5 17.447715 21.5 18 C 21.5 18.552285 21.947327 19 22.5 19 C 23.052673 19 23.5 18.552285 23.5 18 C 23.5 17.447715 23.052673 17 22.5 17 z M 29.5 20 L 30.5 20 C 31.87948 20 32.818849 21.419503 33.15625 22.8125 C 33.611391 24.683899 33.592061 25.801499 33.15625 27.59375 C 32.77843 29.157353 31.87948 30 30.5 30 L 28.5 30 L 23.5 30 L 23.5 31 L 28.5 31 L 28.5 34 C 28.5 35.35782 28.071094 35.460735 26.0625 35.8125 C 25.380667 35.9321 24.592684 35.9963 23.78125 36 C 22.969818 36.003738 22.127887 35.947051 21.3125 35.8125 C 20.024399 35.599683 19.5 34.275154 19.5 33 L 19.5 28 C 19.5 26.68615 20.180268 26 21.5 26 L 26.5 26 C 28.109687 26 29.5 24.55305 29.5 23 L 29.5 20 z M 25.5 32 C 24.947327 32 24.5 32.447715 24.5 33 C 24.5 33.552285 24.947327 34 25.5 34 C 26.052674 34 26.5 33.552285 26.5 33 C 26.5 32.447715 26.052674 32 25.5 32 z "
+     id="path3081" />
+</svg>

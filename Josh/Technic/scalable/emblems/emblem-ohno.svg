@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   viewBox="0 0 48 48"
+   height="48"
+   id="svg3035"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="emblem-ohno.svg">
+  <metadata
+     id="metadata3059">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3057" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="672"
+     inkscape:window-height="480"
+     id="namedview3055"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3035" />
+  <g
+     id="g3043"
+     style="fill:#bebebe;stroke:none">
+    <g
+       id="g3045"
+       transform="translate(-0.01036,0.53263)"
+       style="stroke:none">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3047"
+         d="m 32.510363,31.065909 a 6.448281,4.9014564 0 0 1 -12.896562,0 6.448281,4.9014564 0 1 1 12.896562,0 z"
+         style="stroke:none" />
+    </g>
+    <g
+       id="g3049"
+       transform="translate(-0.01036,0.53263)"
+       style="fill-rule:evenodd;stroke:none">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3051"
+         d="m 21.372432,14.890596 a 2.9310347,3.9211813 0 0 1 -5.862069,0 2.9310347,3.9211813 0 1 1 5.862069,0 z"
+         style="stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3053"
+         d="m 31.924144,14.890596 a 2.9310349,3.9211816 0 0 1 -5.862069,0 2.9310349,3.9211816 0 1 1 5.862069,0 z"
+         style="stroke:none" />
+    </g>
+  </g>
+</svg>

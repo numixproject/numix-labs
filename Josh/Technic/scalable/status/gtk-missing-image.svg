@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="47.5"
+   height="47.5"
+   viewBox="0 0 38 38"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="gtk-missing-image.svg">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="4.9684211"
+     inkscape:cx="23.75"
+     inkscape:cy="23.75"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     style="fill:#54cdee;fill-opacity:.298"
+     d="M 10.375 5.9375 C 7.90918 5.9375 5.9375 7.90918 5.9375 10.375 L 5.9375 37.125 C 5.9375 39.59082 7.90918 41.5625 10.375 41.5625 L 37.125 41.5625 C 39.59082 41.5625 41.5625 39.59082 41.5625 37.125 L 41.5625 10.375 C 41.5625 7.90918 39.59082 5.9375 37.125 5.9375 L 10.375 5.9375 z M 14.84375 10.375 L 32.65625 10.375 L 32.65625 26.71875 L 26.71875 26.71875 L 26.71875 28.1875 L 20.78125 28.1875 L 20.78125 20.78125 L 26.71875 20.78125 L 26.71875 16.3125 L 20.78125 16.3125 L 20.78125 17.8125 L 14.84375 17.8125 L 14.84375 10.375 z M 20.78125 31.1875 L 26.71875 31.1875 L 26.71875 37.125 L 20.78125 37.125 L 20.78125 31.1875 z "
+     transform="scale(0.8,0.8)"
+     id="path4" />
+</svg>

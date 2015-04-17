@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 48 48"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="media-optical-audio.svg">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="998"
+     id="namedview22"
+     showgrid="true"
+     inkscape:zoom="4.9166665"
+     inkscape:cx="70.231545"
+     inkscape:cy="-5.7974782"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3003" />
+  </sodipodi:namedview>
+  <path
+     inkscape:connector-curvature="0"
+     style="line-height:normal;color:#000000;fill:#d33682"
+     d="m 28.244859,9.5522003 c 0.741536,-0.1163 1.540352,-0.047 2.250556,0.294 2.840951,1.3642997 5.263846,0.3072997 5.263846,0.3072997 0,0 -1.908105,4.6184 -5.26851,4.4861 -3.175582,-0.1221 -3.648558,0.7489 -3.738276,0.8543 l 1.92657,13.3766 c 0.01377,0.091 0.03212,0.1729 0.04102,0.2629 0.300434,2.8829 -1.710367,6.1334 -4.936949,7.9886 -4.093189,2.3539 -8.921906,1.6194 -10.796745,-1.6491 -1.874738,-3.2679 -0.09462,-7.8572 3.998555,-10.2113 3.168359,-1.8216 6.779034,-1.7583 9.120251,-0.1347 l -2.083956,-13.352 -0.0691,-0.098 c 0,0 2.062961,-1.8096997 4.292613,-2.1257997 z"
+     id="path22" />
+</svg>

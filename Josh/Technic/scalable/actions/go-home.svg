@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
+   id="svg3665"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="go-home.svg">
+  <metadata
+     id="metadata3675">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3673" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3671"
+     showgrid="false"
+     inkscape:zoom="4.9166667"
+     inkscape:cx="24"
+     inkscape:cy="24"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3665" />
+  <path
+     style="fill:#b58900;fill-rule:evenodd"
+     d="M 24 4 C 12.953125 4 4 12.957031 4 24 C 4 35.046875 12.957031 44 24 44 C 35.042969 44 44 35.046875 44 24 C 44 12.957031 35.046875 4 24 4 z M 24 11.5 C 24.374023 11.5 24.751953 11.859375 25.5 12.5625 C 38.847656 22.433593 38.9375 19.691406 38.9375 22.40625 C 38.9375 23.8125 38.484375 24 34 24 L 34 34 C 34 36 34 36 32 36 L 28 36 C 26 36 26 36 26 34 L 26 26 L 22 26 L 22 34 C 22 36 22 36 20 36 L 16 36 C 14 36 14 36 14 34 L 14 24 C 9.515625 24 9.0625 23.8125 9.0625 22.40625 C 9.0625 19.699219 9.210938 22.386718 22.5 12.5625 C 23.248047 11.859375 23.625977 11.5 24 11.5 z "
+     id="path3667" />
+</svg>
