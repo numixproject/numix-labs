@@ -42,7 +42,7 @@ But enough talk about design ... for now. Next things on the list is ...
 <b>PRICING AND LICENSE:</b><br>
 Here is a funfact - Hermes with all its features is free. And we mean that both ways - as in beer and as in speech.
 Before you proceed you might as well clap a bit in front of you screen is awe of our sheer coolness. :>
-You don't have to pay us a single penny to use the app and it is GPL licensed with the code hosted in [this GitHub repo of ours](https://github.com/numixproject/org.numixproject.hermes) this github repo of ours>. You can fork it if you wish, or you can contribute by filling and fixing bugs.
+You don't have to pay us a single penny to use the app and it is GPL licensed with the code hosted in [this GitHub repo of ours](https://github.com/numixproject/org.numixproject.hermes). You can fork it if you wish, or you can contribute by filling and fixing bugs.
 But because we don't like to hide behind smoke and mirrors, we must tell you about a little catch - Hermes has ads. Now don't worry they won't really mess with your experience, we've made sure of that, so you can safely ignore them. If you however choose that you don't want them - there is a lovely "Remove ads" function in the sidebar and if you opt for it, you will have to pay us 60 cents in order to get rid of the ads. It gets better - if you choose to let them stay we still get money from Google thanks to AdSense. It is a win-win situation. Or in Bulgarian - "Въʌkът сит и агнето цяʌо."
  
 ![](http://numixproject.github.io/blog/res/blog/20150504/ads.png)
