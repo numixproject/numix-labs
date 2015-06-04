@@ -20,7 +20,10 @@ And now after this bit too long and winded introduction lets go to the actual to
 <b>THE NAME</b><br>
 You might have noticed that Hermes, just like Croma does not have the word "Numix" in its name. We figured that "Numix Hermes" and "Numix Croma" would sound just plain weird, plus there is enough Numix propaganda in the app and its play store page. :P The similarities don't end there - both names Croma is Hermes have Greek origin. Croma comes from the Greek word for colour χρώμα (chró̱ma) and Hermes (Ερμής in Greek) is the Greek god of messages, amongst other stuff like god of thieves for example. As you can imagine naming a chat app after the god of messages is only natural. And because Georgi is writing this article he insists on saying that that although he is to be blamed for Hermes, he has nothing to do with Croma name for Klaus the Hybrid (read Satyajit) named it. But enough with etymology, let's go proceed to ...
 
+<br>
+![](http://elfinspell.com/images/Hermes2C.jpg)
 <br><br>
+
 <b>MATERIAL DESIGN</b><br>
 Unless you just like Sisyphus have been tormented to roll rock in Erebus for the rest of eternity or have been living under one, you should know that since the release of Android Lollipop material design has been the talk of the down in Android design-ville. Hell, some would say that this has been the case even in general design ville. This is not really a surprise - Google are huge company (perhaps the biggest IT one out there), so their design trends are being picked by people quite fast. And there is also the fact that material design, whilst being skeumorphic by nature does not look crazy detailed is also helping. People nowadays are not the greatest fans of detailed skeuomorphism.
 We would have been fools to not follow material design guidelines in Hermes, and even bigger fools since our other apps follow them. Hermes is a maaterial designed app and it has everything you would aspect from such:
