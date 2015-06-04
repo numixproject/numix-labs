@@ -6,9 +6,115 @@
 </description>
     <link>http://blog.numixproject.org//blog/</link>
     <atom:link href="http://blog.numixproject.org//blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Feb 2015 17:34:43 +0100</pubDate>
-    <lastBuildDate>Mon, 16 Feb 2015 17:34:43 +0100</lastBuildDate>
-    <generator>Jekyll v2.2.0</generator>
+    <pubDate>Thu, 04 Jun 2015 18:18:01 +0200</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 18:18:01 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hermes - THE IRC CLIENT FOR ANDROID THAT WON&#39;T EAT YOUR CATTLE</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;b&gt;LOO … ONG INTRODUCTION&lt;/b&gt;&lt;br /&gt;
+&lt;i&gt;
+There are many definitions about what a person is and perhaps one of the most famous one is by the ancient Greek philosopher and scientist - Aristotle - “Man is by nature a social animal”. It is one of these thoughts for which one can safely say “Truer words were never spoken” and not really be wrong, because everybody communicates with other people everyday. As times comes by the way we communicate change and evolve - We started with cave paintings and grunting sounds and look at us now - we have languages, alphabets, music, complex renaissance paintings and so on and so forth … if we are to make a list this article will get longer than Leonard Cohen song. And yes, among this list is the internet.
+The simplest, even idiot proof definition of internet is that it’s a big wibbly wobbly virtual ocean filled with information. There is so much information in it, that it’s ridiculous. You can find pretty much anything in it and you can even upload information in it.  But oh wait, there is more - you can communicate with other people all over the internet. And just like the other offline methods of communication - the online internet methods develop with every clock tick sound. In the beginning the only methods of communication via the internet was a text one via a command line interface (CLI) and now we have text, audio and video communication via a graphical user interface (GUI).
+IRC is a method of online text communication and invented back in 1988 from Jarkko Oikarinen. It is extremely powerful when it comes to taking to a lot of people at once, because of its infrastructure - there are servers in which there are dedicated rooms. For example in the Freenode server we’ve created a room “#numix” in which we and community people talk about numix. In the same server there is a room “#ubuntu” in which the topic is … yeah, you are right - Ubuntu. If you want to talk with some Gnome Designers you should go to the “#gnome-design” room is the IRC GIMPNet server. And the list goes on and one. There are lots and lots of servers and in each server there are countless of rooms. However as every other thing alongside pros, IRC also has cons. You can’t upload an image or video or anything else as a matter of fact in IRC. IRC protocol also doesn’t support emoticons. Nowadays IRC is used mostly (but not only) from open source developers or as help and support chat ssystem, again for open source projects.
+And now after this bit too long and winded introduction lets go to the actual topic before you’ve forgotten what this article is supposed to be about, eh? :)&lt;/i&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;THE NAME&lt;/b&gt;&lt;br /&gt;
+You might have noticed that Hermes, just like Croma does not have the word “Numix” in its name. We figured that “Numix Hermes” and “Numix Croma” would sound just plain weird, plus there is enough Numix propaganda in the app and its play store page. :P The similarities don’t end there - both names Croma is Hermes have Greek origin. Croma comes from the Greek word for colour χρώμα (chró̱ma) and Hermes (Ερμής in Greek) is the Greek god of messages, amongst other stuff like god of thieves for example. As you can imagine naming a chat app after the god of messages is only natural. And because Georgi is writing this article he insists on saying that that although he is to be blamed for Hermes, he has nothing to do with Croma name for Klaus the Hybrid (read Satyajit) named it. But enough with etymology, let’s go proceed to …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;MATERIAL DESIGN&lt;/b&gt;&lt;br /&gt;
+Unless you just like Sisyphus have been tormented to roll rock in Erebus for the rest of eternity or have been living under one, you should know that since the release of Android Lollipop material design has been the talk of the down in Android design-ville. Hell, some would say that this has been the case even in general design ville. This is not really a surprise - Google are huge company (perhaps the biggest IT one out there), so their design trends are being picked by people quite fast. And there is also the fact that material design, whilst being skeumorphic by nature does not look crazy detailed is also helping. People nowadays are not the greatest fans of detailed skeuomorphism.
+We would have been fools to not follow material design guidelines in Hermes, and even bigger fools since our other apps follow them. Hermes is a maaterial designed app and it has everything you would aspect from such:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;dual colour scheme - primary teal and accent pink;&lt;/li&gt;
+  &lt;li&gt;material animations and elements;&lt;/li&gt;
+  &lt;li&gt;material design API and libraries;&lt;/li&gt;
+  &lt;li&gt;material notifications;&lt;/li&gt;
+  &lt;li&gt;material designed icon;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Oh because we’re cool you’ll get the same material experience on &lt;strong&gt;KitKat&lt;/strong&gt; too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/yQIMQ_bObLS3tUvwNyNhsqJp54JEu5UG5mlbQ4N8yDE8WdPYFMfVdhg7XP9CT1bcoNg=h900&quot; alt=&quot;&quot; /&gt;
+ &lt;br /&gt;&lt;br /&gt;
+But enough talk about design … for now. Next things on the list is …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;PRICING AND LICENSE:&lt;/b&gt;&lt;br /&gt;
+Here is a funfact - Hermes with all its features is free. And we mean that both ways - as in beer and as in speech.
+Before you proceed you might as well clap a bit in front of you screen is awe of our sheer coolness. :&amp;gt;
+You don’t have to pay us a single penny to use the app and it is GPL licensed with the code hosted in &lt;a href=&quot;https://github.com/numixproject/org.numixproject.hermes&quot;&gt;this GitHub repo of ours&lt;/a&gt; this github repo of ours&amp;gt;. You can fork it if you wish, or you can contribute by filling and fixing bugs.
+But because we don’t like to hide behind smoke and mirrors, we must tell you about a little catch - Hermes has ads. Now don’t worry they won’t really mess with your experience, we’ve made sure of that, so you can safely ignore them. If you however choose that you don’t want them - there is a lovely “Remove ads” function in the sidebar and if you opt for it, you will have to pay us 60 cents in order to get rid of the ads. It gets better - if you choose to let them stay we still get money from Google thanks to AdSense. It is a win-win situation. Or in Bulgarian - “Въʌkът сит и агнето цяʌо.”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150504/ads.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you know what is about to follow - the next chapter. And it is about …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;VERSATILITY AND UI SIMPLICITY&lt;/b&gt;&lt;br /&gt;
+This is it folks, dis iz tEh most important chapter of dis article, bruhs.
+The main goal we set to ourselves for Hermes was to make the client feature rich, yet easy to use. We’re doing a app, so we might as well a really nice one anyway, eh?
+In Hermes you will find pretty much everything that you’ll find in your regular desktop IRC client (or perhaps even more feature) with a simple to use interface tailored specifically for mobile devices:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSL encryption&lt;/li&gt;
+  &lt;li&gt;Server logs&lt;/li&gt;
+  &lt;li&gt;Recent rooms&lt;/li&gt;
+  &lt;li&gt;Auto-join rooms&lt;/li&gt;
+  &lt;li&gt;Server status badges;&lt;/li&gt;
+  &lt;li&gt;Messages counters;&lt;/li&gt;
+  &lt;li&gt;User authentication;&lt;/li&gt;
+  &lt;li&gt;User options like query and reply;&lt;/li&gt;
+  &lt;li&gt;And much more;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And like we said above everything is wrapped in easy to use interface. For example rooms in which you’ve been in the last three sessions are automatically displayed in the server details page so you can join them again easily. And if you want to set a room to autojoin simple tap the start next to it in the same server details page:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/LIpf-KZfVr0_IGr8XbJfMf49aTFhp4fZg02J7ewPANAjgbNyw68sRaFQLYwkLn24xD4=h900&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Oh and speaking server status badges and message counters:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/cneLAMB9kzp1wuf7hEE-PLin9QnAWNv9nIezPyfGYW7bJywINTiuGrHgZu3o8idrbDo=h900&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Want to see more? Well, give our app a whirl!
+Just three more paragraphs to go, you can read this. Up next is …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;BACKEND&lt;/b&gt;&lt;br /&gt;
+Now, because we’re not in the business of lying to you, folks, we feel obligated to say that we did not write the Hermes IRC Lib backend. We used the backend of an app called YAAIC:
+https://play.google.com/store/apps/details?id=org.yaaic
+You can find its source code on &lt;a href=&quot;https://github.com/pocmo/Yaaic&quot;&gt;GitHub&lt;/a&gt;.
+Next up is the section for which you’ve been waiting for, namely …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;DOWNLOAD&lt;/b&gt;&lt;br /&gt;
+Overall we think that despite Hermes is just in 1.0 version it is ace application. Such humbleness, eh?
+But hey, why take our word for it - go try it yourself:
+https://play.google.com/store/apps/details?id=org.numixproject.hermes
+And don’t forget to rate it (5 starts ratings are preferable :3) and report any bugs you find on its &lt;a href=&quot;https://github.com/numixproject/org.numixproject.hermes/issues&quot;&gt;issues page&lt;/a&gt;. Perhaps you might even fix an issue if you can. :)
+And thus we come to the last section which is …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;WHAT KIND OF TITLE IS THIS?!?&lt;/b&gt;&lt;br /&gt;
+Georgi insists on saying that the title is purely his fault. You see, when the Hermes was one really really really hungry baby god. So when his mother - the Titan Maia fell asleep after the birth the little bugger escaped her and went straight to eat some of Apollo sacred cattles. Because Apollo had the hots for his cows and was also somewhat of a jerk he decided to throw Hermes to Tartarus (nasty place even for immortal deities), but Hermes managed to save himself by giving Apollo the the lyre, which he invented after eating cattles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.etfroundup.com/wp-content/uploads/2014/11/thats_all_folks_wallpaper.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 May 2015 19:25:00 +0200</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/05/04/introducing-hermes-irc-client.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/05/04/introducing-hermes-irc-client.html</guid>
+        
+        <category>android</category>
+        
+        
+      </item>
     
       <item>
         <title>Introducing the Numix Store</title>
@@ -16,26 +122,26 @@
 &lt;i&gt;Even if have the best product in the world, it will not sale much, unless you popularise it and provide easy way to sell it. Up until now we’ve been using the Ubuntu Software Centre to sell our GTK themes and Icon themes for Ubuntu and DeviantArt to do the same for all the other distros. However whilst dA does to job, we are well aware that it is imperfect and in all honesty it can sometimes be tricky for both us and you to use. For example there is this as frustrating as having to cope up with Elena from Vampire Diaries for 6 seasons, bug where uploading does not work from the first or the second or the third … or the etc … time. Another con from using dA is the fact you will have to buy points, with chch you can buy products. When we decided we are going to sell t-shirts too, the only solution for us was to open up our own web store.&lt;/i&gt;
 &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;The road to the store.&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;The road to the store.&lt;/b&gt;&lt;br /&gt;
 We announced that we’re making a web store a while ago, but sadly we couldn’t make it as fast as we wanted to, because we didn’t have much experience with setuping opencart. Our adorable web developing hamster - &lt;a href=&quot;https://plus.google.com/107080331539861558818&quot;&gt;ahmar siddiqui&lt;/a&gt; can only work on Numix in his free time and of course there were the issues we had to fix along the road. But no matter now, the important thing is that the store is now up and buying paid Numix products is now easier than ever.&lt;/p&gt;
 
 &lt;p&gt;What about those of us who have already purchased pain Numix products from dA?
 For the time being you will still have to rely on dA, but we will do our best to fix that. Trust us, we don’t want to deal with dA anymore than you do. Perhaps we won’t that even less.&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;Wait! Didn’t you say something about Numix t-shirts?&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;Wait! Didn’t you say something about Numix t-shirts?&lt;/b&gt;&lt;br /&gt;
 Damn right we did, dearies. You can order one from &lt;a href=&quot;https://numixproject.org/store/index.php?route=product/product&amp;amp;product_id=60&quot;&gt;here&lt;/a&gt;. Please note that international shipping can be costly to your destination and there is nothing we can do about that. However you’re buying something to show off with and supporting us. Of course ordering more than 1 t-shirt will not mean the shipping costs will increase.&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;But there are issue with the store.&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;But there are issue with the store.&lt;/b&gt;&lt;br /&gt;
 Well, it would have been scary if there wasn’t. If you find an issue please &lt;a href=&quot;https://github.com/numixproject/numix-store/issues&quot;&gt;report it&lt;/a&gt; and we will do our best to fix it.&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;Is the store secure?&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;Is the store secure?&lt;/b&gt;&lt;br /&gt;
 Yes, it is. It is even behind a SSL certificate.&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;So, where is the store?&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;So, where is the store?&lt;/b&gt;&lt;br /&gt;
 On 22 Acacia Avenue of course. :P &lt;a href=&quot;https://numixproject.org/store/&quot;&gt;Click here&lt;/a&gt; to get beamed to the location really fast.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-HjGTSMlmUrw/VOISkl_9XrI/AAAAAAAA-3k/zQ9nGjRiTC0/w1522-h796-no/Screenshot%2Bfrom%2B2015-02-16%2B17%3A46%3A56.png&quot; alt=&quot;Numix Store&quot; /&gt;
-&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
 &lt;img src=&quot;https://lh5.googleusercontent.com/-biyH2tNxnS4/VOISjeF5W3I/AAAAAAAA-3Y/IH-cTurhX3A/w496-h882-no/2015%2B-%2B1.png&quot; alt=&quot;Numix Store&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Feb 2015 18:25:00 +0100</pubDate>
@@ -98,7 +204,7 @@ Recently we announced that on 14th February we will make one of &lt;strong&gt;ou
 &lt;em&gt;We are currently in the process of, erm … re-evaluating our monetising and general strategy on Google Play and because of that we’ve decided to put on a leotard and dance to rather infamous Michael Sembello song. Ok, ok, ok, not that, although that would be hilarious, just not for us. :P&lt;/em&gt;&lt;/span&gt;
 &lt;br /&gt;
 &lt;br /&gt;
-Now, cheap jokes aside - what we’ve really decided is to &lt;strong&gt;make one of our themes free of charge.&lt;/strong&gt; Yes, you read that correct. One of these three themes &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_hexagon&quot;&gt;hexagon&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_square&quot;&gt;square&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_fold&quot;&gt;fold&lt;/a&gt; will become free. &lt;/p&gt;
+Now, cheap jokes aside - what we’ve really decided is to &lt;strong&gt;make one of our themes free of charge.&lt;/strong&gt; Yes, you read that correct. One of these three themes &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_hexagon&quot;&gt;hexagon&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_square&quot;&gt;square&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_fold&quot;&gt;fold&lt;/a&gt; will become free.&lt;/p&gt;
 
 &lt;p&gt;As a bonus we’re giving you the &lt;strong&gt;ability to choose which one will get free by voting &lt;a href=&quot;https://plus.google.com/b/115833527622591803679/+NumixProjectOrg/posts/4qtP5WxnkqQ&quot;&gt;on this Post&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 
@@ -206,7 +312,7 @@ Well, the last is kept at super secret repository, but if you know where to look
         <title>Every story has a beginning</title>
         <description>&lt;p&gt;&lt;strong&gt;Greetings!&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;If you’re reading this, it means that we’re already dead and you’ve 3 days to save the world from Dalek invasion. Help the world, Numix users, you’re its only hope! &lt;/p&gt;
+&lt;p&gt;If you’re reading this, it means that we’re already dead and you’ve 3 days to save the world from Dalek invasion. Help the world, Numix users, you’re its only hope!&lt;/p&gt;
 
 &lt;p&gt;Ok, we are kidding, although you never know when those plungery bastards will invade us. :-)&lt;/p&gt;
 
