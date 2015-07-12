@@ -1,0 +1,8 @@
+{
+    "name": "numix-gtk-theme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shimmerproject/Numix.git",
+        "api": "github"
+    }
+}
