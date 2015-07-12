@@ -8,7 +8,7 @@ class Spec {
 
         this._data = [];
 
-        let lines = content.toString().split("\n");
+        let lines = content.split("\n");
 
         for (let line of lines) {
             let matched = line.match(/(^[A-Z][a-zA-Z]+)(:\s*)(.+)/);
