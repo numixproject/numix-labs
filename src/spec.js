@@ -28,6 +28,8 @@ class Spec {
                         separator: "\n",
                         type: "section"
                     });
+
+                    continue;
                 }
 
                 let last = this._data[this._data.length - 1];
