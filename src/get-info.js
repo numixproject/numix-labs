@@ -2,7 +2,7 @@ import fs from "fs";
 
 export default function(name) {
     return new Promise((resolve, reject) => {
-        fs.readFile(__dirname + "/../data/" + name + ".json", function(err, data) {
+        fs.readFile(__dirname + "/../data/" + name + ".json", (err, data) => {
             if (err) {
                 reject(err);
             } else {

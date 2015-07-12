@@ -6,16 +6,12 @@ export default function(path) {
             host: "api.github.com",
             path: path,
             headers: { "user-agent": "node" }
-        }, function(res) {
+        }, res => {
             let body = "";
 
-            res.on("data", function(chunk) {
-                body += chunk;
-            });
+            res.on("data", chunk => body += chunk);
 
-            res.on("end", function() {
-                resolve(JSON.parse(body));
-            });
+            res.on("end", () => resolve(JSON.parse(body)));
         }).on("error", reject);
     });
 }
