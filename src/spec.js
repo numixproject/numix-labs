@@ -1,4 +1,4 @@
-const sections = [ "prep", "build", "install", "clean", "pre", "post", "preun", "postun", "files", "changelog" ];
+const sections = [ "description", "prep", "build", "install", "clean", "pre", "post", "preun", "postun", "files", "changelog" ];
 
 class Spec {
     constructor(content) {
