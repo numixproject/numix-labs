@@ -34,8 +34,8 @@ class Spec {
 
                 let last = this._data[this._data.length - 1];
 
-                if (last && last.type === "section") {
-                    last.value += "\n" + line;
+                if (last && (last.type === "section" || last.type === "raw")) {
+                    last.value += line + "\n";
                 } else {
                     this._data.push({
                         value: line,
@@ -71,7 +71,7 @@ class Spec {
             if (item.type === "raw") {
                 raw += item.value;
             } else {
-                raw += item.key + item.separator + item.value;
+                raw += item.key + item.separator + item.value.replace(/\n$/, "");
             }
 
             raw += "\n";
