@@ -7,7 +7,7 @@ Summary:    %{theme} GTK theme for Gnome, Xfce and Openbox
 Group:      User Interface/Desktops
 
 License:    GPL-3
-URL:        http://fav.me/d5ygul6
+URL:        https://github.com/shimmerproject/Numix
 
 Source0:    %{theme}-%{version}.tar.gz
 
