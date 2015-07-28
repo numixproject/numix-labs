@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkWindow" id="window">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkBox" id="mainbox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkImage" id="preview">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_left">75</property>
+            <property name="margin_right">75</property>
+            <property name="margin_top">25</property>
+            <property name="margin_bottom">25</property>
+            <property name="stock">gtk-directory</property>
+            <property name="icon_size">5</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="varbox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_top">25</property>
+            <property name="margin_bottom">25</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkComboBoxText" id="colorlist">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="has_default">True</property>
+                <property name="margin_left">25</property>
+                <property name="margin_right">25</property>
+                <items>
+                  <item translatable="yes">Style 1</item>
+                  <item translatable="yes">Style 2</item>
+                  <item translatable="yes">Style 3</item>
+                  <item translatable="yes">Style 4</item>
+                  <item translatable="yes">Style 5</item>
+                  <item translatable="yes">Style 6</item>
+                </items>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="stylelist">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="has_default">True</property>
+                <property name="margin_left">25</property>
+                <property name="margin_right">25</property>
+                <items>
+                  <item translatable="yes">Blue</item>
+                  <item translatable="yes">Brown</item>
+                  <item translatable="yes">Green</item>
+                  <item translatable="yes">Grey</item>
+                  <item translatable="yes">Orange</item>
+                  <item translatable="yes">Pink</item>
+                  <item translatable="yes">Purple</item>
+                  <item translatable="yes">Red</item>
+                  <item translatable="yes">Yellow</item>
+                  <item translatable="yes">Style 1</item>
+                  <item translatable="yes">Style 2</item>
+                  <item translatable="yes">Style 3</item>
+                  <item translatable="yes">Style 4</item>
+                  <item translatable="yes">Style 5</item>
+                  <item translatable="yes">Style 6</item>
+                </items>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="colorbox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_top">25</property>
+            <property name="margin_bottom">25</property>
+            <child>
+              <object class="GtkEntry" id="hex1">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="margin_left">25</property>
+                <property name="margin_right">25</property>
+                <property name="width_chars">7</property>
+                <property name="text" translatable="yes">#111111</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="hex2">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="margin_left">25</property>
+                <property name="margin_right">25</property>
+                <property name="width_chars">7</property>
+                <property name="text" translatable="yes">#222222</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="hex3">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="margin_left">25</property>
+                <property name="margin_right">25</property>
+                <property name="width_chars">7</property>
+                <property name="text" translatable="yes">#333333</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
