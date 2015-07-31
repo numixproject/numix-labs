@@ -4,6 +4,7 @@ import logging
 import random
 import urllib
 import urllib2
+import re
 
 # for sending images
 from PIL import Image
@@ -13,13 +14,11 @@ import multipart
 from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 import webapp2
+
 import yaml
 
-stram = open("config.yaml", "r");
 
-config = yaml.load(stram)
-
-BASE_URL = 'https://api.telegram.org/bot' + config.get("bot_token") + '/'
+BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open("config.yaml", "r")).get("bot_token") + '/'
 
 
 # ================================
@@ -141,6 +140,14 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('look at the top-right corner of your screen!')
 	elif 'Who am I?' in text:
 	    reply("You are ",chat_id)
+        elif re.compile('.+(hello|hola|hi|hey)').match(text):
+            reply('Hello sweetie!')
+        elif re.compile('who\s+(r|are)\s+(u|you)').match(text):
+            reply('I am numibot, learn to love me.')
+        elif re.compile('what\s+((is\s+)?(the\s+)?)?(time)').match(text):
+            reply('Look at the top-right corner of your screen!')
+        elif re.compile('.+numix\s+(color|hex)').match(text):
+            reply('#F1544D')
         else:
             if getEnabled(chat_id):
                 try:
@@ -150,9 +157,9 @@ class WebhookHandler(webapp2.RequestHandler):
                     logging.error(err)
                     back = str(err)
                 if not back:
-                    reply('okay...')
+                    reply('Okay...')
                 elif 'I HAVE NO RESPONSE' in back:
-                    reply('you said something with no meaning')
+                    reply('I\'ve no idea what you are talking about!')
                 else:
                     reply(back)
             else:
