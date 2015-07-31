@@ -145,6 +145,24 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('Look at the top-right corner of your screen!')
         elif re.search('numix\s+(color|hex)', text, re.IGNORECASE):
             reply('#F1544D')
+        elif re.search('hates', text, re.IGNORECASE):
+            reply('No. It\'s a lie!')
+        elif re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
+            matched = re.compile('(\S+)\s+on\s+(github|gh)').match(text)
+
+            if matched:
+                groups = matched.groups()
+
+                url = 'https://api.github.com/users/{0}'.format(groups[0])
+
+                gh_response = urllib.urlopen(url)
+                gh_results = gh_response.read()
+                results = json.loads(gh_results)
+
+                if results.get('name'):
+                    reply('{0} is from {1}. He has {2} public repos and {3} public gists. {4} people follow him and he is following {5} people on GitHub.'.format(results.get('name'), results.get('location'), results.get('public_repos'), results.get('public_gists'), results.get('followers'), results.get('following')))
+                else:
+                    reply("Couldn\'t find {0}. Does he even exist?".format(groups[0]))
         else:
             if getEnabled(chat_id):
                 try:
