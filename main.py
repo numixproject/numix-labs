@@ -147,13 +147,13 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('#F1544D')
         elif re.search('hates', text, re.IGNORECASE):
             reply('No. It\'s a lie!')
-        elif re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
-            matched = re.compile('(\S+)\s+on\s+(github|gh)').match(text)
+        elif re.search('(@\S+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
+            matched = re.compile('(@\S+\s+)?(\S+)\s+on\s+(github|gh)').match(text)
 
             if matched:
                 groups = matched.groups()
 
-                url = 'https://api.github.com/users/{0}'.format(groups[0])
+                url = 'https://api.github.com/users/{0}'.format(groups[1])
 
                 gh_response = urllib.urlopen(url)
                 gh_results = gh_response.read()
@@ -162,7 +162,7 @@ class WebhookHandler(webapp2.RequestHandler):
                 if results.get('name'):
                     reply('{0} is from {1}. He has {2} public repos and {3} public gists. {4} people follow him and he is following {5} people on GitHub.'.format(results.get('name'), results.get('location'), results.get('public_repos'), results.get('public_gists'), results.get('followers'), results.get('following')))
                 else:
-                    reply("Couldn\'t find {0}. Does he even exist?".format(groups[0]))
+                    reply("Couldn\'t find {0}. Does he even exist?".format(groups[1]))
         else:
             if getEnabled(chat_id):
                 try:
