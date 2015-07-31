@@ -116,10 +116,10 @@ class WebhookHandler(webapp2.RequestHandler):
                 setEnabled(chat_id, False)
 	    elif text == '/help':
 		reply('''Current Commands:
-			1./start
-			2./stop
-			3./help(this menu)
-			4./image				
+			1. /start
+			2. /stop
+			3. /help (this menu)
+			4. /image
 				''')
 	    elif text == '/me':
                 reply('you are',chat_id)
@@ -140,10 +140,12 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('Hi Numibot here!, https://github.com/numixproject/numibot')
         elif 'what time' in text:
             reply('look at the top-right corner of your screen!')
+        elif re.compile('who\s+(r|are)\s+(u|you)').match(text):
+            reply('I am numibot, learn to love me. https://github.com/numixproject/numibot')
+        elif re.compile('who\s+(m|am)\s+i').match(text):
+    	    reply("You are ", chat_id, " ditzy!")
         elif re.compile('.+(hello|hola|hi|hey)').match(text):
             reply('Hello sweetie!')
-        elif re.compile('who\s+(r|are)\s+(u|you)').match(text):
-            reply('I am numibot, learn to love me.')
         elif re.compile('what\s+((is\s+)?(the\s+)?)?(time)').match(text):
             reply('Look at the top-right corner of your screen!')
         elif re.compile('.+numix\s+(color|hex)').match(text):
