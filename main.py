@@ -114,15 +114,13 @@ class WebhookHandler(webapp2.RequestHandler):
             elif text == '/stop':
                 reply('Bot disabled')
                 setEnabled(chat_id, False)
-	    elif text == '/help':
-		reply('''Current Commands:
-			1. /start
-			2. /stop
-			3. /help (this menu)
-			4. /image
-				''')
-	    elif text == '/me':
-                reply('you are',chat_id)
+            elif text == '/help':
+                reply('''Current Commands:
+                    1. /start
+                    2. /stop
+                    3. /help (this menu)
+                    4. /image
+                    ''')
             elif text == '/image':
                 img = Image.new('RGB', (512, 512))
                 base = random.randint(0, 16777216)
@@ -132,23 +130,21 @@ class WebhookHandler(webapp2.RequestHandler):
                 img.save(output, 'JPEG')
                 reply(img=output.getvalue())
             else:
-                reply('What command?')
+                reply('Didn\'t get you!')
 
         # CUSTOMIZE FROM HERE
 
-        elif 'who are you' in text:
-            reply('Hi Numibot here!, https://github.com/numixproject/numibot')
-        elif 'what time' in text:
-            reply('look at the top-right corner of your screen!')
-        elif re.compile('who\s+(r|are)\s+(u|you)').match(text):
+        elif re.search('who\s+(r|are)\s+(u|you)', text):
             reply('I am numibot, learn to love me. https://github.com/numixproject/numibot')
-        elif re.compile('who\s+(m|am)\s+i').match(text):
-    	    reply("You are ", chat_id, " ditzy!")
-        elif re.compile('.+(hello|hola|hi|hey)').match(text):
+        elif re.search('who\s+(m|am)\s+i', text):
+            name = fr.get('username')
+
+            reply("You are %s ditzy!" % name)
+        elif re.search('(hello|hola|hi|hey)', text):
             reply('Hello sweetie!')
-        elif re.compile('what\s+((is\s+)?(the\s+)?)?(time)').match(text):
+        elif re.search('what\s+((is\s+)?(the\s+)?)?(time)', text):
             reply('Look at the top-right corner of your screen!')
-        elif re.compile('.+numix\s+(color|hex)').match(text):
+        elif re.search('numix\s+(color|hex)', text):
             reply('#F1544D')
         else:
             if getEnabled(chat_id):
