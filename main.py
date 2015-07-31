@@ -121,6 +121,8 @@ class WebhookHandler(webapp2.RequestHandler):
 			3./help(this menu)
 			4./image				
 				''')
+	    elif text == '/me':
+                reply('you are',chat_id)
             elif text == '/image':
                 img = Image.new('RGB', (512, 512))
                 base = random.randint(0, 16777216)
@@ -138,8 +140,6 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('Hi Numibot here!, https://github.com/numixproject/numibot')
         elif 'what time' in text:
             reply('look at the top-right corner of your screen!')
-	elif 'Who am I?' in text:
-	    reply("You are ",chat_id)
         elif re.compile('.+(hello|hola|hi|hey)').match(text):
             reply('Hello sweetie!')
         elif re.compile('who\s+(r|are)\s+(u|you)').match(text):
