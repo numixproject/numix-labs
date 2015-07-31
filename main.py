@@ -134,17 +134,17 @@ class WebhookHandler(webapp2.RequestHandler):
 
         # CUSTOMIZE FROM HERE
 
-        elif re.search('who\s+(r|are)\s+(u|you)', text):
+        elif re.search('who\s+(r|are)\s+(u|you)', text, re.IGNORECASE):
             reply('I am numibot, learn to love me. https://github.com/numixproject/numibot')
-        elif re.search('who\s+(m|am)\s+i', text):
-            name = fr.get('username')
+        elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
+            username = fr.get('username')
 
-            reply("You are %s ditzy!" % name)
-        elif re.search('(hello|hola|hi|hey)', text):
+            reply("You are %s ditzy!" % username)
+        elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
             reply('Hello sweetie!')
-        elif re.search('what\s+((is\s+)?(the\s+)?)?(time)', text):
+        elif re.search('what\s+((is\s+)?(the\s+)?)?(time)', text, re.IGNORECASE):
             reply('Look at the top-right corner of your screen!')
-        elif re.search('numix\s+(color|hex)', text):
+        elif re.search('numix\s+(color|hex)', text, re.IGNORECASE):
             reply('#F1544D')
         else:
             if getEnabled(chat_id):
