@@ -115,6 +115,13 @@ class WebhookHandler(webapp2.RequestHandler):
             elif text == '/stop':
                 reply('Bot disabled')
                 setEnabled(chat_id, False)
+	    elif text == '/help':
+		reply('''Current Commands:
+			1./start
+			2./stop
+			3./help(this menu)
+			4./image				
+				''')
             elif text == '/image':
                 img = Image.new('RGB', (512, 512))
                 base = random.randint(0, 16777216)
@@ -129,9 +136,11 @@ class WebhookHandler(webapp2.RequestHandler):
         # CUSTOMIZE FROM HERE
 
         elif 'who are you' in text:
-            reply('telebot starter kit, created by yukuku: https://github.com/yukuku/telebot')
+            reply('Hi Numibot here!, https://github.com/numixproject/numibot')
         elif 'what time' in text:
             reply('look at the top-right corner of your screen!')
+	elif 'Who am I?' in text:
+	    reply("You are ",chat_id)
         else:
             if getEnabled(chat_id):
                 try:
