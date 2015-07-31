@@ -137,9 +137,7 @@ class WebhookHandler(webapp2.RequestHandler):
         elif re.search('who\s+(r|are)\s+(u|you)', text, re.IGNORECASE):
             reply('I am numibot, learn to love me. https://github.com/numixproject/numibot')
         elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
-            username = fr.get('username')
-
-            reply("You are %s ditzy!" % username)
+            reply('You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username')))
         elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
             reply('Hello sweetie!')
         elif re.search('what\s+((is\s+)?(the\s+)?)?(time)', text, re.IGNORECASE):
