@@ -115,13 +115,6 @@ class WebhookHandler(webapp2.RequestHandler):
             elif text == '/stop':
                 reply('Bot disabled')
                 setEnabled(chat_id, False)
-            elif text == '/help':
-                reply('''Current Commands:
-                    1. /start
-                    2. /stop
-                    3. /help (this menu)
-                    4. /image
-                    ''')
             elif text == '/image':
                 img = Image.new('RGB', (512, 512))
                 base = random.randint(0, 16777216)
@@ -130,8 +123,6 @@ class WebhookHandler(webapp2.RequestHandler):
                 output = StringIO.StringIO()
                 img.save(output, 'JPEG')
                 reply(img=output.getvalue())
-            else:
-                reply('Didn\'t get you!')
 
         # CUSTOMIZE FROM HERE
 
@@ -147,7 +138,7 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('#F1544D')
         elif re.search('hates', text, re.IGNORECASE):
             reply('No. It\'s a lie!')
-        elif re.search('(@\S+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
+        elif re.search('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
             matched = re.compile('(@\S+\s+)?(\S+)\s+on\s+(github|gh)').match(text)
 
             if matched:
@@ -163,6 +154,8 @@ class WebhookHandler(webapp2.RequestHandler):
                     reply('{0} is from {1}. He has {2} public repos and {3} public gists. {4} people follow him and he is following {5} people on GitHub.'.format(results.get('name'), results.get('location'), results.get('public_repos'), results.get('public_gists'), results.get('followers'), results.get('following')))
                 else:
                     reply("Couldn\'t find {0}. Does he even exist?".format(groups[1]))
+            else:
+                reply("Something is wrong, don't you think so?")
         else:
             if getEnabled(chat_id):
                 try:
