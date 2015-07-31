@@ -5,6 +5,7 @@ import random
 import urllib
 import urllib2
 import re
+import random
 
 # for sending images
 from PIL import Image
@@ -139,7 +140,7 @@ class WebhookHandler(webapp2.RequestHandler):
         elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
             reply('You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username')))
         elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
-            reply('Hello sweetie!')
+            reply('Hello {0}!'.format(random.choice([ fr.get('first_name'), fr.get('username'), 'sweetie' ])))
         elif re.search('what\s+((is\s+)?(the\s+)?)?(time)', text, re.IGNORECASE):
             reply('Look at the top-right corner of your screen!')
         elif re.search('numix\s+(color|hex)', text, re.IGNORECASE):
