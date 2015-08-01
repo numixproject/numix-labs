@@ -151,8 +151,8 @@ class WebhookHandler(webapp2.RequestHandler):
                     reply("Couldn\'t find {0}. Does he even exist?".format(name))
             else:
                 reply("Something is wrong, don't you think so?")
-        elif re.search('.*time\s+(at|in)\s+(\S+)', text, re.IGNORECASE):
-            matched = re.match('.*time\s+(at|in)\s+(\S+)', text)
+        elif re.search('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
+            matched = re.match('.*time\s+(at|in)\s+(.+)', text)
 
             if matched:
                 name = matched.groups()[1]
