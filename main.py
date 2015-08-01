@@ -6,6 +6,7 @@ import urllib
 import urllib2
 import re
 import random
+import yaml
 
 # for sending images
 from PIL import Image
@@ -16,8 +17,8 @@ from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 import webapp2
 
-import yaml
-
+import ghuser
+import timezone
 
 BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open("config.yaml", "r")).get("bot_token") + '/'
 
@@ -132,30 +133,38 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username')))
         elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
             reply('Hello {0}!'.format(random.choice([ fr.get('first_name'), fr.get('username'), 'sweetie' ])))
-        elif re.search('what\s+((is\s+)?(the\s+)?)?(time)', text, re.IGNORECASE):
-            reply('Look at the top-right corner of your screen!')
         elif re.search('numix\s+(color|hex)', text, re.IGNORECASE):
             reply('#F1544D')
         elif re.search('hates', text, re.IGNORECASE):
             reply('No. It\'s a lie!')
         elif re.search('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
-            matched = re.compile('(@\S+\s+)?(\S+)\s+on\s+(github|gh)').match(text)
+            matched = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text)
 
             if matched:
-                groups = matched.groups()
+                name = matched.groups()[1]
 
-                url = 'https://api.github.com/users/{0}'.format(groups[1])
+                result = ghuser.find(name);
 
-                gh_response = urllib.urlopen(url)
-                gh_results = gh_response.read()
-                results = json.loads(gh_results)
-
-                if results.get('name'):
-                    reply('{0} is from {1}. He has {2} public repos and {3} public gists. {4} people follow him and he is following {5} people on GitHub.'.format(results.get('name'), results.get('location'), results.get('public_repos'), results.get('public_gists'), results.get('followers'), results.get('following')))
+                if result:
+                    reply(result)
                 else:
-                    reply("Couldn\'t find {0}. Does he even exist?".format(groups[1]))
+                    reply("Couldn\'t find {0}. Does he even exist?".format(name))
             else:
                 reply("Something is wrong, don't you think so?")
+        elif re.search('.*time\s+(at|in)\s+(\S+)', text, re.IGNORECASE):
+            matched = re.match('.*time\s+(at|in)\s+(\S+)', text)
+
+            if matched:
+                name = matched.groups()[1]
+
+                result = timezone.query(name);
+
+                if result:
+                    reply(result)
+                else:
+                    reply("Where is that place, again?".format(name))
+            else:
+                reply("What, when, where?")
         else:
             if getEnabled(chat_id):
                 try:
