@@ -138,23 +138,25 @@ class WebhookHandler(webapp2.RequestHandler):
         elif re.search('hates', text, re.IGNORECASE):
             reply('No. It\'s a lie!')
         elif re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
-            name = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text).groups()[1]
+            name = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE).groups()[1]
 
-            result = ghuser.find(name.lower());
+            username = fr.get('username') if name == 'me' or name == 'Me' else name
+
+            result = ghuser.find(username);
 
             if result:
                 reply(result)
             else:
-                reply("Couldn\'t find {0}. Does he even exist?".format(name))
+                reply("Couldn\'t find {0}. Does he even exist?".format(username))
         elif re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
-            name = re.match('.*time\s+(at|in)\s+(.+)', text).groups()[1]
+            place = re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE).groups()[1]
 
-            result = timezone.query(name);
+            result = timezone.query(place);
 
             if result:
                 reply(result)
             else:
-                reply("Where is that place, again?".format(name))
+                reply("Where is that place, again?".format(place))
         else:
             if getEnabled(chat_id):
                 try:
