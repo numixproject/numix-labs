@@ -128,7 +128,7 @@ class WebhookHandler(webapp2.RequestHandler):
         # CUSTOMIZE FROM HERE
 
         elif re.search('who\s+(r|are)\s+(u|you)', text, re.IGNORECASE):
-            reply('I am numibot, learn to love me. https://github.com/numixproject/numibot')
+            reply('I am numibot, {0}. https://github.com/numixproject/numibot'.format(random.choice([ 'I know stuff', 'learn to love me' ])))
         elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
             reply('You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username')))
         elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
@@ -137,34 +137,24 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('#F1544D')
         elif re.search('hates', text, re.IGNORECASE):
             reply('No. It\'s a lie!')
-        elif re.search('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
-            matched = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text)
+        elif re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
+            name = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text).groups()[1]
 
-            if matched:
-                name = matched.groups()[1]
+            result = ghuser.find(name.lower());
 
-                result = ghuser.find(name);
-
-                if result:
-                    reply(result)
-                else:
-                    reply("Couldn\'t find {0}. Does he even exist?".format(name))
+            if result:
+                reply(result)
             else:
-                reply("Something is wrong, don't you think so?")
-        elif re.search('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
-            matched = re.match('.*time\s+(at|in)\s+(.+)', text)
+                reply("Couldn\'t find {0}. Does he even exist?".format(name))
+        elif re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
+            name = re.match('.*time\s+(at|in)\s+(.+)', text).groups()[1]
 
-            if matched:
-                name = matched.groups()[1]
+            result = timezone.query(name);
 
-                result = timezone.query(name);
-
-                if result:
-                    reply(result)
-                else:
-                    reply("Where is that place, again?".format(name))
+            if result:
+                reply(result)
             else:
-                reply("What, when, where?")
+                reply("Where is that place, again?".format(name))
         else:
             if getEnabled(chat_id):
                 try:
