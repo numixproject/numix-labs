@@ -89,9 +89,14 @@ class WebhookHandler(webapp2.RequestHandler):
 
         def reply(msg=None, img=None):
             if msg:
+                try:
+                    encoded_msg = msg.encode('utf-8')
+                except UnicodeEncodeError:
+                    encoded_msg = unicode(msg, 'utf-8').encode('utf-8')
+
                 resp = urllib2.urlopen(BASE_URL + 'sendMessage', urllib.urlencode({
                     'chat_id': str(chat_id),
-                    'text': msg.encode('utf-8'),
+                    'text': encoded_msg,
                     'disable_web_page_preview': 'true',
                     'reply_to_message_id': str(message_id),
                 })).read()
@@ -130,7 +135,12 @@ class WebhookHandler(webapp2.RequestHandler):
         elif re.search('who\s+(r|are)\s+(u|you)', text, re.IGNORECASE):
             reply('I am numibot, {0}. https://github.com/numixproject/numibot'.format(random.choice([ 'I know stuff', 'learn to love me' ])))
         elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
-            reply('You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username')))
+            try:
+                encoded_reply = 'You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username'))
+            except UnicodeEncodeError:
+                encoded_reply = 'Now I have to tell you that?'
+
+            reply(encoded_reply)
         elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
             reply('Hello {0}!'.format(random.choice([ fr.get('first_name'), fr.get('username'), 'sweetie' ])))
         elif re.search('numix\s+(color|hex)', text, re.IGNORECASE):
@@ -162,7 +172,7 @@ class WebhookHandler(webapp2.RequestHandler):
                 try:
                     resp1 = json.load(urllib2.urlopen('http://www.simsimi.com/requestChat?lc=en&ft=1.0&req=' + urllib.quote_plus(text.encode('utf-8'))))
                     back = resp1.get('res')
-                except urllib2.HTTPError, err:
+                except (urllib2.HTTPError, UnicodeEncodeError), err:
                     logging.error(err)
                     back = str(err)
                 if not back:

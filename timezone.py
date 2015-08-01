@@ -7,10 +7,13 @@ import datetime
 config = yaml.load(open('config.yaml', 'r'))
 
 GEOCODE_URL = 'https://maps.googleapis.com/maps/api/geocode/json?key=' + config.get('map_geocode_api_key')
-TIMEZONES_URL = 'https://maps.googleapis.com/maps/api/timezone/json?key=' + config.get('map_timezone_api_key')
+TIMEZONE_URL = 'https://maps.googleapis.com/maps/api/timezone/json?key=' + config.get('map_timezone_api_key')
 
 def query(name):
-    geocode = GEOCODE_URL + "&address=" + urllib.quote_plus(name)
+    try:
+        geocode = GEOCODE_URL + "&address=" + urllib.quote_plus(name.encode('utf-8'))
+    except UnicodeEncodeError:
+        geocode = GEOCODE_URL + "&address=" + urllib.quote_plus(unicode(name, 'utf-8').encode('utf-8'))
 
     geocode_results = json.loads(urllib.urlopen(geocode).read())
 
@@ -20,7 +23,7 @@ def query(name):
         address = results.get('formatted_address')
         timestamp = time.time()
 
-        timezone = TIMEZONES_URL + "&location=" + str(location.get('lat')) + ',' + str(location.get('lng')) + "&timestamp=" + str(timestamp)
+        timezone = TIMEZONE_URL + "&location=" + str(location.get('lat')) + ',' + str(location.get('lng')) + "&timestamp=" + str(timestamp)
 
         timezone_results = json.loads(urllib.urlopen(timezone).read())
 

@@ -2,7 +2,10 @@ import urllib
 import json
 
 def find(name):
-    url = 'https://api.github.com/users/{0}'.format(name)
+    try:
+        url = 'https://api.github.com/users/{0}'.format(urllib.quote_plus(name.encode('utf-8')))
+    except UnicodeDecodeError:
+        url = 'https://api.github.com/users/{0}'.format(urllib.quote_plus(unicode(name, 'utf-8').encode('utf-8')))
 
     results = json.loads(urllib.urlopen(url).read())
 
