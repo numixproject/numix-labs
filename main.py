@@ -1,15 +1,12 @@
-import StringIO
 import json
 import logging
 import random
 import urllib
 import urllib2
 import re
-import random
 import yaml
 
 # for sending images
-from PIL import Image
 import multipart
 
 # standard app engine imports
@@ -19,8 +16,10 @@ import webapp2
 
 import ghuser
 import timezone
+import color
 
 BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open("config.yaml", "r")).get("bot_token") + '/'
+NUMIX_COLOR = '#F1544D'
 
 
 # ================================
@@ -36,6 +35,7 @@ def setEnabled(chat_id, yes):
     es = EnableStatus.get_or_insert(str(chat_id))
     es.enabled = yes
     es.put()
+
 
 def getEnabled(chat_id):
     es = EnableStatus.get_by_id(str(chat_id))
@@ -121,19 +121,11 @@ class WebhookHandler(webapp2.RequestHandler):
             elif text == '/stop':
                 reply('Bot disabled')
                 setEnabled(chat_id, False)
-            elif text == '/image':
-                img = Image.new('RGB', (512, 512))
-                base = random.randint(0, 16777216)
-                pixels = [base+i*j for i in range(512) for j in range(512)]  # generate sample image
-                img.putdata(pixels)
-                output = StringIO.StringIO()
-                img.save(output, 'JPEG')
-                reply(img=output.getvalue())
 
         # CUSTOMIZE FROM HERE
 
         elif re.search('who\s+(r|are)\s+(u|you)', text, re.IGNORECASE):
-            reply('I am numibot, {0}. https://github.com/numixproject/numibot'.format(random.choice([ 'I know stuff', 'learn to love me' ])))
+            reply('I am numibot, {0}. https://github.com/numixproject/numibot'.format(random.choice(['I know stuff', 'learn to love me'])))
         elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
             try:
                 encoded_reply = 'You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username'))
@@ -142,17 +134,32 @@ class WebhookHandler(webapp2.RequestHandler):
 
             reply(encoded_reply)
         elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
-            reply('Hello {0}!'.format(random.choice([ fr.get('first_name'), fr.get('username'), 'sweetie' ])))
-        elif re.search('numix\s+(color|hex)', text, re.IGNORECASE):
-            reply('#F1544D')
-        elif re.search('hates', text, re.IGNORECASE):
-            reply('No. It\'s a lie!')
+            reply('Hello {0}!'.format(random.choice([fr.get('first_name'), fr.get('username'), 'sweetie'])))
+        elif re.match('numix\s+(color|colour|hex|red)', text, re.IGNORECASE):
+            reply(NUMIX_COLOR)
+        elif re.match('(@\S+\s+)?show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE):
+            c = re.match('(@\S+\s+)?show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE).groups()[1]
+
+            if (re.match('(color|colour)\s+(.+)', c, re.IGNORECASE)):
+                c = re.match('(color|colour)\s+(.+)', c, re.IGNORECASE).groups()[1]
+            elif (re.match('(.+)\s+(color|colour)', c, re.IGNORECASE)):
+                c = re.match('(.+)\s+(color|colour)', c, re.IGNORECASE).groups()[0]
+
+            if re.match('numix(\s+(hex|red))?', c, re.IGNORECASE):
+                c = NUMIX_COLOR
+
+            image = color.image(c)
+
+            if image:
+                reply(img=image)
+            else:
+                reply("What kind of color is that?")
         elif re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
             name = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE).groups()[1]
 
             username = fr.get('username') if name == 'me' or name == 'Me' else name
 
-            result = ghuser.find(username);
+            result = ghuser.find(username)
 
             if result:
                 reply(result)
@@ -161,7 +168,7 @@ class WebhookHandler(webapp2.RequestHandler):
         elif re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
             place = re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE).groups()[1]
 
-            result = timezone.query(place);
+            result = timezone.query(place)
 
             if result:
                 reply(result)
