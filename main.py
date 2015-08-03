@@ -159,7 +159,7 @@ class WebhookHandler(webapp2.RequestHandler):
             type = groups[0]
             c = groups[3]
 
-            val = getattr(color, 'to{0}'.format(type))(c)
+            val = getattr(color, 'to{0}'.format(type.lower()))(c)
 
             if val:
                 reply(val)
@@ -171,7 +171,7 @@ class WebhookHandler(webapp2.RequestHandler):
             c = groups[1]
             p = int(groups[2])
 
-            val = getattr(color, type)(c, p)
+            val = getattr(color, type.lower())(c, p)
 
             if val:
                 reply(val)
