@@ -137,8 +137,8 @@ class WebhookHandler(webapp2.RequestHandler):
             reply('Hello {0}!'.format(random.choice([fr.get('first_name'), fr.get('username'), 'sweetie'])))
         elif re.match('numix\s+(color|colour|hex|red)', text, re.IGNORECASE):
             reply(NUMIX_COLOR)
-        elif re.match('(@\S+\s+)?show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE):
-            c = re.match('(@\S+\s+)?show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE).groups()[1]
+        elif re.search('show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE):
+            c = re.search('show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE).groups()[0]
 
             if (re.match('(color|colour)\s+(.+)', c, re.IGNORECASE)):
                 c = re.match('(color|colour)\s+(.+)', c, re.IGNORECASE).groups()[1]
@@ -154,8 +154,31 @@ class WebhookHandler(webapp2.RequestHandler):
                 reply(img=image)
             else:
                 reply("What kind of color is that?")
-        elif re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
-            name = re.match('(@\S+\s+)?(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE).groups()[1]
+        elif re.search('(hex|rgb|hsl|hsv)\s+((of|for)\s+)?(.+)', text, re.IGNORECASE):
+            groups = re.search('(hex|rgb|hsl|hsv)\s+((of|for)\s+)?(.+)', text, re.IGNORECASE).groups()
+            type = groups[0]
+            c = groups[3]
+
+            val = getattr(color, 'to{0}'.format(type))(c)
+
+            if val:
+                reply(val)
+            else:
+                reply("I don't know dude.")
+        elif re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE):
+            groups = re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE).groups()
+            type = groups[0]
+            c = groups[1]
+            p = int(groups[2])
+
+            val = getattr(color, type)(c, p)
+
+            if val:
+                reply(val)
+            else:
+                reply("What are you telling me to do exactly?")
+        elif re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
+            name = re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE).groups()[1]
 
             username = fr.get('username') if name == 'me' or name == 'Me' else name
 
@@ -165,8 +188,8 @@ class WebhookHandler(webapp2.RequestHandler):
                 reply(result)
             else:
                 reply("Couldn\'t find {0}. Does he even exist?".format(username))
-        elif re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
-            place = re.match('.*time\s+(at|in)\s+(.+)', text, re.IGNORECASE).groups()[1]
+        elif re.search('time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
+            place = re.search('time\s+(at|in)\s+(.+)', text, re.IGNORECASE).groups()[1]
 
             result = timezone.query(place)
 
