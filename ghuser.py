@@ -1,6 +1,7 @@
 import urllib
 import json
 
+
 def find(name):
     try:
         url = 'https://api.github.com/users/{0}'.format(urllib.quote_plus(name.encode('utf-8')))

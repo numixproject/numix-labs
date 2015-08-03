@@ -17,6 +17,7 @@ import webapp2
 import ghuser
 import timezone
 import color
+import search
 
 BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open("config.yaml", "r")).get("bot_token") + '/'
 NUMIX_COLOR = '#F1544D'
@@ -133,7 +134,7 @@ class WebhookHandler(webapp2.RequestHandler):
                 encoded_reply = 'Now I have to tell you that?'
 
             reply(encoded_reply)
-        elif re.search('(hello|hola|hi|hey)', text, re.IGNORECASE):
+        elif re.search('\\b(hello|hola|hi|hey)\\b', text, re.IGNORECASE):
             reply('Hello {0}!'.format(random.choice([fr.get('first_name'), fr.get('username'), 'sweetie'])))
         elif re.match('numix\s+(color|colour|hex|red)', text, re.IGNORECASE):
             reply(NUMIX_COLOR)
@@ -196,7 +197,14 @@ class WebhookHandler(webapp2.RequestHandler):
             if result:
                 reply(result)
             else:
-                reply("Where is that place, again?".format(place))
+                reply("Where is that place, again?")
+        elif re.match('(what|who|where|why|when)\s+(is|are)\s+(.+)', text, re.IGNORECASE):
+            result = search.query(text)
+
+            if result:
+                reply(result)
+            else:
+                reply("I don't have an answer for that!")
         else:
             if getEnabled(chat_id):
                 try:
