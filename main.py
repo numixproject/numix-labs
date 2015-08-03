@@ -20,7 +20,7 @@ import color
 import search
 
 BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open('config.yaml', 'r')).get('bot_token') + '/'
-NUMIX_COLOR = '#F1544D'
+NUMIX_COLOR = '#f1544d'
 
 
 # ================================
@@ -136,10 +136,8 @@ class WebhookHandler(webapp2.RequestHandler):
             reply(encoded_reply)
         elif re.search('\\b(hello|hola|hi|hey)\\b', text, re.IGNORECASE):
             reply('Hello {0}!'.format(random.choice([fr.get('first_name'), fr.get('username'), 'sweetie'])))
-        elif re.match('numix\s+(color|colour|hex|red)', text, re.IGNORECASE):
-            reply(NUMIX_COLOR)
-        elif re.search('show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE):
-            c = re.search('show\s+(((#|(rgb|hsl)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE).groups()[0]
+        elif re.search('show\s+(((#|(rgb|hsl|hsv)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE):
+            c = re.search('show\s+(((#|(rgb|hsl|hsv)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE).groups()[0]
 
             if (re.match('(color|colour)\s+(.+)', c, re.IGNORECASE)):
                 c = re.match('(color|colour)\s+(.+)', c, re.IGNORECASE).groups()[1]
@@ -160,17 +158,25 @@ class WebhookHandler(webapp2.RequestHandler):
             type = groups[0]
             c = groups[3]
 
+            if re.match('numix(\s+(hex|red))?', c, re.IGNORECASE):
+                c = NUMIX_COLOR
+
             val = getattr(color, 'to{0}'.format(type.lower()))(c)
 
             if val:
                 reply(val)
             else:
                 reply('I don\'t know dude.')
+        elif re.search('numix\s+(color|colour|hex|red)', text, re.IGNORECASE):
+            reply(NUMIX_COLOR)
         elif re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE):
             groups = re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE).groups()
             type = groups[0]
             c = groups[1]
             p = int(groups[2])
+
+            if re.match('numix(\s+(hex|red))?', c, re.IGNORECASE):
+                c = NUMIX_COLOR
 
             val = getattr(color, type.lower())(c, p)
 
