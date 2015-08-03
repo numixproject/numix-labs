@@ -19,7 +19,7 @@ import timezone
 import color
 import search
 
-BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open("config.yaml", "r")).get("bot_token") + '/'
+BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open('config.yaml', 'r')).get('bot_token') + '/'
 NUMIX_COLOR = '#F1544D'
 
 
@@ -154,7 +154,7 @@ class WebhookHandler(webapp2.RequestHandler):
             if image:
                 reply(img=image)
             else:
-                reply("What kind of color is that?")
+                reply('What kind of color is that?')
         elif re.search('(hex|rgb|hsl|hsv)\s+((of|for)\s+)?(.+)', text, re.IGNORECASE):
             groups = re.search('(hex|rgb|hsl|hsv)\s+((of|for)\s+)?(.+)', text, re.IGNORECASE).groups()
             type = groups[0]
@@ -165,7 +165,7 @@ class WebhookHandler(webapp2.RequestHandler):
             if val:
                 reply(val)
             else:
-                reply("I don't know dude.")
+                reply('I don\'t know dude.')
         elif re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE):
             groups = re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE).groups()
             type = groups[0]
@@ -177,7 +177,7 @@ class WebhookHandler(webapp2.RequestHandler):
             if val:
                 reply(val)
             else:
-                reply("What are you telling me to do exactly?")
+                reply('What are you telling me to do exactly?')
         elif re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
             name = re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE).groups()[1]
 
@@ -188,7 +188,7 @@ class WebhookHandler(webapp2.RequestHandler):
             if result:
                 reply(result)
             else:
-                reply("Couldn\'t find {0}. Does he even exist?".format(username))
+                reply('Couldn\'t find {0}. Does he even exist?'.format(username))
         elif re.search('time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
             place = re.search('time\s+(at|in)\s+(.+)', text, re.IGNORECASE).groups()[1]
 
@@ -197,7 +197,7 @@ class WebhookHandler(webapp2.RequestHandler):
             if result:
                 reply(result)
             else:
-                reply("Where is that place, again?")
+                reply('Where is that place, again?')
         elif re.match('(@\S+\s+)?((what|who|where|why|when|how)\s+(is|are|was|were|do|did|to).+)', text, re.IGNORECASE):
             query = re.match('(@\S+\s+)?((what|who|where|why|when|how)\s+(is|are|was|were|do|did|to).+)', text, re.IGNORECASE).groups()[1]
 
@@ -206,7 +206,7 @@ class WebhookHandler(webapp2.RequestHandler):
             if result:
                 reply(result)
             else:
-                reply("I don't have an answer for that!")
+                reply('I don\'t have an answer for that!')
         else:
             if getEnabled(chat_id):
                 try:

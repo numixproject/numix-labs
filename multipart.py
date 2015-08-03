@@ -3,6 +3,7 @@ import mimetypes
 import urlparse
 import uuid
 
+
 def post_multipart(url, fields, files):
     parts = urlparse.urlparse(url)
     scheme = parts[0]
@@ -33,12 +34,12 @@ def encode_multipart_formdata(fields, files):
     L = []
     for (key, value) in fields:
         L.append('--' + LIMIT)
-        L.append('Content-Disposition: form-data; name="%s"' % key)
+        L.append('Content-Disposition: form-data; name=\'%s\'' % key)
         L.append('')
         L.append(value)
     for (key, filename, value) in files:
         L.append('--' + LIMIT)
-        L.append('Content-Disposition: form-data; name="%s"; filename="%s"' % (key, filename))
+        L.append('Content-Disposition: form-data; name=\'%s\'; filename=\'%s\'' % (key, filename))
         L.append('Content-Type: %s' % get_content_type(filename))
         L.append('')
         L.append(value)
