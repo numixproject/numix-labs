@@ -57,7 +57,7 @@ def lighten(color, percentage):
 
     if c:
         hls1 = colorsys.rgb_to_hls(c[0] / 255.0, c[1] / 255.0, c[2] / 255.0)
-        hls2 = (hls1[0], (hls1[1] + (percentage / 100)), hls1[2])
+        hls2 = (hls1[0], (hls1[1] + (percentage * 1.0 / 100)), hls1[2])
         rgb = colorsys.hls_to_rgb(hls2[0], hls2[1], hls2[2])
 
         return formathex((clamp(rgb[0] * 255.0), clamp(rgb[1] * 255.0), clamp(rgb[2] * 255.0)))
