@@ -198,8 +198,10 @@ class WebhookHandler(webapp2.RequestHandler):
                 reply(result)
             else:
                 reply("Where is that place, again?")
-        elif re.match('(what|who|where|why|when)\s+(is|are)\s+(.+)', text, re.IGNORECASE):
-            result = search.query(text)
+        elif re.match('(@\S+\s+)?((what|who|where|why|when|how)\s+(is|are|to).+)', text, re.IGNORECASE):
+            query = re.match('(@\S+\s+)?((what|who|where|why|when|how)\s+(is|are|to).+)', text, re.IGNORECASE).groups()[1]
+
+            result = search.query(query)
 
             if result:
                 reply(result)
