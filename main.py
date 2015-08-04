@@ -1,9 +1,7 @@
 import json
 import logging
-import random
 import urllib
 import urllib2
-import re
 import yaml
 
 # for sending images
@@ -14,13 +12,19 @@ from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 import webapp2
 
-import ghuser
-import timezone
-import color
-import search
+# plugins
+from plugins import intro
+from plugins import geocode
+from plugins import timezone
+from plugins import ghuser
+from plugins import showcolor
+from plugins import luminance
+from plugins import convertcolor
+from plugins import duckduckgo
+from plugins import simsimi
+
 
 BASE_URL = 'https://api.telegram.org/bot' + yaml.load(open('config.yaml', 'r')).get('bot_token') + '/'
-NUMIX_COLOR = '#f1544d'
 
 
 # ================================
@@ -70,17 +74,17 @@ class SetWebhookHandler(webapp2.RequestHandler):
 class WebhookHandler(webapp2.RequestHandler):
     def post(self):
         urlfetch.set_default_fetch_deadline(60)
+
         body = json.loads(self.request.body)
+
         logging.info('request body:')
         logging.info(body)
+
         self.response.write(json.dumps(body))
 
-        update_id = body['update_id']
         message = body['message']
         message_id = message.get('message_id')
-        date = message.get('date')
         text = message.get('text')
-        fr = message.get('from')
         chat = message['chat']
         chat_id = chat['id']
 
@@ -110,6 +114,7 @@ class WebhookHandler(webapp2.RequestHandler):
                 ])
             else:
                 logging.error('no msg or img specified')
+
                 resp = None
 
             logging.info('send response:')
@@ -123,113 +128,49 @@ class WebhookHandler(webapp2.RequestHandler):
                 reply('Goodbye, cruel world!')
                 setEnabled(chat_id, False)
 
-        # CUSTOMIZE FROM HERE
-
-        elif re.search('who\s+(r|are)\s+(u|you)', text, re.IGNORECASE):
-            reply('I am numibot, {0}. https://github.com/numixproject/numibot'.format(random.choice(['I know stuff', 'learn to love me'])))
-        elif re.search('who\s+(m|am)\s+i', text, re.IGNORECASE):
-            try:
-                encoded_reply = 'You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username'))
-            except UnicodeEncodeError:
-                encoded_reply = 'Now I have to tell you that?'
-
-            reply(encoded_reply)
-        elif re.search('\\b(hello|hola|hi|hey)\\b', text, re.IGNORECASE):
-            reply('Hello {0}!'.format(random.choice([fr.get('first_name'), fr.get('username'), 'sweetie'])))
-        elif re.search('show\s+(((#|(rgb|hsl|hsv)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE):
-            c = re.search('show\s+(((#|(rgb|hsl|hsv)\().+)|((.+\s+)?(color|colour)(\s+.+)?))', text, re.IGNORECASE).groups()[0]
-
-            if (re.match('(color|colour)\s+(.+)', c, re.IGNORECASE)):
-                c = re.match('(color|colour)\s+(.+)', c, re.IGNORECASE).groups()[1]
-            elif (re.match('(.+)\s+(color|colour)', c, re.IGNORECASE)):
-                c = re.match('(.+)\s+(color|colour)', c, re.IGNORECASE).groups()[0]
-
-            if re.match('numix(\s+(hex|red))?', c, re.IGNORECASE):
-                c = NUMIX_COLOR
-
-            image = color.image(c)
-
-            if image:
-                reply(img=image)
-            else:
-                reply('What kind of color is that?')
-        elif re.search('(hex|rgb|hsl|hsv)\s+((of|for)\s+)?(.+)', text, re.IGNORECASE):
-            groups = re.search('(hex|rgb|hsl|hsv)\s+((of|for)\s+)?(.+)', text, re.IGNORECASE).groups()
-            type = groups[0]
-            c = groups[3]
-
-            if re.match('numix(\s+(hex|red))?', c, re.IGNORECASE):
-                c = NUMIX_COLOR
-
-            val = getattr(color, 'to{0}'.format(type.lower()))(c)
-
-            if val:
-                reply(val)
-            else:
-                reply('I don\'t know dude.')
-        elif re.search('numix\s+(color|colour|hex|red)', text, re.IGNORECASE):
-            reply(NUMIX_COLOR)
-        elif re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE):
-            groups = re.search('(darken|lighten)\s+(.+[^(\s+by\s+|\s+\d])\s+[^\d]*(\d+)%?', text, re.IGNORECASE).groups()
-            type = groups[0]
-            c = groups[1]
-            p = int(groups[2])
-
-            if re.match('numix(\s+(hex|red))?', c, re.IGNORECASE):
-                c = NUMIX_COLOR
-
-            val = getattr(color, type.lower())(c, p)
-
-            if val:
-                reply(val)
-            else:
-                reply('What are you telling me to do exactly?')
-        elif re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE):
-            name = re.search('(\S+)\s+on\s+(github|gh)', text, re.IGNORECASE).groups()[1]
-
-            username = fr.get('username') if name == 'me' or name == 'Me' else name
-
-            result = ghuser.find(username)
-
-            if result:
-                reply(result)
-            else:
-                reply('Couldn\'t find {0}. Does he even exist?'.format(username))
-        elif re.search('time\s+(at|in)\s+(.+)', text, re.IGNORECASE):
-            place = re.search('time\s+(at|in)\s+(.+)', text, re.IGNORECASE).groups()[1]
-
-            result = timezone.query(place)
-
-            if result:
-                reply(result)
-            else:
-                reply('Where is that place, again?')
-        elif re.match('(@\S+\s+)?((what|who|where|why|when|how)\s+(is|are|was|were|do|did|to).+)', text, re.IGNORECASE):
-            query = re.match('(@\S+\s+)?((what|who|where|why|when|how)\s+(is|are|was|were|do|did|to).+)', text, re.IGNORECASE).groups()[1]
-
-            result = search.query(query)
-
-            if result:
-                reply(result)
-            else:
-                reply('I don\'t have an answer for that!')
         else:
-            if getEnabled(chat_id):
-                try:
-                    resp1 = json.load(urllib2.urlopen('http://www.simsimi.com/requestChat?lc=en&ft=1.0&req=' + urllib.quote_plus(text.encode('utf-8'))))
-                    back = resp1.get('res')
-                except (urllib2.HTTPError, UnicodeEncodeError), err:
-                    logging.error(err)
-                    back = str(err)
-                if not back:
-                    reply('Okay...')
-                elif 'I HAVE NO RESPONSE' in back:
-                    reply('I\'ve no idea what you are talking about!')
+
+            def query(q, m):
+                for plugin in (intro, geocode, timezone, ghuser, showcolor, luminance, convertcolor):
+                    matches = plugin.matches(q)
+
+                    if matches:
+                        try:
+                            decode = getattr(plugin, 'decode')
+                        except AttributeError:
+                            decode = False
+
+                        if decode:
+                            args = decode(text)
+
+                            if args:
+                                return plugin.query(m, *args)
+                        else:
+                            return plugin.query(m)
+
+            back = query(text, message)
+
+            if back:
+                if isinstance(back, dict):
+                    reply(back.get('text'), back.get('image'))
                 else:
                     reply(back)
             else:
-                logging.info('not enabled for chat_id {}'.format(chat_id))
+                if getEnabled(chat_id):
+                    back = duckduckgo.query(message)
 
+                    if not back:
+                        back = simsimi.query(message)
+
+                    if back:
+                        reply(back)
+                    else:
+                        reply('What are you even talking about?')
+                else:
+                    logging.info('not enabled for chat_id {}'.format(chat_id))
+
+
+# ================================
 
 app = webapp2.WSGIApplication([
     ('/me', MeHandler),

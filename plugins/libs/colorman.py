@@ -1,6 +1,8 @@
 from PIL import Image, ImageDraw, ImageColor
+
 import StringIO
 import colorsys
+import re
 
 
 def clamp(x):
@@ -8,6 +10,9 @@ def clamp(x):
 
 
 def parse(color):
+    if re.match('numix(\s+(hex|red))?', color, re.IGNORECASE):
+        color = '#F1544D'
+
     try:
         c = ImageColor.getrgb(color)
     except ValueError:
