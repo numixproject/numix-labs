@@ -31,4 +31,4 @@ def query(m, q):
     if r:
         location = r.get('geometry').get('location')
 
-        return '{0} is located at {1}° N longitude and {2}° E latitude.'.format(r.get('formatted_address'), str(location.get('lng')), str(location.get('lat')))
+        return '{0} is located at {1} N longitude and {2} E latitude.'.format(r.get('formatted_address'), str(location.get('lng')), str(location.get('lat')))
