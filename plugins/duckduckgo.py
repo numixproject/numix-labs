@@ -1,3 +1,5 @@
+import re
+
 from libs import request
 
 
@@ -6,7 +8,8 @@ def matches(text):
 
 
 def raw(m):
-    results = request.ajax('http://api.duckduckgo.com/?format=json&t=numibot&no_html=1&skip_disambig=1&q=' + request.quote_plus(m.get('text')))
+    text = re.sub('@\S+\s+', '', m.get('text'))
+    results = request.ajax('http://api.duckduckgo.com/?format=json&t=numibot&no_html=1&skip_disambig=1&q=' + request.quote_plus(text))
 
     if results and results.get('AbstractText'):
         return results
