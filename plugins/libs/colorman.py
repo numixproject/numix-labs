@@ -5,13 +5,16 @@ import colorsys
 import re
 
 
+NUMIX = '#f1544d'
+
+
 def clamp(x):
     return max(0, min(x, 255.0)) * 1.0
 
 
 def parse(color):
     if re.match('numix(\s+(hex|red))?', color, re.IGNORECASE):
-        color = '#F1544D'
+        color = NUMIX
 
     try:
         c = ImageColor.getrgb(color)
@@ -73,6 +76,9 @@ def darken(color, percentage):
 
 
 def image(color):
+    if re.match('numix(\s+(hex|red))?', color, re.IGNORECASE):
+        color = NUMIX
+
     img = Image.new('RGB', (120, 120))
     draw = ImageDraw.Draw(img)
 

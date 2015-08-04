@@ -150,11 +150,10 @@ class WebhookHandler(webapp2.RequestHandler):
 
             back = query(text, message)
 
-            if back:
-                if isinstance(back, dict):
-                    reply(back.get('text'), back.get('image'))
-                else:
-                    reply(back)
+            if isinstance(back, dict) and (back.get('text') or back.get('image')):
+                reply(back.get('text'), back.get('image'))
+            elif isinstance(back, str):
+                reply(back)
             else:
                 if getEnabled(chat_id):
                     back = duckduckgo.query(message)
