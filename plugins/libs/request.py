@@ -20,7 +20,7 @@ def quote_plus(text):
 def get(url):
     try:
         return urllib.urlopen(url).read()
-    except urllib.error.HTTPError, err:
+    except urllib.error.HTTPError as err:
         logging.error(err)
 
 
@@ -28,4 +28,7 @@ def ajax(url):
     data = get(url)
 
     if data:
+        logging.info('got data from ' + url)
+        logging.info(data)
+
         return json.loads(data)

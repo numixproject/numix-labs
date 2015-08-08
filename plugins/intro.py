@@ -21,7 +21,7 @@ def query(m):
 
         try:
             return 'You are {0} {1} ({2}), you need to remember stuff!'.format(fr.get('first_name'), fr.get('last_name'), fr.get('username'))
-        except UnicodeEncodeError, err:
+        except UnicodeEncodeError as err:
             logging.error(err)
 
             return 'Now I have to tell you that?'

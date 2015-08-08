@@ -1,3 +1,10 @@
+# fix all unicode woes, this is a hack
+import sys
+
+reload(sys)
+sys.setdefaultencoding('UTF-8')
+
+
 import json
 import logging
 import urllib
@@ -148,7 +155,12 @@ class WebhookHandler(webapp2.RequestHandler):
                         else:
                             return plugin.query(m)
 
-            back = query(text, message)
+            back = False
+
+            try:
+                back = query(text, message)
+            except Exception as err:
+                logging.error(err)
 
             if isinstance(back, dict) and (back.get('text') or back.get('image')):
                 reply(back.get('text'), back.get('image'))
