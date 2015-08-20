@@ -31,4 +31,7 @@ def ajax(url):
         logging.info('got data from ' + url)
         logging.info(data)
 
-        return json.loads(data)
+        try:
+            return json.loads(data)
+        except ValueError as err:
+            logging.error(err)
