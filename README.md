@@ -72,7 +72,7 @@ Here the data passed to `fill` is `symbol[color]`. `symbol[color]` tells the scr
 Any SVG file can contain these types of data in a simple syntax. For example, the `color` data can be defined inside the symbol as,
 
 ```xml
-    <!-- color: #d64937 -->
+<!-- color: #d64937 -->
 ```
 
 Coming to the next line, we are generating a shadow for the symbol here. So, we select the `symbol` and copy into a new layer named `drop`. The `%` in front of the name tells the script to create a new layer.
@@ -178,7 +178,7 @@ Filters can be used to apply a number of different image effects to an element.
 #### Blur
 
 ```xml
-    <feGaussianBlur stdDeviation="0.5"/>
+<feGaussianBlur stdDeviation="0.5"/>
 ```
 
 *NOTE: The blur radius is controlled by the `stdDeviation` propery. It can take 2 parameters for the blur radius in x and y axis.*
@@ -186,49 +186,49 @@ Filters can be used to apply a number of different image effects to an element.
 #### Luminance mask
 
 ```xml
-    <feColorMatrix type="luminanceToAlpha"/>
+<feColorMatrix type="luminanceToAlpha"/>
 ```
 
 #### Hue rotate
 
 ```xml
-    <feColorMatrix type="hueRotate" values="60"/>
+<feColorMatrix type="hueRotate" values="60"/>
 ```
 
 #### Saturate
 
 ```xml
-    <feColorMatrix type="saturate" values="0.75"/>
+<feColorMatrix type="saturate" values="0.75"/>
 ```
 
 #### Grayscale
 
 ```xml
-    <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
+<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
 ```
 
 #### Sharpen
 
 ```xml
-    <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
+<feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
 ```
 
 #### Edge detect
 
 ```xml
-    <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-5 0 0 0 0 0 0 0 5"/>
+<feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-5 0 0 0 0 0 0 0 5"/>
 ```
 
 #### Emboss
 
 ```xml
-    <feConvolveMatrix order="5 5" preserveAlpha="true" kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0"/>
+<feConvolveMatrix order="5 5" preserveAlpha="true" kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0"/>
 ```
 
 #### Brightness
 
 ```xml
-    <feComponentTransfer><feFuncR type="linear" slope="0.5"/><feFuncG type="linear" slope="0.5"/><feFuncB type="linear" slope="0.5"/></feComponentTransfer>
+<feComponentTransfer><feFuncR type="linear" slope="0.5"/><feFuncG type="linear" slope="0.5"/><feFuncB type="linear" slope="0.5"/></feComponentTransfer>
 ```
 
 *NOTE: The amount of brightness is controlled by the `slope` property.*
@@ -236,25 +236,25 @@ Filters can be used to apply a number of different image effects to an element.
 #### Posterize
 
 ```xml
-    <feComponentTransfer><feFuncR type="discrete" tableValues="0 0.25 0.5 0.75 1"/><feFuncG type="discrete" tableValues="0 0.25 0.5 0.75 1"/><feFuncB type="discrete" tableValues="0 0.25 0.5 0.75 1"/></feComponentTransfer>
+<feComponentTransfer><feFuncR type="discrete" tableValues="0 0.25 0.5 0.75 1"/><feFuncG type="discrete" tableValues="0 0.25 0.5 0.75 1"/><feFuncB type="discrete" tableValues="0 0.25 0.5 0.75 1"/></feComponentTransfer>
 ```
 
 #### Inverse
 
 ```xml
-    <feComponentTransfer><feFuncR type="table" tableValues="1 0"/><feFuncG type="table" tableValues="1 0"/><feFuncB type="table" tableValues="1 0"/></feComponentTransfer>
+<feComponentTransfer><feFuncR type="table" tableValues="1 0"/><feFuncG type="table" tableValues="1 0"/><feFuncB type="table" tableValues="1 0"/></feComponentTransfer>
 ```
 
 #### Discrete
 
 ```xml
-    <feGaussianBlur stdDeviation="1.5" /><feComponentTransfer><feFuncR type="discrete" tableValues="0 .5 1 1"/><feFuncG type="discrete" tableValues="0 .5 1"/><feFuncB type="discrete" tableValues="0"/></feComponentTransfer>
+<feGaussianBlur stdDeviation="1.5" /><feComponentTransfer><feFuncR type="discrete" tableValues="0 .5 1 1"/><feFuncG type="discrete" tableValues="0 .5 1"/><feFuncB type="discrete" tableValues="0"/></feComponentTransfer>
 ```
 
 #### X-Ray
 
 ```xml
-    <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feComponentTransfer ><feFuncR type="table" tableValues="1 0"/><feFuncG type="table" tableValues="1 0"/><feFuncB type="table" tableValues="1 0"/></feComponentTransfer>
+<feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feComponentTransfer ><feFuncR type="table" tableValues="1 0"/><feFuncG type="table" tableValues="1 0"/><feFuncB type="table" tableValues="1 0"/></feComponentTransfer>
 ```
 
 ### Resources
