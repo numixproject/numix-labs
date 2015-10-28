@@ -1,6 +1,8 @@
-# numix-kit
+# Script-O-Mighty
 
-# BUGS
+This is something we used to use for generating icon themes. It was dropped because several bugs emerged that were deemed too serious to try and fix. We've decided to now open-source the project so that others can examine the code and possibly find a solution we couldn't. We highly recommend you don't use this unless you know what you're doing & certainly don't use it to generate a theme for general usage because of the previously mentioned bugs.
+
+### BUGS
 
 These things need fixing before icon making can continue:
 
