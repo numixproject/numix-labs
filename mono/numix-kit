@@ -3,7 +3,7 @@
 #
 # Copyright (c) 2014  Numix Project
 #
-# License: Numix
+# License: GPLv3
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
