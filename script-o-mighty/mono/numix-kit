@@ -1,0 +1,333 @@
+#!/bin/bash
+# Script to generate icons from SVG templates
+#
+# Copyright (c) 2014  Numix Project
+#
+# License: GPLv3
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -d|--dir)
+            basedir="$2"
+            shift;;
+        -t|--template)
+            template="$2"
+            shift;;
+        -p|--png)
+            makepng="true";;
+        -s|--store)
+            optimize="false";;
+        -h|--help)
+            args=( "-d, --dir <directory>" "-t, --template <name>" "-p, --png" "-s, --store" "-h, --help" )
+            desc=( "specify base directory" "specify template directory to use" "generate PNG files" "don't optimize icons" "show this help message and exit" )
+            printf "Usage:\tgen-icons [options...]\n\n"
+            for ((i=0; i < ${#args[@]}; i++)); do
+                printf "\t%-30s%-s\n" "${args[i]}" "${desc[i]}"
+            done
+            exit;;
+        -?|--*)
+            printf "Unrecognized option '$1'. Try '--help' for all available options.\n"
+            exit;;
+        -*)
+            args="$1"
+            shift
+            set -- $(printf "$args" | cut -c 2- | sed 's/./-& /g') "$@"
+            continue;;
+        *)
+            break;;
+    esac
+    shift
+done
+
+[[ "$basedir" = "" ]] && basedir="."
+[[ "$makepng" = "" ]] && makepng="false"
+[[ "$optimize" = "" ]] && optimize="true"
+
+indir="$basedir/input"
+outdir="$basedir/output"
+symbolsdir="$indir/symbols"
+
+trap exit INT
+
+show_info() {
+echo -e "\033[0;34m$@\033[0m" 1>&2 2>&1
+return 0
+}
+
+show_success() {
+echo -e "\033[0;32m$@\033[0m" 1>&2 2>&1
+return 0
+}
+
+show_warn() {
+echo -e "\033[0;33m$@\033[0m" 1>&2
+return 2
+}
+
+show_err() {
+echo -e "\033[0;31m$@\033[0m" 1>&2
+return 1
+}
+
+write_png() {
+rm -f "$outdir/$template/png/${icon/svg/png}"
+
+if [[ `command -v convert` ]]; then
+    convert -depth 16 -background transparent "$outdir/$template/svg/$icon" "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
+elif [[ `command -v inkscape` ]]; then
+    inkscape "$outdir/$template/svg/$icon" --without-gui --export-background-opacity 0 --export-png "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
+elif [[ `command -v rsvg-convert` ]]; then
+    rsvg-convert "$outdir/$template/svg/$icon" -o "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
+else
+    show_warn "ImageMagick, Inkscape or librsvg2-tools not installed"
+fi
+
+if [[ -f "$outdir/$template/png/${icon/svg/png}" ]]; then
+    if [[ "$optimize" = "true" ]]; then
+        if [[ `command -v optipng` ]]; then
+            optipng -strip all -o7 -zm1-9 "$outdir/$template/png/${icon/svg/png}" > /dev/null 2>&1
+        else
+            show_warn "optipng not installed."
+        fi
+    fi
+
+    show_success "Successfully wrote ${icon/svg/png}."
+else
+    show_err "Failed to write ${icon/svg/png}."
+fi
+}
+
+op_write() {
+data="$1"
+
+rm -f "$outdir/$template/svg/$icon"
+
+echo "<svg ${viewbox}>${data}</svg>" > "$outdir/$template/svg/$icon"
+
+if [[ -f "$outdir/$template/svg/$icon" && $(grep "<svg\|</svg>" "$outdir/$template/svg/$icon") ]]; then
+    if [[ "$optimize" = "true" ]]; then
+        if [[ `command -v svgcleaner-cli` ]]; then
+            svgcleaner-cli "$outdir/$template/svg/$icon" "$outdir/$template/svg/$icon" --colors-to-rrggbb --convert-to-relative --compact-output --create-viewbox --equal-elts-to-use --merge-gradients --remove-ai-atts --remove-ai-elts --remove-corel-atts --remove-corel-elts --remove-duplicated-defs --remove-empty-containers --remove-fill-props --remove-inkscape-atts --remove-inkscape-elts --remove-invisible-elts --remove-metadata-elts --remove-msvisio-atts --remove-msvisio-elts --remove-nonsvg-elts --remove-notappl-atts --remove-outside-elts --remove-proc-instr --remove-prolog --remove-sketch-atts --remove-sketch-elts --remove-sodipodi-atts --remove-sodipodi-elts --remove-stroke-props --remove-unreferenced-ids --remove-unused-defs --remove-unused-xlinks --remove-version --rrggbb-to-rgb > /dev/null 2>&1
+        else
+            show_warn "svgcleaner not installed."
+        fi
+    fi
+
+    show_success "Successfully wrote $icon."
+else
+    show_err "Failed to write $icon."
+fi
+
+[[ "$makepng" = "true" ]] && write_png
+
+echo "$data"
+}
+
+op_fill() {
+data="$1"
+color="$2"
+
+[[ "$color" =~ ^#.+$ ]] && color="${color:0:7}"
+
+if [[ ! "$color" = "" ]]; then
+    if [[ $(echo "$data" | grep "fill[:=]") ]]; then
+        data=$(echo "$data" | sed -e "s/fill=\"/style=\"fill:/g" -e "s/fill:[^;\"]*/fill:${color}/g")
+    else
+        oldtag=$(echo "$data" | grep -o "<.*" | grep -v "<[\!\?].+" | head -n 1 | sed -e 's/[[\.+^$/]/\\&/g')
+        newtag=$(echo "$oldtag" | sed -e "s/$/ style=\"fill:${color}\"/")
+        data=$(echo "$data" | sed -e "0,/$oldtag/s//$newtag/")
+    fi
+else
+    show_warn "No color specified for fill."
+fi
+
+echo "$data"
+}
+
+do_task() {
+data="$1"
+task="$2"
+type=$(echo "$task" | cut -f1 -d"(" | sed -e "s/^/op_/g")
+prop=$(echo "$task" | cut -f2 -d"(" | cut -f1 -d")")
+
+[[ "$prop" =~ ^.+\[.+\]$ ]] && prop=$(read_props "$prop")
+
+if [[ $(type -t "$type") = "function" ]]; then
+    data=$("$type" "$data" "$prop")
+else
+    show_warn "Invalid operation $type."
+fi
+
+echo "$data"
+}
+
+strip_tags() {
+data=$(cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g")
+
+echo "$data"
+}
+
+add_layer() {
+data="$1"
+layer="$2"
+
+if [[ ! "${!layer}" = "" ]]; then
+    data+="<g id=\"${layer}\">${!layer}</g>"
+else
+    show_warn "$layer is empty or doesn't exist"
+fi
+
+echo "$data"
+}
+
+strip_tags() {
+data=$(cat "$1" | tr "\n" " " | sed -e "s/<\/\?svg[^>]*>//g" -e "s/<[?]\?xml[^>]*>//g")
+
+echo "$data"
+}
+
+add_attr() {
+data="$1"
+attr="$2"
+type=$(echo "$attr" | cut -f1 -d"=")
+prop=$(echo "$attr" | cut -f2 -d"\"")
+
+[[ "$prop" =~ ^.+\[.+\]$ ]] && prop=$(read_props "$prop")
+
+[[ "$prop" = "" ]] && show_warn "Property $prop is empty."
+
+if [[ "$prop" =~ ^.+\.svg$ ]]; then
+    id=$(date +%N)
+    url="${prop%.*}"
+    tagname=$(echo "$type" | sed -re "s/([a-z]+)-([a-z])([a-z]+)/\1\U\2\L\3/")
+
+    if [[ ! "${!url}" = "" ]]; then
+        data="<defs><${tagname} id=\"${tagname}-${id}\">${!url}</${tagname}></defs><g ${type}=\"url(#${tagname}-${id})\">${data}</g>"
+    else
+        show_warn "$type is empty or doesn't exist."
+    fi
+else    
+    data="<g ${type}=\"${prop}\">${data}</g>"
+fi
+
+echo "$data"
+}
+
+get_viewbox() {
+file=$(find "$templatedir" -type f -name "*.svg" | xargs ls -1S | head -n 1)
+viewbox=$(cat "$file" | grep -o 'viewBox="[^"]*"')
+
+if [[ "$viewbox" = "" ]]; then
+    width=$(cat "$file" | tr "\n" " " | grep -o "<svg[^>]*>" | grep -o 'width="[^"]*"' | sed -e "s/width=//g" -e "s/\"//g")
+    height=$(cat "$file" | tr "\n" " " | grep -o "<svg[^>]*>" | grep -o 'height="[^"]*"' | sed -e "s/height=//g" -e "s/\"//g")
+    viewbox="viewBox=\"0 0 $width $height\""
+fi
+
+[[ "$viewbox" = "" || "$viewbox" = "0 0    " ]] && show_warn "Failed to determine viewBox."
+}
+
+read_props() {
+data=$(echo "$1" | sed -e "s/\[/_/" -e "s/\]//")
+name=$(echo "$data" | cut -f1 -d"_")
+prop=$(echo "$data" | cut -f2 -d"_")
+value=$(echo "${!name}" | grep -o "<\!-- ${prop}: .* -->" | sed -e "s/<\!-- ${prop}: //g" -e "s/ -->//g")
+
+[[ "$value" = "" ]] && show_warn "Property $prop not found."
+
+echo "$value"
+}
+
+read_files() {
+while read svg; do
+    name=${svg##*/}
+    var=${name%.svg}
+
+    if [[ $(grep "<svg\|</svg>" "$svg") ]]; then
+        export $var="$(strip_tags $svg)"
+    else
+        show_warn "$var doesn't seem to be a valid SVG file."
+    fi
+
+    [[ $(grep "data:image" "$svg") ]] && show_warn "$svg contains raster image."
+done < <(find "$templatedir/" -name '*.svg' | sort -u)
+}
+
+read_commands() {
+echo "$1" | while read line; do
+    data=""
+    command=""
+    for command in ${line[@]}; do
+        if [[ "$command" =~ ^[a-z]+$ ]]; then
+            data="$command"
+        elif [[ "$command" =~ ^[a-z\-]+=\".*\"$ ]]; then
+            declare $data="$(add_attr "${!data}" "$command")"
+        elif [[ "$command" =~ ^[a-z\-]+\(.*\)$ ]]; then
+            declare $data="$(do_task "${!data}" "$command")"
+        elif [[ "$command" =~ ^\+[a-z]+$ ]]; then
+            declare $data="$(add_layer "${!data}" "${command#+}")"
+        elif [[ "$command" =~ ^\%[a-z]+$ ]]; then
+            declare ${command#%}="${!data}"
+            data=${command#%}
+        else
+            show_warn "Unrecognized command $command."
+        fi
+    done
+done
+}
+
+gen_icons() {
+if [[ ! -d "$templatedir" ]]; then
+    show_err "Template directory not found."
+    exit 1
+fi
+
+[[ -d "$outdir/$template/svg" ]] || mkdir -p "$outdir/$template/svg"
+[[ -d "$outdir/$template/png" ]] || [[ "$makepng" = "true" ]] && mkdir -p "$outdir/$template/png"
+
+if [[ -f "$templatefile" ]]; then
+    templatedata=$(cat "$templatefile" | sed -e "s/ //g" -e "s/->/ /g")
+else
+    show_err "No template file found in $templatefile."
+    exit 1
+fi
+
+if [[ "$templatedata" = "" ]]; then
+    show_err "Template file is empty."
+    exit 1
+fi
+
+show_info "Found template in $templatedir"
+
+read_files
+get_viewbox
+
+while read file; do
+    icon=${file##*/}
+    symbol=$(strip_tags "$file")
+    read_commands "$templatedata"
+done < <(find "$symbolsdir/" -name '*.svg' | sort -u)
+}
+
+get_template() {
+if [[ ! -d "$indir" || ! -d "$symbolsdir" ]]; then
+    show_err "Directory structure is not set up."
+    exit 1
+fi
+
+if [[ "$template" = "" ]]; then
+    while read dir; do
+        if [[ -f "$dir/template.meta" ]]; then
+            template="${dir##*/}"
+            templatedir="$dir"
+            templatefile="$dir/template.meta"
+            gen_icons
+        fi
+    done < <(find "$indir/templates" -maxdepth 1 -type d)
+else
+    templatedir="$indir/templates/$template"
+    templatefile="$templatedir/template.meta"
+    gen_icons
+fi
+}
+
+get_template
