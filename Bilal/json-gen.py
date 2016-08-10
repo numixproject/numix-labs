@@ -39,6 +39,9 @@ for icon in data:
         root = data[icon]["linux"]
         if "symlinks" in root.keys() and len(root["symlinks"]) == 0:
             del data[icon]["linux"]["symlinks"]
+        else:
+            sorted(data[icon]["linux"]["symlinks"], key=lambda icon_name: icon_name.lower())
+sorted(data, key=lambda icon_name: icon_name.lower())
 
 with open(db, 'w') as fp:
     json.dump(data, fp, sort_keys=True, indent=4)
