@@ -1,0 +1,78 @@
+1.3
+===
+* Merged install and uninstall into one
+* Removed hardcode fixing
+* Updated documentation
+
+
+1.2
+===
+* Fixed the GitHub downloads
+
+1.1
+===
+* Downloads tars from GitHub rather than being included
+* Comments in installer
+* Removed support for uTouch-GS and Monochrome theme
+
+1.0
+===
+* First "stable" release
+
+0.11
+====
+* All issues fixed with hardcode fixer
+* Installer and uninstaller bugfixes
+
+0.10
+====
+* Integrated fix and unfix into one file
+* Known issue with root aquisition
+
+0.9
+===
+* Added hardcode unfixer
+* Integrated hardcode unfixer
+* Fixed whitespace problems
+
+0.8
+===
+* Integrated hardcode fixer
+
+0.7
+===
+* Fixed line length problems
+* Uninstaller now functional
+
+0.6
+===
+* Added more .desktop names
+* Removed undeed code from installer
+
+0.5
+===
+* Merged local and global lists
+* Added all known hardcoded icons
+* Refined methods
+
+0.4
+===
+* Added global hardcode fixing
+
+0.3
+===
+* Added python hardcode fixing script
+
+0.2
+===
+* Added tarballs of icon themes for testing
+
+0.1
+===
+* Switched Faenza information for Numix
+* Updated README
+
+0.0
+===
+* First installer version
+* Copy of Faenza Installer
