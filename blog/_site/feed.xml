@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Official Numix Blog</title>
+    <description>The official blog of &#39;&#39;Numix Project&#39;&#39; - an open source project that is all about creating quality designed software product and artwork.Here we will post important announcements and blog about anything we feel is worthy writing about.
+</description>
+    <link>http://blog.numixproject.org//blog/</link>
+    <atom:link href="http://blog.numixproject.org//blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 04 Jun 2015 18:18:01 +0200</pubDate>
+    <lastBuildDate>Thu, 04 Jun 2015 18:18:01 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hermes - THE IRC CLIENT FOR ANDROID THAT WON&#39;T EAT YOUR CATTLE</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;b&gt;LOO … ONG INTRODUCTION&lt;/b&gt;&lt;br /&gt;
+&lt;i&gt;
+There are many definitions about what a person is and perhaps one of the most famous one is by the ancient Greek philosopher and scientist - Aristotle - “Man is by nature a social animal”. It is one of these thoughts for which one can safely say “Truer words were never spoken” and not really be wrong, because everybody communicates with other people everyday. As times comes by the way we communicate change and evolve - We started with cave paintings and grunting sounds and look at us now - we have languages, alphabets, music, complex renaissance paintings and so on and so forth … if we are to make a list this article will get longer than Leonard Cohen song. And yes, among this list is the internet.
+The simplest, even idiot proof definition of internet is that it’s a big wibbly wobbly virtual ocean filled with information. There is so much information in it, that it’s ridiculous. You can find pretty much anything in it and you can even upload information in it.  But oh wait, there is more - you can communicate with other people all over the internet. And just like the other offline methods of communication - the online internet methods develop with every clock tick sound. In the beginning the only methods of communication via the internet was a text one via a command line interface (CLI) and now we have text, audio and video communication via a graphical user interface (GUI).
+IRC is a method of online text communication and invented back in 1988 from Jarkko Oikarinen. It is extremely powerful when it comes to taking to a lot of people at once, because of its infrastructure - there are servers in which there are dedicated rooms. For example in the Freenode server we’ve created a room “#numix” in which we and community people talk about numix. In the same server there is a room “#ubuntu” in which the topic is … yeah, you are right - Ubuntu. If you want to talk with some Gnome Designers you should go to the “#gnome-design” room is the IRC GIMPNet server. And the list goes on and one. There are lots and lots of servers and in each server there are countless of rooms. However as every other thing alongside pros, IRC also has cons. You can’t upload an image or video or anything else as a matter of fact in IRC. IRC protocol also doesn’t support emoticons. Nowadays IRC is used mostly (but not only) from open source developers or as help and support chat ssystem, again for open source projects.
+And now after this bit too long and winded introduction lets go to the actual topic before you’ve forgotten what this article is supposed to be about, eh? :)&lt;/i&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;THE NAME&lt;/b&gt;&lt;br /&gt;
+You might have noticed that Hermes, just like Croma does not have the word “Numix” in its name. We figured that “Numix Hermes” and “Numix Croma” would sound just plain weird, plus there is enough Numix propaganda in the app and its play store page. :P The similarities don’t end there - both names Croma is Hermes have Greek origin. Croma comes from the Greek word for colour χρώμα (chró̱ma) and Hermes (Ερμής in Greek) is the Greek god of messages, amongst other stuff like god of thieves for example. As you can imagine naming a chat app after the god of messages is only natural. And because Georgi is writing this article he insists on saying that that although he is to be blamed for Hermes, he has nothing to do with Croma name for Klaus the Hybrid (read Satyajit) named it. But enough with etymology, let’s go proceed to …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;MATERIAL DESIGN&lt;/b&gt;&lt;br /&gt;
+Unless you just like Sisyphus have been tormented to roll rock in Erebus for the rest of eternity or have been living under one, you should know that since the release of Android Lollipop material design has been the talk of the down in Android design-ville. Hell, some would say that this has been the case even in general design ville. This is not really a surprise - Google are huge company (perhaps the biggest IT one out there), so their design trends are being picked by people quite fast. And there is also the fact that material design, whilst being skeumorphic by nature does not look crazy detailed is also helping. People nowadays are not the greatest fans of detailed skeuomorphism.
+We would have been fools to not follow material design guidelines in Hermes, and even bigger fools since our other apps follow them. Hermes is a maaterial designed app and it has everything you would aspect from such:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;dual colour scheme - primary teal and accent pink;&lt;/li&gt;
+  &lt;li&gt;material animations and elements;&lt;/li&gt;
+  &lt;li&gt;material design API and libraries;&lt;/li&gt;
+  &lt;li&gt;material notifications;&lt;/li&gt;
+  &lt;li&gt;material designed icon;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Oh because we’re cool you’ll get the same material experience on &lt;strong&gt;KitKat&lt;/strong&gt; too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/yQIMQ_bObLS3tUvwNyNhsqJp54JEu5UG5mlbQ4N8yDE8WdPYFMfVdhg7XP9CT1bcoNg=h900&quot; alt=&quot;&quot; /&gt;
+ &lt;br /&gt;&lt;br /&gt;
+But enough talk about design … for now. Next things on the list is …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;PRICING AND LICENSE:&lt;/b&gt;&lt;br /&gt;
+Here is a funfact - Hermes with all its features is free. And we mean that both ways - as in beer and as in speech.
+Before you proceed you might as well clap a bit in front of you screen is awe of our sheer coolness. :&amp;gt;
+You don’t have to pay us a single penny to use the app and it is GPL licensed with the code hosted in &lt;a href=&quot;https://github.com/numixproject/org.numixproject.hermes&quot;&gt;this GitHub repo of ours&lt;/a&gt; this github repo of ours&amp;gt;. You can fork it if you wish, or you can contribute by filling and fixing bugs.
+But because we don’t like to hide behind smoke and mirrors, we must tell you about a little catch - Hermes has ads. Now don’t worry they won’t really mess with your experience, we’ve made sure of that, so you can safely ignore them. If you however choose that you don’t want them - there is a lovely “Remove ads” function in the sidebar and if you opt for it, you will have to pay us 60 cents in order to get rid of the ads. It gets better - if you choose to let them stay we still get money from Google thanks to AdSense. It is a win-win situation. Or in Bulgarian - “Въʌkът сит и агнето цяʌо.”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150504/ads.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you know what is about to follow - the next chapter. And it is about …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;VERSATILITY AND UI SIMPLICITY&lt;/b&gt;&lt;br /&gt;
+This is it folks, dis iz tEh most important chapter of dis article, bruhs.
+The main goal we set to ourselves for Hermes was to make the client feature rich, yet easy to use. We’re doing a app, so we might as well a really nice one anyway, eh?
+In Hermes you will find pretty much everything that you’ll find in your regular desktop IRC client (or perhaps even more feature) with a simple to use interface tailored specifically for mobile devices:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SSL encryption&lt;/li&gt;
+  &lt;li&gt;Server logs&lt;/li&gt;
+  &lt;li&gt;Recent rooms&lt;/li&gt;
+  &lt;li&gt;Auto-join rooms&lt;/li&gt;
+  &lt;li&gt;Server status badges;&lt;/li&gt;
+  &lt;li&gt;Messages counters;&lt;/li&gt;
+  &lt;li&gt;User authentication;&lt;/li&gt;
+  &lt;li&gt;User options like query and reply;&lt;/li&gt;
+  &lt;li&gt;And much more;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And like we said above everything is wrapped in easy to use interface. For example rooms in which you’ve been in the last three sessions are automatically displayed in the server details page so you can join them again easily. And if you want to set a room to autojoin simple tap the start next to it in the same server details page:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/LIpf-KZfVr0_IGr8XbJfMf49aTFhp4fZg02J7ewPANAjgbNyw68sRaFQLYwkLn24xD4=h900&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+Oh and speaking server status badges and message counters:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/cneLAMB9kzp1wuf7hEE-PLin9QnAWNv9nIezPyfGYW7bJywINTiuGrHgZu3o8idrbDo=h900&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Want to see more? Well, give our app a whirl!
+Just three more paragraphs to go, you can read this. Up next is …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;BACKEND&lt;/b&gt;&lt;br /&gt;
+Now, because we’re not in the business of lying to you, folks, we feel obligated to say that we did not write the Hermes IRC Lib backend. We used the backend of an app called YAAIC:
+https://play.google.com/store/apps/details?id=org.yaaic
+You can find its source code on &lt;a href=&quot;https://github.com/pocmo/Yaaic&quot;&gt;GitHub&lt;/a&gt;.
+Next up is the section for which you’ve been waiting for, namely …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;DOWNLOAD&lt;/b&gt;&lt;br /&gt;
+Overall we think that despite Hermes is just in 1.0 version it is ace application. Such humbleness, eh?
+But hey, why take our word for it - go try it yourself:
+https://play.google.com/store/apps/details?id=org.numixproject.hermes
+And don’t forget to rate it (5 starts ratings are preferable :3) and report any bugs you find on its &lt;a href=&quot;https://github.com/numixproject/org.numixproject.hermes/issues&quot;&gt;issues page&lt;/a&gt;. Perhaps you might even fix an issue if you can. :)
+And thus we come to the last section which is …&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;WHAT KIND OF TITLE IS THIS?!?&lt;/b&gt;&lt;br /&gt;
+Georgi insists on saying that the title is purely his fault. You see, when the Hermes was one really really really hungry baby god. So when his mother - the Titan Maia fell asleep after the birth the little bugger escaped her and went straight to eat some of Apollo sacred cattles. Because Apollo had the hots for his cows and was also somewhat of a jerk he decided to throw Hermes to Tartarus (nasty place even for immortal deities), but Hermes managed to save himself by giving Apollo the the lyre, which he invented after eating cattles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.etfroundup.com/wp-content/uploads/2014/11/thats_all_folks_wallpaper.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 04 May 2015 19:25:00 +0200</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/05/04/introducing-hermes-irc-client.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/05/04/introducing-hermes-irc-client.html</guid>
+        
+        <category>android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introducing the Numix Store</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;i&gt;Even if have the best product in the world, it will not sale much, unless you popularise it and provide easy way to sell it. Up until now we’ve been using the Ubuntu Software Centre to sell our GTK themes and Icon themes for Ubuntu and DeviantArt to do the same for all the other distros. However whilst dA does to job, we are well aware that it is imperfect and in all honesty it can sometimes be tricky for both us and you to use. For example there is this as frustrating as having to cope up with Elena from Vampire Diaries for 6 seasons, bug where uploading does not work from the first or the second or the third … or the etc … time. Another con from using dA is the fact you will have to buy points, with chch you can buy products. When we decided we are going to sell t-shirts too, the only solution for us was to open up our own web store.&lt;/i&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;The road to the store.&lt;/b&gt;&lt;br /&gt;
+We announced that we’re making a web store a while ago, but sadly we couldn’t make it as fast as we wanted to, because we didn’t have much experience with setuping opencart. Our adorable web developing hamster - &lt;a href=&quot;https://plus.google.com/107080331539861558818&quot;&gt;ahmar siddiqui&lt;/a&gt; can only work on Numix in his free time and of course there were the issues we had to fix along the road. But no matter now, the important thing is that the store is now up and buying paid Numix products is now easier than ever.&lt;/p&gt;
+
+&lt;p&gt;What about those of us who have already purchased pain Numix products from dA?
+For the time being you will still have to rely on dA, but we will do our best to fix that. Trust us, we don’t want to deal with dA anymore than you do. Perhaps we won’t that even less.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Wait! Didn’t you say something about Numix t-shirts?&lt;/b&gt;&lt;br /&gt;
+Damn right we did, dearies. You can order one from &lt;a href=&quot;https://numixproject.org/store/index.php?route=product/product&amp;amp;product_id=60&quot;&gt;here&lt;/a&gt;. Please note that international shipping can be costly to your destination and there is nothing we can do about that. However you’re buying something to show off with and supporting us. Of course ordering more than 1 t-shirt will not mean the shipping costs will increase.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;But there are issue with the store.&lt;/b&gt;&lt;br /&gt;
+Well, it would have been scary if there wasn’t. If you find an issue please &lt;a href=&quot;https://github.com/numixproject/numix-store/issues&quot;&gt;report it&lt;/a&gt; and we will do our best to fix it.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Is the store secure?&lt;/b&gt;&lt;br /&gt;
+Yes, it is. It is even behind a SSL certificate.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;So, where is the store?&lt;/b&gt;&lt;br /&gt;
+On 22 Acacia Avenue of course. :P &lt;a href=&quot;https://numixproject.org/store/&quot;&gt;Click here&lt;/a&gt; to get beamed to the location really fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-HjGTSMlmUrw/VOISkl_9XrI/AAAAAAAA-3k/zQ9nGjRiTC0/w1522-h796-no/Screenshot%2Bfrom%2B2015-02-16%2B17%3A46%3A56.png&quot; alt=&quot;Numix Store&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-biyH2tNxnS4/VOISjeF5W3I/AAAAAAAA-3Y/IH-cTurhX3A/w496-h882-no/2015%2B-%2B1.png&quot; alt=&quot;Numix Store&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Feb 2015 18:25:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/02/16/numix-store.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/02/16/numix-store.html</guid>
+        
+        <category>web</category>
+        
+        <category>store</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Our valentine present for you - Fold icon pack for free!</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;i&gt;So, today is 14th of February and unless you are really out of the loop, you should know that most countries celebrate St. Valentine’s day also known as the day of love. The historical St. Valentine was a before schism third century Roman priest that. During the High Middle Ages, the day on which he is commemorated - 14th of February, became associated with Courtly love and that tradition evolved in today’s day about all things love, cuddling, plush toys and chocolate boxes. We shall however not dwell more on that, because there is very little confirmed historical info about this person.
+Those of you who don’t have a person with which to celebrate St. Valentine’s day and feel blue about that should know that in Bulgaria 14th of February is also the day of people who make wine, so you can sit quietly at home and drink wine whilst watching “Vampire Diaries”. Just make sure you watch episodes with Katherine in them. :)&lt;/i&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;And after that charming introduction - it is now time to go to business.
+Recently we announced that on 14th February we will make one of &lt;strong&gt;our paid Android icon themes free&lt;/strong&gt; in &lt;a href=&quot;http://numixproject.github.io/blog/2015/01/31/free-icon-pack.html&quot;&gt;this blog post&lt;/a&gt; and we gave you the ability to choose which one by voting for your favourite on &lt;a href=&quot;https://plus.google.com/b/115833527622591803679/115833527622591803679/posts/4qtP5WxnkqQ&quot;&gt;Google+.&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh5.ggpht.com/d6m15TjkwW0W9kpXFaHzr_5lND6DnWSTLeG24spWam5budXXKYcPDCatPe2APW1KFBo=h900-rw&quot; alt=&quot;Numix Fold icon pack FREE&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The results of the poll showed that the majority of you would like to get our &lt;strong&gt;fold icon pack for free&lt;/strong&gt; and because we love you more than how young Clark Kent loved Lana Lang we kept our world and &lt;strong&gt;we made the icon pack free&lt;/strong&gt;. So, what are you waiting for - &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_fold&quot;&gt;GO GET IT ON GOOGLE PLAY!&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_fold&quot;&gt;
+  &lt;img alt=&quot;Get it on Google Play&quot; src=&quot;https://developer.android.com/images/brand/en_generic_rgb_wo_60.png&quot; /&gt;
+&lt;/a&gt;&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;And to conclude this post, here have a photo of St. Valendtines day toy. Although, to be honest it can also represent how bears born near chernobyl look like. :&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150214/love.jpg&quot; alt=&quot;Numix Valentine&#39;s Day&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Feb 2015 15:22:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/02/14/fold-android-icon-pack-free.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/02/14/fold-android-icon-pack-free.html</guid>
+        
+        <category>android</category>
+        
+        <category>icons</category>
+        
+        <category>icon packs</category>
+        
+        <category>giveaway</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Ermahgerd, free icon theme!</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;em&gt;In Bulgarian there is a saying “δеʒпʌатен оδяg няма”, which means “there is not such thing as free lunch”. If we say that this saying exists in various variations in most in not all languages, there is a good 99% chance, we won’t be wrong. However as you know in the world of open source this is one of the maxims that for better or worse is not entirely true.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;em&gt;We are currently in the process of, erm … re-evaluating our monetising and general strategy on Google Play and because of that we’ve decided to put on a leotard and dance to rather infamous Michael Sembello song. Ok, ok, ok, not that, although that would be hilarious, just not for us. :P&lt;/em&gt;&lt;/span&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+Now, cheap jokes aside - what we’ve really decided is to &lt;strong&gt;make one of our themes free of charge.&lt;/strong&gt; Yes, you read that correct. One of these three themes &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_hexagon&quot;&gt;hexagon&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_square&quot;&gt;square&lt;/a&gt;, &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_fold&quot;&gt;fold&lt;/a&gt; will become free.&lt;/p&gt;
+
+&lt;p&gt;As a bonus we’re giving you the &lt;strong&gt;ability to choose which one will get free by voting &lt;a href=&quot;https://plus.google.com/b/115833527622591803679/+NumixProjectOrg/posts/4qtP5WxnkqQ&quot;&gt;on this Post&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh5.ggpht.com/d6m15TjkwW0W9kpXFaHzr_5lND6DnWSTLeG24spWam5budXXKYcPDCatPe2APW1KFBo=h900-rw&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh5.ggpht.com/Gh4qqiWfExKWHNHvpUDU_CJJ9Yx0IXJH9vDHUcGpDNgYpBlA0q2-jzODe1GC6wdz_w=h900-rw&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=&quot;https://lh3.ggpht.com/JKzSAGrWLM6jtslbCMdycD3NMvMhXGap5JhNO84vgtiJdRXrROkWcUqU77BUoFU5_g=h900-rw&quot; alt=&quot;&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But wait, there is more&lt;/strong&gt; - the source files of the selected theme will get uploaded on GitHub under a &lt;strong&gt;Open Source license&lt;/strong&gt;. How cool is all of that, eh? Oooops, almost forgot - the selected theme will become free on &lt;strong&gt;14th of February&lt;/strong&gt;. However, you’re not getting a plush teddy bear and a box a chocolates with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+For we started the article with a maxima, allow us to finish it with one. Way back in the day Niccolo Machiavelli - an Italian historian, politician, diplomat, philosopher, humanist, and writer become associated with the saying “the end justifies the means” and we can it is somewhat applicable to our strategy re-evaluation when it comes to Google Play. Don’t worry, we’re not doing anything evil or illegal, but rather simply rolling out ads for our Android apps. Our &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.numixproject.torch&quot;&gt;Torch App&lt;/a&gt; came with ads build in, which you can remove by tapping the remove ads button and chucking some Money at our screens. Our &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.calculator&quot;&gt;base and free Calculator app&lt;/a&gt; got an update, which introduced ads on exiting the preferences pane, which you can avoid by buying the &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.calculator_pro&quot;&gt;Pro version&lt;/a&gt;, which also comes with plenty of other neat features. Our Hermes app will also come with ads, which you will be able remove for some price, which is an action that will also grant you access to pro features like additional themes and more.
+The &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.numix.icons_circle&quot;&gt;Circle Icon Theme&lt;/a&gt; also got ads. On that note - the theme that gets free of charge will be the next product in the Numix Android line to get ads. Don’t worry, the ads will only show up within the app from which you apply the theme and not anywhere else, so the chances are you might not even notice them much.
+Now dearies, go and vote.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.gretchenrubin.com/wp-content/uploads/2014/06/freebutton-300x299.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Jan 2015 18:00:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/01/31/free-icon-pack.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/01/31/free-icon-pack.html</guid>
+        
+        <category>android</category>
+        
+        <category>icons</category>
+        
+        <category>icon packs</category>
+        
+        <category>giveaway</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Folders, folders, folders, they are ready for your love</title>
+        <description>&lt;p&gt;&lt;span style=&quot;color:#555555;&quot;&gt;
+&lt;em&gt;In case you are wonder from where we came up with that article title - in 1987 an Italian artist called Sabrina recorded a song called “Boys, boys, boys” that become quite the talk in the disco town. The song contained the lyrics “Boys, boys, boys, get ready for my love”.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Now to business -  as you know, very recently we pushed &lt;strong&gt;new folders design&lt;/strong&gt; in our base icon theme and new folders apps icons for our circle, square and non-uniformity icon themes. 
+Well, the last is kept at super secret repository, but if you know where to look, you can find it too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/-m3zmC297hT0/VMu4cPpmJtI/AAAAAAAAL7I/L2T1pUTTIng/w628-h435-no/NFIP.png&quot; alt=&quot;Numix Folders&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh6.googleusercontent.com/-w1Oi77gPknw/VMu4cIqCVWI/AAAAAAAAL7A/o_7R4_GG620/w628-h449-no/fl-p.png&quot; alt=&quot;Numix Folders&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh4.googleusercontent.com/-2nWcguyFYR8/VMu4b9YZZjI/AAAAAAAAL7E/Et3ouz8s54Y/w628-h449-no/fl-c-p.png&quot; alt=&quot;Numix Circle Folders&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh4.googleusercontent.com/-SAY_183Yxf0/VMu4cVUDxzI/AAAAAAAAL7M/GAqt5_bztFU/w628-h449-no/fl-s-p.png&quot; alt=&quot;Numix Square Folders&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What you might not know is why we redesigned them.  Well, the reason can be summarised in one reason - &lt;strong&gt;consistency&lt;/strong&gt;. You see with the old folders design you had one design for the folders icon themselves, another for the symbols for circle and square icon themes. The issue become even more prominent with the non-uniformity icons, because the old design was not meant to work as an app icon. We didn’t fancy that consistency at all, so the icons had to be redesigned.&lt;/p&gt;
+
+&lt;p&gt;What we introduced in the new design was &lt;strong&gt;new shapes&lt;/strong&gt; for the folder body, &lt;strong&gt;new colours&lt;/strong&gt; (taken from &lt;a href=&quot;http://www.google.co.uk/design/spec/style/color.html#color-color-palette&quot;&gt;Google’s material palette&lt;/a&gt;), a &lt;strong&gt;sheet&lt;/strong&gt; between the folders tiles and a &lt;strong&gt;slight shadow&lt;/strong&gt; below the folders to folders to add a spice of 3D look. The &lt;strong&gt;inset shadows&lt;/strong&gt; were also redone to play well with this new design.&lt;/p&gt;
+
+&lt;p&gt;To achieve crispy looking folder on no matter which zoom level you use your file manager, we have created all the folder icons for &lt;strong&gt;all the sizes&lt;/strong&gt; - &lt;code&gt;16x16, 22x22, 24x24, 32x32, 48x48, 64x64, 96x96, 128x128, 256x1256&lt;/code&gt;. The symbol to tile ration is identical for all the sizes and in 16x16 size we use plain orange symbolics, because these icons are too tiny to have a symbol over a tile design and are used mostly in sidebars and a symbol over a tile design would not work that well in sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/16.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/22.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/24.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/32.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/48.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/64.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/96.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/128.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/256.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To conclude this article we will not give you and image of a potato, but rather a screenshot of the new folders used in Ozonified Fedora 21 with Ozon GTK theme and our top secret non-uniformity apps icon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150131/1.png&quot; alt=&quot;Ubuntu Numix&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Jan 2015 18:00:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/01/31/folders-folders-folders-they-are-ready-for-your-love.html</guid>
+        
+        <category>linux</category>
+        
+        <category>ubuntu</category>
+        
+        <category>fedora</category>
+        
+        <category>icons</category>
+        
+        <category>circle</category>
+        
+        <category>square</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Every story has a beginning</title>
+        <description>&lt;p&gt;&lt;strong&gt;Greetings!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re reading this, it means that we’re already dead and you’ve 3 days to save the world from Dalek invasion. Help the world, Numix users, you’re its only hope!&lt;/p&gt;
+
+&lt;p&gt;Ok, we are kidding, although you never know when those plungery bastards will invade us. :-)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Now, lets be serious for a difference.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So, this is our &lt;strong&gt;official Numix blog&lt;/strong&gt; and in it we will post &lt;strong&gt;important announcements&lt;/strong&gt;, interesting &lt;strong&gt;stories&lt;/strong&gt; about numix, karaoke versions of us singing “Let it go” and anything else we think is blog posts material. It goes without saying that you should keep and eye on the blog and interfact with us in it.
+We hope you will have enjoyable time and our blog and find it useful, informative and even slightly funny.&lt;/p&gt;
+
+&lt;p&gt;We also updated our main website with a link of our blog:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://numixproject.github.io/blog/res/blog/20150130/01.png&quot; alt=&quot;Numix Website Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This concludes our first post, see you all in the comments here and on various social networks and of course in the next post.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Jan 2015 20:00:00 +0100</pubDate>
+        <link>http://blog.numixproject.org//blog/2015/01/30/introducing-numix-blog.html</link>
+        <guid isPermaLink="true">http://blog.numixproject.org//blog/2015/01/30/introducing-numix-blog.html</guid>
+        
+        <category>blog</category>
+        
+        <category>web</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
