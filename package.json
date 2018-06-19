@@ -1,0 +1,26 @@
+{
+  "name": "bolt-packager",
+  "version": "0.1.0",
+  "description": "Packager for Numix themes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/numixproject/bolt-packager.git"
+  },
+  "author": "Satyajit Sahoo <satyajit.happy@gmail.com> (https://github.com/satya164/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/numixproject/bolt-packager/issues"
+  },
+  "homepage": "https://github.com/numixproject/bolt-packager#readme",
+  "dependencies": {
+    "babel": "latest"
+  },
+  "devDependencies": {
+    "babel-eslint": "latest"
+  }
+}
